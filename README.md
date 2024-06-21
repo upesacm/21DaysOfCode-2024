@@ -74,7 +74,8 @@ In order to run html file use live server extension on VSCODE.
 4.	The above-mentioned anchor should open a website in a new tab.
 
 5.	Replicate the image below. (Keep the code safe with you as you will make changes in this in future)
-     ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/81b52524-e162-4a55-94a1-a0591bc73ea0)
+
+  	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/81b52524-e162-4a55-94a1-a0591bc73ea0)
 
 
 
