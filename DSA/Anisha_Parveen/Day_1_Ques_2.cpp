@@ -8,11 +8,8 @@ int validPairs(vector<int> arr, int n, int k)
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (arr[i] < arr[j])
-            {
                 if ((arr[i] + arr[j]) % k == 0)
                     pairs++;
-            }
         }
     }
     return pairs;
