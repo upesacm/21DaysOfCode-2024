@@ -7,3 +7,6 @@
 <p align="center">
   I'm excited to follow 21 days of code to improve my consistency and discipline to become a better coder who can transform ideas and innovations into code and reality.
 </p>
+<p align="center">
+  Here, I will adding my solutions to DSA questions posted in 21DaysOfCode-2024 repository of UPES ACM organization.
+</p>
