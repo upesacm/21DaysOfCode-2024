@@ -1,4 +1,4 @@
-def count_valid_segments(candy, day, month):
+def count(candy, day, month):
   n = len(candy)
   dp = [[0] * (day + 1) for _ in range(n + 1)]
   for i in range(n + 1):
@@ -19,5 +19,5 @@ candy = [2, 2, 1, 3, 2]
 day = 4
 month = 2
 
-result = count_valid_segments(candy, day, month)
+result = count(candy, day, month)
 print("Number of valid segments:", result)
