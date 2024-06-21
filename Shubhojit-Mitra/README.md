@@ -1,6 +1,6 @@
 # Shubhojit Mitra - 21DaysOfCode
 
-## Day-1
+## Day 1
 
 ## DSA
 
@@ -63,7 +63,7 @@ function countDivisiblePairs(arr, k) {
 
 ## Web Dev
 
-#### index.html
+- #### index.html
 
 ```html
 <!DOCTYPE html>
@@ -96,6 +96,6 @@ function countDivisiblePairs(arr, k) {
 </body>
 </html>
 ```
-### Solution
+- ### Solution
 
 ![Solution](Web-Dev/Day-1/solution-day-1.png)
