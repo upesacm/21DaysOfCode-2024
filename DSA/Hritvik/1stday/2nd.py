@@ -1,4 +1,4 @@
-def count_k_divisible_pairs(arr, k):
+def count(arr, k):
   n = len(arr)
   count = 0
   for i in range(n):
@@ -9,5 +9,5 @@ def count_k_divisible_pairs(arr, k):
 arr = [1, 3, 2, 6, 1, 2]
 k = 3
 
-result = count_k_divisible_pairs(arr, k)
+result = count(arr, k)
 print("Total pairs is", result)
