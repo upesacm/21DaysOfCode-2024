@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    int numberOfCandyBlocks;
+    printf("Enter the number of candy blocks: ");
+    scanf("%d", &numberOfCandyBlocks);
+
+    int candyBlocks[numberOfCandyBlocks];
+    for (int i = 0; i < numberOfCandyBlocks; i++) {
+        printf("Enter the number of candies in block %d: ", i + 1);
+        scanf("%d", &candyBlocks[i]);
+    }
+
+    int rajusBirthMonth, rajusBirthDay, count = 0, currentSum, currentIndex;
+
+    printf("Enter Raju's birth month: ");
+    scanf("%d", &rajusBirthMonth);
+    printf("Enter Raju's birth day: ");
+    scanf("%d", &rajusBirthDay);
+
+    for (int i = 0; i < numberOfCandyBlocks; i++) {
+        currentIndex = i;
+        currentSum = 0;
+        for (int j = 0; j < rajusBirthMonth && currentIndex + j < numberOfCandyBlocks; j++) {
+            currentSum += candyBlocks[currentIndex + j];
+        }
+        if (rajusBirthDay == currentSum) {
+            count++;
+        }
+    }
+
+    printf("Number of times Raju can eat %d candies in a month: %d\n", rajusBirthDay, count);
+
+    return 0;
+}
