@@ -17,7 +17,7 @@ arrival_times = [-1, -3, 4, 2]
 
 Output: YES
 
-##### Question 2: Leaderboard Climbing A player is climbing a leaderboard where scores are ranked in descending order. Given the scores on the leaderboard and the player's scores in the game, determine the player's rank after each new score.
+##### Question 2: A player is climbing a leaderboard where scores are ranked in descending order. Given the scores on the leaderboard and the player's scores in the game, determine the player's rank after each new score.
 Inputs:
 - An array of integers representing the leaderboard scores.
 -	An array of integers representing the player's scores.
