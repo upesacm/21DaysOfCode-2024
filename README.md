@@ -1,81 +1,60 @@
-# Questions for Day 1 - (21/06/2024)
+# Questions for Day 2 - (22/06/2024)
 
 ## DSA
 
-**Question 1:** 
 
-Rohan and Raju have a candy where each square has a number. Rohan wants to find out how many ways she can break the bar into a contiguous segment such that:
-
-1. The segment length matches Raju's birth month.
-2. The sum of the numbers in the segment equals Raju's birth day.
+#### Question 1: A professor has a class of students and wants to know if the class should be cancelled based on student arrival times. The class is cancelled if fewer than a threshold number of students arrive on time.
 ##### Inputs:
-
-- An array of integers representing the chocolate squares.
-
-- Two integers representing Raju's birth day and birth month.
-
-##### Output:
-
-- The number of valid ways to divide the bar.
-
+- An integer representing the threshold number of students.
+- An array of integers representing arrival times, where a non-positive integer indicates on-time arrival.
+Output:
+- YES" if the class is cancelled, "NO" otherwise.
 ##### Example:
 
-Candy = [2, 2, 1, 3, 2]
+threshold = 3
 
-day = 4
+arrival_times = [-1, -3, 4, 2]
 
-month = 2
+Output: YES
 
-##### Output: 2
+##### Question 2: A player is climbing a leaderboard where scores are ranked in descending order. Given the scores on the leaderboard and the player's scores in the game, determine the player's rank after each new score.
+Inputs:
+- An array of integers representing the leaderboard scores.
+-	An array of integers representing the player's scores.
+Output:
+-	An array of integers representing the player's rank after each new score.
 
-**Question 2:** 
+Example:
 
-Given an array of integers and an integer k, determine the number of (i, j) pairs where i \< j and the sum of the pair is divisible by k.
+leaderboard = [100, 90, 90, 80]
 
-###### Inputs:
+player_scores = [70, 80, 105]
 
-- An array of integers.
-
-- An integer k.
-
-###### Output:
-
-- The number of valid (i, j) pairs.
-
-###### Example:
-
-arr = [1, 3, 2, 6, 1, 2]
-
-k = 3
-
-##### Output: 5
-
+Output: [4, 3, 1]
 
 ## WebDev
 
-In order to run html file use live server extension on VSCODE.
-1.	Create Two buttons one with your name and other with your SapID.
+1.	Replicate this button.
 
-      ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/3fbb1a39-6490-4cce-9c59-3a9efee7a49a)
+       ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/d6aa23a2-72da-4c53-a619-961605fbdebd)
 
-2.	Create a paragraph and write two different sentences in the below mentioned manner.
-   
-       ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/3cdcd5c1-9184-4633-8e45-a9c3e813d561)
+2.	Replicate this below button rgb(255,216,20).
 
+      ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/7552d8fa-cbb2-49c7-964b-1a1a1cd6aca9)
 
+ 
+3.	Replicate this button rgb(10,102,194).
 
-3.	Create a link to www.upesacmw.org with the help of anchor tag using href tag.
-   
-      ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/b32206fa-be93-49ef-83d6-ab2de244d3c2)
+      ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/df5edecf-cc2a-4065-840a-8e1bcba6a45d)
 
+ 
+4.	Replicate this button rgb(121,82,179) and rgb(108,117,125).
 
-*Clicking on the mentioned anchor should go to the ACMW website. *
+  	 ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/ebee73a2-ee72-4034-aa80-d81f3ed5cb5e)
 
-4.	The above-mentioned anchor should open a website in a new tab.
+ 
+6.	Using the code made for the previous day for question 5 try to enhance it with this style.
 
-5.	Replicate the image below. (Keep the code safe with you as you will make changes in this in future)
+	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/dbc4f87a-b841-4a9c-8ddf-fafe174eb247)
 
-  	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/81b52524-e162-4a55-94a1-a0591bc73ea0)
-
-
-
+ 
