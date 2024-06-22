@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class day1q2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements in the array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Enter the value of k: ");
+        int k = sc.nextInt();
+
+        int countPairs = 0;
+
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (i < j && (arr[i] + arr[j]) % k == 0) {
+                    countPairs++;
+                }
+            }
+        }
+
+        System.out.println("Number of valid (i, j) pairs: " + countPairs);
+
+    }
+}
