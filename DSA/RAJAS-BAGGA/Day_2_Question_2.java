@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Day_2_Quesion_2 {
+public class Day_2_Question_2 {
     
     public static int[] playerRanks(int leaderboard[], int playerScores[]) {
         
