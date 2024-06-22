@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Question-2</title>
+    </head>
+    <style>
+        button{
+            background:rgb(255,216,20);
+            color:black;
+            border:none;
+            border-radius:20px;
+        }
+    </style>
+    <body>
+        <button>Add to Cart</button>
+    </body>
+</html>
