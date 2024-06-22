@@ -1,5 +1,5 @@
 //Question-2
-
+// Author: Ayush Dey
 import java.util.Scanner;
 
 public class Q2{
