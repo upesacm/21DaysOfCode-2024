@@ -19,7 +19,7 @@ same sequence when read backward. If true, return "symmetrical", otherwise retur
 symmetrical".
 
 ##### Inputs:
-- A string?
+- A string.
 ##### Output:
 - "symmetrical" if the string meets the criteria, otherwise "not symmetrical".
   
