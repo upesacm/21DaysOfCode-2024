@@ -17,7 +17,7 @@ arrival_times = [-1, -3, 4, 2]
 
 Output: YES
 
-##### Question 2: Leaderboard Climbing A player is climbing a leaderboard where scores are ranked in descending order. Given the scores on the leaderboard and the player's scores in the game, determine the player's rank after each new score.
+##### Question 2: A player is climbing a leaderboard where scores are ranked in descending order. Given the scores on the leaderboard and the player's scores in the game, determine the player's rank after each new score.
 Inputs:
 - An array of integers representing the leaderboard scores.
 -	An array of integers representing the player's scores.
@@ -49,10 +49,11 @@ Output: [4, 3, 1]
 
  
 4.	Replicate this button rgb(121,82,179) and rgb(108,117,125).
-         ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/ebee73a2-ee72-4034-aa80-d81f3ed5cb5e)
+
+  	 ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/ebee73a2-ee72-4034-aa80-d81f3ed5cb5e)
 
  
-5.	Using the code made for the previous day for question 5 try to enhance it with this style.
+6.	Using the code made for the previous day for question 5 try to enhance it with this style.
 
 	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/dbc4f87a-b841-4a9c-8ddf-fafe174eb247)
 
