@@ -1,0 +1,45 @@
+/*
+Question 1:
+A function to determine if a given sentence includes every letter of the English alphabet at least once.
+The function should be case insensitive and return "complete" if the sentence contains every letter,
+otherwise return "incomplete".
+
+Inputs:
+A string representing the sentence.
+Output:
+"complete" if the sentence is a pangram, otherwise "incomplete".
+Example:
+sentence = "The quick brown fox jumps over the lazy dog"
+
+Output: complete
+ */
+
+
+import java.util.*;
+
+public class Day3_Q1 {
+    public static String isPangram(String sentence) {
+        Set<Character> uniqueLetters = new HashSet<>();
+
+        // Convert the sentence to lowercase and iterate over each character
+        for (char c : sentence.toLowerCase().toCharArray()) {
+            // Add only alphabet characters to the set
+            if (c >= 'a' && c <= 'z') {
+                uniqueLetters.add(c);
+            }
+        }
+
+        // Check if the set contains all 26 letters of the alphabet
+        if (uniqueLetters.size() == 26) {
+            return "complete";
+        } else {
+            return "incomplete";
+        }
+    }
+
+    public static void main(String[] args) {
+        String sentence = "The quick brown fox jumps over the lazy dog";
+        String result = isPangram(sentence);
+        System.out.println(result);
+    }
+}
