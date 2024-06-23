@@ -30,7 +30,7 @@ string = "acxz"
 ##### Output: symmetrical
 
 ## WEB-DEV:
-1. Using question 3 from the previous day try applying the following (hint: background colour, text 
+1. Using *question 3* from the previous day try applying the following (hint: background colour, text 
 colour): https://youtu.be/TBo6SKbgRDQ
 2. Using question 4 from the previous day try applying the following (hint: background colour, width):
 https://youtu.be/HO7cdSLWCiA
