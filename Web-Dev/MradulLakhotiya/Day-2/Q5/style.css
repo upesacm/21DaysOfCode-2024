@@ -1,0 +1,33 @@
+.inside-button-p {
+    margin: 0;   /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    border: 0;   /* Remove default border */
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.prize{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-cart, 
+.buy-now {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: rgb(255,216,20);
+}
+
+.buy-now {
+    background-color: orange;
+}
