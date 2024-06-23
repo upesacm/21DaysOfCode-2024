@@ -1,0 +1,60 @@
+.button{
+    border: none;
+    margin: 15px 8px;
+    border-radius: 50px;
+    font-size: x-large;
+}
+.btn1 {
+    background-color: black;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 0px;
+}
+.btn2 {
+    background-color: rgb(255,216,20);
+    text-align: center;
+    padding: 14px 66px;
+}
+.btn3 {
+    background-color: rgb(10,102,194);
+    color: white;
+    padding:16px 32px;
+    font-weight: bold;
+}
+.btn4 {
+    border: 1px solid rgb(10,102,194);
+    color: rgb(10,102,194);
+    font-weight: bold;
+    background-color: white;
+    padding:16px 32px;
+}
+.btn5 {
+    background-color: rgb(121,82,179);
+    border-radius: 4px;
+    color: white;
+    padding:18px 32px;
+    font-weight: bold;
+}
+.btn6{
+    background-color: white;
+    border: 1px solid rgb(108,117,125);
+    border-radius: 4px;
+    color: rgb(108,117,125);
+    padding:18px 32px;
+    font-weight: bold;
+    
+}
+.btn7 {
+    background-color: rgb(255,216,20);
+    padding:6px 30px;
+}
+.btn8 {
+    background-color: orange;
+    padding:6px 30px;
+}
+h4{
+    color: rgb(9, 140, 9);
+}
+a {
+    color: rgb(12, 130, 130);
+}
