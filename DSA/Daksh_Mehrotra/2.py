@@ -1,13 +1,13 @@
-def count_pairs_divisible_by_k(arr, k):
-    remainder_count = [0] * k
-    count = 0
-    for num in arr:
-        remainder = num % k
-        complement = (k - remainder) % k
-        count += remainder_count[complement]
-        remainder_count[remainder] += 1
-    return count
-arr = [1, 3, 2, 6, 1, 2]
-k = 3
-result = count_pairs_divisible_by_k(arr, k)
-print(result) 
+def climbing_leaderboard(leaderboard, player_scores):
+    unique_leaderboard = sorted(set(leaderboard), reverse=True)
+    results = []
+    index = len(unique_leaderboard) - 1
+    
+    for score in player_scores:
+        while index >= 0 and score >= unique_leaderboard[index]:
+            index -= 1
+        results.append(index + 2)
+    return results
+leaderboard = [100, 90, 90, 80]
+player_scores = [70, 80, 105]
+print(climbing_leaderboard(leaderboard, player_scores))
