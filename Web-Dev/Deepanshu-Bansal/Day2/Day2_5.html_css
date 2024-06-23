@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Question-4</title>
+    </head>
+    <style>
+        a{
+            color:rgb(74, 133, 156);
+        }
+        .p1{
+            font-weight:bold;
+        }
+        .p2{
+            font-weight:bold;
+            color:green;
+        }
+        .bfirst{
+            background:yellow;
+            color:black;
+            border:none;
+            border-radius:20px;
+        }
+        .bsecond{
+            color:black;
+            background:orange;
+            border:none;
+            border-radius:20px;
+        }
+    </style>
+    <body>
+        <a href="www.upesacmw.org">Back to Amazon</a>
+        <p class="p1">Nike Black Running Shoes</p>
+        <p class="p2">$39 - in stock.</p>
+        <p class="p3">Free delivery tomorrow.</p>
+        <button class="bfirst">Add to cart</button>
+        <button class="bsecond">Buy now</button>
+    </body>
+</html>
