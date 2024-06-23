@@ -1,0 +1,16 @@
+#b1{
+    background-color: rgb(10,102,194);
+    color: white;
+    width:200px;
+    height:30px;
+    border-radius: 13px;
+    border-color: rgb(10,102,194);
+}
+#b2{
+    background-color: white;
+    color: rgb(10,102,194);
+    width: 50px;
+    height:20px;
+    border-radius: 13px;
+    border-color: rgb(10,102,194);
+}
