@@ -1,0 +1,17 @@
+.button{
+    background-color: rgb(255,216,20);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+}
+.buy{
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+
+}
