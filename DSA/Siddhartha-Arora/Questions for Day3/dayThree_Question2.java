@@ -17,18 +17,17 @@ string = "acxz"
 
 
 public class dayThree_Question2{
+
     public static void main(String[] args) {
         String str = "acxz";
         System.out.println(checkSymmetry(str));
     }
-    private static String checkSymmetry(String str){
-        boolean flag=true;
-        String backString=stringReversal(str);
-        String reverseAscii=asciiRevercal(str);
-        if(backString!=reverseAscii)flag=false;
+    private static String checkSymmetry(String str) {
+        String reverseString = reverseAscii(str);
+        String backString = stringReversal(str);
+        boolean flag = backString.equals(reverseString);
 
-
-        return flag?"not symmetrical":"symmetrical";
+        return flag ? "symmetrical" : "not symmetrical";
     }
     private static String stringReversal(String str){
         StringBuilder s=new StringBuilder(str);
@@ -36,7 +35,7 @@ public class dayThree_Question2{
         System.out.println(s.toString());
         return s.toString();
     }
-    private static String asciiRevercal(String str){
+    private static String reverseAscii(String str){
         String res="";
         for(char ch:str.toCharArray()){
             res += (char) ('z' - (ch - 'a'));
