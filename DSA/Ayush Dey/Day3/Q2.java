@@ -5,33 +5,45 @@ import java.util.Scanner;
 
 public class Q2 {
 
-    // The Function to check if a string is symmetrical
-    static boolean isSymmetrical(String str) {
-        char[] chars = str.toCharArray();
-        int n = chars.length;
+    public static String reverseAlphabet(String input) {
+        StringBuilder reversedString = new StringBuilder();
 
-        for (int i = 0; i < n / 2; i++) {
-            if (chars[i] != chars[n - i - 1]) {
-                return false;
+        for (char c : input.toCharArray()) {
+            if (Character.isLetter(c)) {
+                char reverseChar = (char) ('a' + ('z' - Character.toLowerCase(c)));
+                reversedString.append(reverseChar);
             }
         }
-        return true;
+
+        return reversedString.toString();
+    }
+
+    // Function to check if the string is symmetrical based on the reversed alphabet
+    public static String isSymmetrical(String input) {
+        // Stripping non-letter characters and whitespace
+        String strippedInput = input.replaceAll("[^a-zA-Z]", "").toLowerCase();
+
+        String reversedAlphabetString = reverseAlphabet(strippedInput);
+        
+        // Reversing the reversed alphabet string
+        String finalReversedString = new StringBuilder(reversedAlphabetString).reverse().toString();
+
+        // Checking if the stripped input string is the same as the final reversed string
+        if (strippedInput.equals(finalReversedString)) {
+            return "symmetrical";
+        } else {
+            return "not symmetrical";
+        }
     }
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
+        System.out.println("Enter a string:");
+        String userInput = scanner.nextLine();
+
+        String result = isSymmetrical(userInput);
+        System.out.println(result);
         scanner.close();
-
-        boolean result = isSymmetrical(input);
-
-        if (result) {
-            System.out.println("symmetrical");
-        } else {
-            System.out.println("not symmetrical");
-        }
     }
 }
-
-
