@@ -1,0 +1,114 @@
+.btn3 { 
+    font-size:22px;
+    background-color:rgb(10,102,194);
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-block: 13px;
+    border-radius: 25px;
+    border: none;
+    font-family:Arial, Helvetica, sans-serif;
+    transition-duration: 0.4s
+}
+.btn3:hover {
+    background-color:rgb(5, 88, 171); 
+    color: white;;
+  }
+#b1{
+    color: white;
+    text-decoration: none;
+}
+ 
+.btn4 { font-size: large;
+    background-color: white;
+    padding: 30px;
+    padding-block: 13px;
+    margin: 13px;
+    border-color: rgb(10,102,194);
+    border-radius: 25px;
+   
+}
+.btn4:hover {
+    background-color:rgb(221, 229, 233); 
+    color: rgb(8, 88, 168);
+    border-width: 3px;
+   
+  }
+#b2{
+    color: rgb(10,102,194);
+    text-decoration: none;
+}
+/* ------------------------------------ */
+#btn5 { font-size:22px;
+    background-color:rgb(121,82,179);
+    color: white;
+    padding: 35px;
+    padding-block: 17px;
+    border-radius: 5px;
+    border: none;
+    transition-duration: 0.4s
+}
+#btn5:hover {
+    background-color:rgb(95, 62, 145); 
+    color: white;;
+  }
+  
+ #btn6 { font-size: 22px;
+    background-color: white;
+    color: rgb(95, 100, 104);
+    padding: 35px;
+    padding-block: 17px;
+    margin: 13px;
+    border-color: rgb(108,117,125);
+    border-radius: 5px;
+    transition-duration: 0.4s
+}
+#btn6:hover {
+    background-color: rgb(108,117,125); 
+    color: rgb(255, 255, 255);
+  }
+
+  /* --------------------------- */
+  #lnk{
+    
+    color: rgb(51, 132, 146) ;
+    font-size: 20px;
+    
+ }
+ #lnk:hover {
+color: rgb(198, 107, 65);
+ }
+ #btn7 { font-size:16px;
+    background-color:  rgb(247, 217, 82);
+    color: black;
+    padding: 30px;
+    padding-block: 8px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 10px;
+    transition-duration: 0.4s
+ }
+ #btn7:hover { 
+   color: black ;
+   background-color: rgb(230, 195, 35) ;
+ }
+ #btn7:active{
+    background-color: rgb(229, 216, 155);
+    color:rgb(112, 112, 112);
+ }
+ #btn8 { font-size:16px;
+    background-color: rgb(247, 167, 82);
+    color: black;
+    padding: 30px;
+    padding-block: 8px;
+    border-radius: 25px;
+    border: none;
+    transition-duration: 0.4s
+ }
+ #btn8:hover { 
+   color: black ;
+   background-color: rgb(232, 143, 49) ;
+ }
+ #btn8:active{
+    background-color: rgb(250, 203, 153);
+    color:rgb(112, 112, 112);
+ }

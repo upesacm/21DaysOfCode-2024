@@ -1,0 +1,121 @@
+.Request{
+    background-color: #000000; /* Green */
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+}
+
+.AddCart{
+    background-color: rgb(255,216,20);
+    width: 280px;
+    height: 60px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 30px;
+}
+.container-1{
+    display: flex;
+    gap: 30px;
+}
+.AddCompany{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(10,102,194);
+    border-radius: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s ease ;
+}
+.AddCompany:hover{
+    
+    background-color: rgb(5, 79, 153);
+    cursor: pointer; 
+}
+.Save{
+    width: 110px;
+    height: 50px;
+    background-color: rgb(227, 218, 218);
+    color: rgb(10,102,194) ;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(10,102,194); /* Green */
+    border-radius: 40px;
+    transition: background-color 0.3s ease, border 0.3s ease  ;
+}
+.Save:hover{
+   
+    background-color: rgb(59, 107, 144);
+   
+    border: 3px solid rgb(10,102,194); 
+    
+    cursor: pointer
+}
+
+.GetStarted{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(121,82,179) ;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.4s ease;
+}
+.GetStarted:hover{
+    background-color:rgb(63, 34, 107) ;
+    cursor: pointer;
+}
+
+.Download{
+    width: 180px;
+    height: 60px;
+    border: 2px solid rgb(108,117,125) ;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s ease, color 0.3s ease  ;
+}
+.Download:hover{
+    background-color: rgba(108, 117, 125, 0.716) ;
+    cursor: pointer;
+    color: rgb(108,117,125) ;
+}
+
+
+  
+.link_here:hover {
+    color: rgb(255, 147, 47);
+  }
+  
+ 
+
+.AddCart2{
+    background-color: rgb(255,216,20);
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 14px;
+}
+.AddCart2:hover{
+    background-color:rgb(165, 139, 11) ;
+}
+.AddCart2:active{
+    background-color: rgb(224, 211, 146) ;
+}
+
+
+.BuyNow{
+    background-color: rgb(255, 165, 0);
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 14px;
+}
+.BuyNow:hover{
+    background-color: rgb(213, 139, 0);
+}
+.BuyNow:active{
+    background-color: rgb(246, 207, 135);
+}
