@@ -1,9 +1,9 @@
-def is_class_cancelled(threshold, arrival_times):
-    on_time_students = sum(1 for time in arrival_times if time <= 0)
-    if on_time_students < threshold:
-        return "YES"
+def is_pangram(sentence):
+    alphabet = set("abcdefghijklmnopqrstuvwxyz")
+    sentence_set = set(sentence.lower())
+    if alphabet <= sentence_set:
+        return "complete"
     else:
-        return "NO"
-threshold = 3
-arrival_times = [-1, -3, 4, 2]
-print(is_class_cancelled(threshold, arrival_times)) 
+        return "incomplete"
+sentence = input("Enter a sentence: ")
+print(is_pangram(sentence))
