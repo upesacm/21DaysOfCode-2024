@@ -19,7 +19,7 @@ same sequence when read backward. If true, return "symmetrical", otherwise retur
 symmetrical".
 
 ##### Inputs:
-- A string.
+- A string
 ##### Output:
 - "symmetrical" if the string meets the criteria, otherwise "not symmetrical".
   
@@ -30,9 +30,9 @@ string = "acxz"
 ##### Output: symmetrical
 
 ## WEB-DEV:
-1. Using question 3 from the previous day try applying the following (hint: background colour, text 
+1. Using *question 3* from the previous day try applying the following (hint: background colour, text 
 colour): https://youtu.be/TBo6SKbgRDQ
-2. Using question 4 from the previous day try applying the following (hint: background colour, width):
+2. Using *question 4* from the previous day try applying the following (hint: background colour, width):
 https://youtu.be/HO7cdSLWCiA
-3. Using question 5 from the previous day try applying the following:
+3. Using *question 5* from the previous day try applying the following:
 [https://youtu.be/-aGbXEY00F](https://youtu.be/-aGbXEY00FE)
