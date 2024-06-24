@@ -7,31 +7,37 @@ public class Main {
             freq[c - 'a']++;
         }
 
-        int maxFreq = 0, minFreq = Integer.MAX_VALUE, maxCount = 0, minCount = 0;
+        int maxFreq = 0, minFreq = Integer.MAX_VALUE;
         for (int i : freq) {
-            if (i > maxFreq) {
-                maxFreq = i;
-            }
-            if (i < minFreq) {
-                minFreq = i;
+            if (i > 0) {
+                if (i > maxFreq) {
+                    maxFreq = i;
+                }
+                if (i < minFreq) {
+                    minFreq = i;
+                }
             }
         }
 
-        for (int i : freq) {
-            if (i == maxFreq) {
-                maxCount++;
-            }
-            if (i == minFreq) {
-                minCount++;
-            }
-        }
-
-        if (maxCount > 1) {
-            return "invalid";
-        } else if (maxFreq - minFreq > 1) {
-            return "invalid";
-        } else {
+        if (maxFreq == minFreq) {
             return "valid";
+        } else if (maxFreq - minFreq == 1) {
+            int maxCount = 0, minCount = 0;
+            for (int i : freq) {
+                if (i == maxFreq) {
+                    maxCount++;
+                }
+                if (i == minFreq) {
+                    minCount++;
+                }
+            }
+            if (maxCount == 1 || minCount == 1) {
+                return "valid";
+            } else {
+                return "invalid";
+            }
+        } else {
+            return "invalid";
         }
     }
 
