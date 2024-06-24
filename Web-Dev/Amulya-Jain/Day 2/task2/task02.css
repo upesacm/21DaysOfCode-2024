@@ -1,0 +1,12 @@
+.add-to-cart {
+    background-color: rgb(255,216,20);
+    border: none;
+    padding: 10px;
+    width: 15%;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: rgb(252, 210, 0);
+}
