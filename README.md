@@ -13,7 +13,7 @@ specified length.
 string = "ababa"
 
 length = 3
-##### Output: 2
+##### Output: 3
 
 **Question 2:** Determine if a string can be rearranged such that 
 all characters have the same frequency. If one removal can achieve this, return "valid", 
