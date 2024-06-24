@@ -12,7 +12,7 @@
  * string = "ababa"
  * length = 3
  * 
- * Output: 2
+ * Output: 3
  */ 
 import java.util.*;
 public class Day4_Q1 {
