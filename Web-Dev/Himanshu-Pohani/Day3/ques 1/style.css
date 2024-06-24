@@ -1,0 +1,28 @@
+.button{
+    background-color: rgb(10,102,194);
+    color: white;
+    padding: 10px 40px;
+    width: 250px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}
+.save{
+    text-align: center;
+    background-color: white;
+    border-color:rgb(10,102,194); 
+    color: rgb(10,102,194);
+    padding: 10px 40px;
+    border-radius: 25px;
+    font-size: 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(19, 15, 153) ;
+}
+.save:hover{
+    background-color: rgba(23, 75, 99, 0.174);
+}
