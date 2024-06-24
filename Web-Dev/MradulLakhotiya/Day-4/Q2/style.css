@@ -1,0 +1,41 @@
+* {
+    margin: 0;   /* Remove default margin */
+    padding: 0;  /* Remove default padding */
+    border: 0;   /* Remove default border */
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-name,
+.email {
+    padding: 1.2vh;
+    border: 2px solid #e7e7e7;
+    margin: 0.3rem;
+    color: #8c8c8c;
+    border-radius: 0.6rem;
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.email {
+    width: 24.6rem;
+}
+
+.sign-up {
+    background-color: rgb(57, 117, 234);
+    height: 2.5rem;
+    width: 24.6rem;
+    padding: 1.2vh;
+    margin: 0.3rem;
+    border-radius: 0.6rem;
+    color: white;
+    font-weight: bold;
+}
