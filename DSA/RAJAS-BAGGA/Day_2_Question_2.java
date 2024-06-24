@@ -30,5 +30,8 @@ public class Day_2_Question_2 {
         int []arr1 = {100, 90, 90, 80};
         int []arr2 = {70, 80, 105};
         int res[] = playerRanks(arr1, arr2);
+        for (int i=0; i < res.length; i++) {
+            System.out.printf("%d ", res[i]);
+        }
     }
 }

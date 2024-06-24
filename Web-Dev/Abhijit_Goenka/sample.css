@@ -1,0 +1,62 @@
+.request
+{
+    color: white;
+    background-color:black;
+    border: 0px;
+}
+.add-cart{
+    color:black;
+    background-color: rgb(255,216,20);
+    border-radius: 20px;
+    border: 0px;
+}
+.apply
+{
+    color:rgb(255, 255, 255);
+    background-color: rgb(10,102,194);
+    border-radius: 20px;border: 0px;
+}
+.save
+{
+    color:rgb(10,102,194);
+    background-color: rgb(252, 252, 252);
+    border-radius: 20px;
+    border: 2px solid rgb(10,102,194) ;
+}
+.save:hover
+{
+    background-color: rgb(169, 214, 251);
+    cursor: pointer;
+
+}
+.apply:hover{
+    background-color: rgb(4, 94, 168);
+    cursor: pointer;
+    
+}
+.get
+{
+   color:rgb(255, 255, 255);
+   background-color: rgb(121,82,179);
+   border-radius: 5px;border: 0px;
+}
+.get:hover
+{
+    background-color: rgb(109, 18, 188);
+    cursor: pointer;
+}
+
+.downlaod
+{
+    color:rgb(108,117,125);
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    border: 2px solid rgb(108,117,125) ;
+}
+.download:hover
+{
+    background-color: rgb(17, 130, 216);
+    cursor: pointer;
+    
+
+}
