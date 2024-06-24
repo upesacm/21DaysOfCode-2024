@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Question-1</title>
+    </head>
+    <style>
+        button{
+            background:black;
+            color:white;
+        }
+    </style>
+    <body>
+        <button>Request now</button>
+    </body>
+</html>

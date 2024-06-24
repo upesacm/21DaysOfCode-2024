@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="DAY3.css"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>Harshika__3</title>
+</head>
+<body>
+    <!-- Q3 -->
+     <button id="apply">Apply on company website</button>
+     <button id="save">Save</button>
+</br></br>
+     <!-- Q4 -->
+    <button id="start">Get started</button>
+    <button id="download">Download</button>
+</br></br>
+<!-- Q5 -->
+<a href="https://amazon.com" class="amazon-link" type="text/html">Back to Amazon</a>
+<h1>
+    <b>Nike Black Running Shoes</b>
+</h1>
+<div style="color:green;">
+   <b><h3>
+    $39-in stock</h3>
+   </b>
+</div>
+<div>Free delivery tomorrow.</div>
+<button class="add-to-cart" onclick="handleButtonClick(this)">Add to Cart</button>
+<button class="buy-now" onclick="handleButtonClick(this)">Buy Now</button>
+<script>
+    function handleButtonClick(button) {
+        button.classList.add('clicked');
+        setTimeout(function() {
+            button.classList.remove('clicked');
+        }, 500);
+    }
+</script>
+</body>
+</html>
