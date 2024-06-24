@@ -1,0 +1,19 @@
+.button{
+    background-color: rgb(121, 82, 179); 
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  
+}
+.download{
+    background-color: white;
+    color: rgb(108,117,125);
+    border-color: rgb(108,117,125);
+    padding: 15px 30px;
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 12px;
+    
+}
