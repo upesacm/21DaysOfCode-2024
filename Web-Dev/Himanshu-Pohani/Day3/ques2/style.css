@@ -5,6 +5,7 @@
   border: none;
   border-radius: 5px;
   font-size: 12px;
+  cursor: pointer;
   
 }
 .download{
@@ -13,7 +14,16 @@
     border-color: rgb(108,117,125);
     padding: 15px 30px;
     border: 1px solid;
-    border-radius: 2px;
+    border-radius: 5px;
     font-size: 12px;
+    cursor: pointer;
     
+}
+.button:hover{
+    
+    background-color: rgb(101, 50, 178)
+}
+.download:hover{
+    background-color: rgba(119, 115, 115, 0.796);
+    color: white;
 }
