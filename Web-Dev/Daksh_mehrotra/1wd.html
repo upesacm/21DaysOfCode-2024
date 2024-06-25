@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button Example</title>
+    <style>
+        .request-button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .request-button:hover {
+            background-color: #333;
+        }
+    </style>
 </head>
 <body>
-    <button id="nameButton">Daksh Mehrotra</button>
-    <button id="sapIdButton">500125960</button>
-    
-    <script>
-        document.getElementById('nameButton').addEventListener('click', function() {
-            alert('You clicked on the Name button!');
-        });
-
-        document.getElementById('sapIdButton').addEventListener('click', function() {
-            alert('You clicked on the SAP ID button!');
-        });
-    </script>
+    <button class="request-button">Request now</button>
 </body>
 </html>
