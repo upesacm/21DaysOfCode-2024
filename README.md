@@ -1,49 +1,59 @@
-# Questions for Day 4 - (24/06/2024)
-
-## DSA
-
-**Question 1:** Given a string, determine the number of distinct palindromic substrings of a 
-specified length.
+# Questions for Day 5 - (25/06/2024)
+## DSA:
+**Question 1:** Given a singly linked list, write a function to print the elements in reverse order.
 ##### Inputs:
-- A string.
-- An integer representing the length of the substrings.
+- A singly linked list.
 ##### Output:
-- The number of distinct palindromic substrings.
-##### Example:
-string = "ababa"
+- The elements of the list in reverse order.
 
-length = 3
-##### Output: 3
+Example:
 
-**Question 2:** Determine if a string can be rearranged such that 
-all characters have the same frequency. If one removal can achieve this, return "valid", 
-otherwise return "invalid".
+Linked list: 1 -> 2 -> 3
+
+Output: 3 2 1
+
+
+
+
+**Question 2:** Create a function to compare two singly linked lists and determine if they are identical.
 
 ##### Inputs:
-- A string.
+- Two singly linked lists.
 ##### Output:
-- "valid" if the string meets the criteria, otherwise "invalid".
-##### Example:
+- "identical" if the lists are the same, otherwise "different".
 
-string = "aabbcc"
+Example:
 
-##### Output: valid
+Linked list 1: 1 -> 2 -> 3
+
+Linked list 2: 1 -> 2 -> 3
+
+Output: identical
+
+
 
 ## WEB-DEV:
+1.	Create a flexbox with 3 items. Widths = 50px | remaining space | 75px
 
-1. Try recreating this image using display element (the logo of google is provided in the 
-repo).
+    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/8f264f11-4183-4c25-b633-aa3aba80678e)
 
-    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/ad6abc92-5bba-4c4a-b342-e3431ac31d7a)
+2.	Create a flexbox with 4 items, spread evenly across the page.
+
+    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/e5cf2fce-1848-48d6-bc29-c22318800b0b)
+
+3.	Create a flexbox below with height = 50px and a gray border.
+
+     ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/58712d04-87ae-4d61-baba-57856ef2ca29)
 
 
-2. Try recreating this image using display inline and block element.
+4.	With everything that you have learnt up until this point try to recreate this image.
 
-    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/6d2c5efa-83de-4c70-9549-44f744da740b)
+  	 ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/5843a12e-f158-4a31-9fc9-0e3459eeeaee)
 
+5.	Recreate this design.
 
-3. Create a grid with 4 equal columns that take up the entire page. Space between columns 
-= 20px, space between rows = 10p
+  	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/4586fe0e-2eed-442c-a7fd-53ad95e95c69)
 
-    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/51c9a75c-7a52-4b65-8749-f74c32ce5015)
+ 
+
 
