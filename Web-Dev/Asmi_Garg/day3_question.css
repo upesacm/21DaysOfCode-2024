@@ -1,0 +1,134 @@
+/* 1. Apply on company website and Save buttons */
+
+.apply{
+    background:rgb(10,102,194);
+    color:white;
+    border:none;
+    border-radius:20px;
+}
+.save{
+    background:white;
+    color:rgb(10,102,194);
+    border:1px solid rgb(10,102,194);
+    border-radius:20px;
+}
+.apply:hover{
+    background:rgb(6, 82, 158);
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+.save:hover{
+    background:rgb(229, 241, 255);
+    color:rgb(10,102,194);
+    border:2px solid rgb(10,102,194);
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* 2. Get started and Download buttons */
+
+.get-started {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.download {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.get-started:hover{
+    background:rgb(43, 5, 101);
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+.download:hover{
+    background:grey;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/*3. Amazon product card */
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.product-card a {
+    color: #0066c0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    color: green;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .delivery {
+    margin: 10px 0;
+}
+
+.product-card .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card .add-to-cart,
+.product-card .buy-now {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-card .add-to-cart {
+    background-color: rgb(255, 216, 20);
+    color: black;
+}
+
+.product-card .buy-now {
+    background-color: orange;
+    color: black;
+}
+
+a:hover{
+    color: brown;
+}
+
+
+.add-to-cart:active {
+    background: rgb(61, 61, 2); 
+}
+
+.buy-now:active {
+    background: rgb(117, 77, 3); 
+}

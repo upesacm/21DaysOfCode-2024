@@ -1,38 +1,49 @@
-# Questions for Day 3 - (23/06/2024)
+# Questions for Day 4 - (24/06/2024)
 
 ## DSA
 
-**Question 1:** A function to determine if a given sentence includes every letter of the English 
-alphabet at least once. The function should be case insensitive and return "complete" if the 
-sentence contains every letter, otherwise return "incomplete".
-
+**Question 1:** Given a string, determine the number of distinct palindromic substrings of a 
+specified length.
 ##### Inputs:
-- A string representing the sentence.
+- A string.
+- An integer representing the length of the substrings.
 ##### Output:
-- "complete" if the sentence is a pangram, otherwise "incomplete".
+- The number of distinct palindromic substrings.
 ##### Example:
-sentence = "The quick brown fox jumps over the lazy dog"
-##### Output: complete
+string = "ababa"
 
-**Question 2:** Create a function to check if reversing the ASCII values of a string results in the 
-same sequence when read backward. If true, return "symmetrical", otherwise return "not 
-symmetrical".
+length = 3
+##### Output: 3
+
+**Question 2:** Determine if a string can be rearranged such that 
+all characters have the same frequency. If one removal can achieve this, return "valid", 
+otherwise return "invalid".
 
 ##### Inputs:
 - A string.
 ##### Output:
-- "symmetrical" if the string meets the criteria, otherwise "not symmetrical".
-  
+- "valid" if the string meets the criteria, otherwise "invalid".
 ##### Example:
 
-string = "acxz"
+string = "aabbcc"
 
-##### Output: symmetrical
+##### Output: valid
 
 ## WEB-DEV:
-1. Using *question 3* from the previous day try applying the following (hint: background colour, text 
-colour): https://youtu.be/TBo6SKbgRDQ
-2. Using *question 4* from the previous day try applying the following (hint: background colour, width):
-https://youtu.be/HO7cdSLWCiA
-3. Using *question 5* from the previous day try applying the following:
-[https://youtu.be/-aGbXEY00F](https://youtu.be/-aGbXEY00FE)
+
+1. Try recreating this image using display element (the logo of google is provided in the 
+repo).
+
+    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/ad6abc92-5bba-4c4a-b342-e3431ac31d7a)
+
+
+2. Try recreating this image using display inline and block element.
+
+    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/6d2c5efa-83de-4c70-9549-44f744da740b)
+
+
+3. Create a grid with 4 equal columns that take up the entire page. Space between columns 
+= 20px, space between rows = 10p
+
+    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/51c9a75c-7a52-4b65-8749-f74c32ce5015)
+
