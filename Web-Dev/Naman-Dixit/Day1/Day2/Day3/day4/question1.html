@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google-Style Logo</title>
+    <link rel="stylesheet" href="webdev.css">
+</head>
+<style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-container input[type="text"] {
+
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+        }
+        .search-container button {
+
+            padding: 10px;
+            font-size: 16px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</style>
+<body>
+    
+    <h1 class="google-logo">
+        <span>G</span>
+        <span>o</span>
+        <span>o</span>
+        <span>g</span>
+        <span>l</span>
+        <span>e</span>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+        <div class="results" id="results"></div>
+    
+        <script>
+      // JavaScript function to handle the search
+      function search() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const resultsDiv = document.getElementById('results');
+            
+            // Example array of data to search from
+            const data = [
+                'Apple',
+                'Banana',
+                'Orange',
+                'Mango',
+                'Pineapple',
+                'Grapes'
+            ];
+            
+            // Clear previous results
+            resultsDiv.innerHTML = '';
+            
+            // Filter the data based on the search input
+            const results = data.filter(item => item.toLowerCase().includes(input));
+            
+            // Display the results
+            if (results.length > 0) {
+                results.forEach(item => {
+                    const p = document.createElement('p');
+                    p.textContent = item;
+                    resultsDiv.appendChild(p);
+                });
+            } else {
+                resultsDiv.textContent = 'No results found';
+            }
+        }
+        </script>
+</body>
+</html>
