@@ -1,0 +1,12 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col {
+    background-color: rgba(255, 0, 0, 0.2);
+}
