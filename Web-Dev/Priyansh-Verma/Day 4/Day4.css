@@ -1,0 +1,54 @@
+img{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+.searchbar{
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+    padding: 11px 15px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+input{
+    border: 1px solid rgb(177, 177, 177);
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+.fname{
+    width: 80px;
+    display: inline;
+}
+.lname{
+    width: 80px;
+    display: inline;
+}
+.Email{
+    width: 194px;
+    display: block;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(40, 125, 235);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    width: 223px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.box{
+    background-color: lightpink;
+}

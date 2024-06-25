@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <style>
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .get-started-button {
+            background-color: rgb(121, 82, 179);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .download-button {
+            background-color: white;
+            color: rgb(108, 117, 125);
+            padding: 10px 20px;
+            border: 2px solid rgb(108, 117, 125);
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .get-started-button:hover, .download-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="get-started-button">Get Started</button>
+        <button class="download-button">Download</button>
+    </div>
+</body>
+</html>
