@@ -1,0 +1,58 @@
+/*
+Question 1:
+Given a string, determine the number of distinct palindromic substrings of a specified length.
+
+Inputs:
+A string.
+An integer representing the length of the substrings.
+Output:
+The number of distinct palindromic substrings.
+Example:
+string = "ababa"
+
+length = 3
+
+Output: 3
+
+ */
+import java.util.HashSet;
+import java.util.Set;
+
+public class Day4_Q1 {
+
+    public static int countDistinctPalindromicSubstrings(String str, int length) {
+        Set<String> palindromicSubstrings = new HashSet<>();
+
+        // Iterate through all possible substrings of the specified length
+        for (int i = 0; i <= str.length() - length; i++) {
+            String substring = str.substring(i, i + length);
+            if (isPalindrome(substring)) {
+                // Add palindromic substring to the set
+                palindromicSubstrings.add(substring);
+            }
+        }
+        return palindromicSubstrings.size();
+    }
+
+    private static boolean isPalindrome(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String str = "ababa";
+        int length = 3;
+        int result = countDistinctPalindromicSubstrings(str, length);
+        System.out.println(result);  
+    }
+}
