@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DAY 4 QUESTION 2</title>
+<style>
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .signup-form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap; 
+  }
+
+  .input-box {
+    width: calc(50% - 5px); 
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .email-box {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(26, 174, 233);
+    color: white;
+    border: 1px solid rgb(26, 174, 233);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .signup-button:hover {
+    background-color: rgb(41, 129, 164);
+  }
+</style>
+</head>
+<body>
+  <div class="signup-form">
+    <div class="input-group">
+      <input type="text" class="input-box" placeholder="First Name">
+      <input type="text" class="input-box" placeholder="Last Name">
+    </div>
+    <input type="email" class="email-box" placeholder="Email">
+    <button type="submit" class="signup-button">Sign Up</button>
+  </div>
+</body>
+</html>
