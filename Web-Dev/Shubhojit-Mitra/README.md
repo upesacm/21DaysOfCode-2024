@@ -107,3 +107,8 @@
 ![Solution](Web-Dev/Day-2/solution-day-2.png)
 
 ---
+
+### Day-2
+
+- #### index.html
+
