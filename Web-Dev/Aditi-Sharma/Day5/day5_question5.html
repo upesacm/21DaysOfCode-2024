@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            background-color: rgb(173, 104, 238);
+            border: solid white;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .download{
+            border: solid white 0.2px;
+            color: white;
+            background-color:rgb(173, 104, 238);
+            padding-left:20px;
+            padding-right:20px;
+            padding-top:10px;
+            padding-bottom: 10px;
+            margin-left:100px ;
+            margin-right: 20px;
+            font-size: medium;
+        }
+        .download:active{
+            background-color: rgb(147, 52, 236);
+        }
+        .download:hover{
+            background-color: rgb(149, 73, 220);
+        }
+        .searchbox{
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            flex:1;
+            height:50%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .home{
+            color: white;
+            background-color: rgb(173, 104, 238);
+            color: white;
+            margin-right: 100px;
+            border: solid rgb(173, 104, 238) 0.2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top:10px ;
+            padding-bottom: 10px;
+            font-size: medium;
+        }
+        .home:active{
+            background-color: rgb(150, 57, 238);
+        }
+        .home:hover{
+            background-color: rgb(151, 58, 237);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="home">Home</button>
+        <input type="text" class="searchbox" placeholder="Search">
+        <button class="download">Download</button>
+    </div> 
+</body>
+</html>
