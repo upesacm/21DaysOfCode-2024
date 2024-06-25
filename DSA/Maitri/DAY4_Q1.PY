@@ -1,9 +1,11 @@
 def is_palindrome(s):
     return s == s[::-1]
 
-def palindromic_substrings(string, length):
+def count_distinct_palindromic_substrings(string, length):
     if length > len(string):
         return 0
+
+    palindromic_substrings = set()
 
     for i in range(len(string) - length + 1):
         substring = string[i:i + length]
@@ -16,6 +18,7 @@ def palindromic_substrings(string, length):
 string = input("Enter the string: ")
 length = int(input("Enter the length of substrings: "))
 
-result = palindromic_substrings(string, length)
+result = count_distinct_palindromic_substrings(string, length)
 
+# Printing the result
 print(result)
