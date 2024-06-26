@@ -1,0 +1,25 @@
+# Function to check if a string is a palindrome
+def is_palindrome(s):
+    # Check if the string is the same forwards and backwards
+    return s == s[::-1]
+
+if __name__ == '__main__':
+    # Get the string from the user
+    string = input("Enter the string: ")
+    # Get the length of substrings from the user
+    length = int(input("Enter the length of the substrings: "))
+    
+    # A set to store unique palindromic substrings
+    palindromes = set()
+    
+    # Loop through the string to get all substrings of the specified length
+    for i in range(len(string) - length + 1):
+        # Get the substring of the specified length
+        substring = string[i:i+length]
+        
+        # If the substring is a palindrome, add it to the set
+        if is_palindrome(substring):
+            palindromes.add(substring)
+    
+    # Print the number of unique palindromic substrings
+    print("Number of distinct palindromic substrings of length", length, ":", len(palindromes))
