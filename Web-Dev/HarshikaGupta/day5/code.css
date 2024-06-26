@@ -1,0 +1,94 @@
+/* Q1 */
+.flexbox1 {
+    display: flex;
+}
+.flexbox1 > div:nth-child(1), 
+.flexbox1 > div:nth-child(3) { 
+    width: 75px;
+    background-color: lightblue; 
+}
+.flexbox1 > div:nth-child(2) { 
+    flex-grow: 1;
+    background-color: lightpink; 
+}
+.flexbox1 > div:nth-child(1) { 
+    width: 50px;
+}
+
+/* Q2 */
+.flexbox2 {
+    display: flex;
+    justify-content: space-around;
+}
+.flexbox2 > div {
+    background-color: lightpink;
+}
+
+/* Q 3 */
+.flexbox3 {
+    display: flex;
+    height: 50px;
+    border: 1px solid gray;
+    align-items: center;
+}
+.flexbox3 > div:nth-child(1),
+.flexbox3 > div:nth-child(3) {
+    background-color: lightpink;
+}
+
+/* Q 4 */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.menu {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.badge {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+/* Q5 */
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #6a0dad;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+}
+.navbar-item {
+    margin: 0 10px;
+}
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.search input {
+    width: 70%;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+.download-button {
+    background-color: transparent; 
+    color: white; 
+    border: 2px solid white; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    cursor: pointer; 
+}
