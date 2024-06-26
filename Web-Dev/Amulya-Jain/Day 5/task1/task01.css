@@ -1,0 +1,18 @@
+body {
+    display: flex;
+}
+
+#item1 {
+    background-color: rgb(182,215,227);
+    width: 75px;
+}
+
+#item2 {
+    background-color: rgb(245,185,194);
+    width: 325px;
+}
+
+#item3 {
+    background-color: rgb(182,215,227);
+    width: 50px;
+}
