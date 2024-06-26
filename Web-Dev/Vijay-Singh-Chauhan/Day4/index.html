@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+        /* question 1. */
+      .google-box {
+        text-align: center;
+        padding: 20px;
+      }
+      .google-logo {
+        margin: 10px;
+      }
+      .search-bar input[type="text"] {
+        font-size: 15px;
+        width: 500px;
+        padding: 15px;
+        margin: 10px;
+        font-weight: bold;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 1px 5px rgba(9, 0, 0, 0.409);
+        outline: none;
+      }
+      .search-bar input::placeholder {
+        color: #979696eb;
+      }
+
+      /* question 2. */
+
+      .forms-input {
+        margin: 30px;
+        padding: 20px;
+        text-align: center;
+      }
+      .forms-input input::placeholder{
+        color:#6b6b6beb;
+      }
+      .forms-input .names input,
+      .emails input {
+        border: 2px solid #b9b9b9;
+      }
+      .signup input {
+        border: none;
+        background-color: #0070ba;
+        color: white;
+      }
+      .forms-input .names input {
+        display: inline-block;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 150px;
+      }
+      .forms-input .emails input {
+        padding: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        width: 350px;
+        font-size: 18px;
+      }
+      .forms-input .signup input {
+        padding: 15px;
+        margin: 5px;
+        border-radius: 10px;
+        width: 380px;
+        height: 56px;
+        font-size: 19px;
+        font-weight: bold;
+      }
+
+      /* question 3. */
+
+      .items{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 10px;
+        column-gap: 20px;
+        padding:10px;
+        border:1px solid red;
+       
+        
+     
+      }
+      .grid-item{
+        background-color: rgb(250, 164, 178);
+        padding:20px;
+        font-size: 30px;
+        text-align: center;
+        font-size: 20px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <!-- question 1.  Try recreating this image using display element (the logo of google is provided in the repo). -->
+
+      <div class="google-box">
+        <div class="google-logo">
+          <a href="https://www.google.co.in/"><img src="google.png" alt="Google image" /></a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search Google or type a URL" />
+        </div>
+      </div>
+
+      <!-- question 2. Try recreating this image using display inline and block element. -->
+
+      <div class="forms-input">
+        <div class="names">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Second name" />
+        </div>
+        <div class="emails">
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="signup">
+          <input type="button" value="Sign Up" />
+        </div>
+      </div>
+
+      <!-- question 3. Create a grid with 4 equal columns that take up the entire page. Space between columns = 20px, space between rows = 10p -->
+
+      <div class="items">
+        <div class="grid-item">col 1</div>
+        <div class="grid-item">col 2</div>
+        <div class="grid-item">col 3</div>
+        <div class="grid-item">col 4</div>
+        <div class="grid-item">col 1</div>
+        <div class="grid-item">col 2</div>
+        <div class="grid-item">col 3</div>
+        <div class="grid-item">col 4</div>
+      </div>
+    </section>
+  </body>
+</html>
