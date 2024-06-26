@@ -29,16 +29,18 @@ public class CheckCycle {
     }
 
     public static ListNode createLinkedList(Vector<Integer> values) {
-        ListNode head = new ListNode(values.get(0));
-        ListNode current = head;
+    ListNode head = new ListNode(values.get(0));
+    ListNode current = head;
 
-        for (int i = 1; i < values.size(); ++i) {
-            current.next = new ListNode(values.get(i));
-            current = current.next;
-        }
-
-        return head;
+    for (int i = 1; i < values.size() - 1; ++i) {
+        current.next = new ListNode(values.get(i));
+        current = current.next;
     }
+
+    current.next = head;  // Form a cycle
+
+    return head;
+}
 
     public static void main(String[] args) {
         Vector<Integer> values = new Vector<>();
