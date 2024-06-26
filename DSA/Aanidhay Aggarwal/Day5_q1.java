@@ -1,4 +1,5 @@
-// Node class for the singly linked list
+import java.util.Scanner;
+
 class Node {
     int data;
     Node next;
@@ -12,12 +13,24 @@ class Node {
 class LinkedList {
     Node head;
 
-    // Function to print the elements in reverse order
+    // Function to add a new node to the end of the list
+    void addNode(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next!= null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
+
     void printReverse() {
         printReverse(head);
     }
 
-    // Recursive function to print the elements in reverse order
     void printReverse(Node node) {
         if (node == null) {
             return;
@@ -30,13 +43,20 @@ class LinkedList {
 public class Main {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        list.head = new Node(1);
-        list.head.next = new Node(2);
-        list.head.next.next = new Node(3);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements: ");
+        int n = scanner.nextInt();
+
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            int data = scanner.nextInt();
+            list.addNode(data);
+        }
 
         System.out.print("Linked list: ");
         Node temp = list.head;
-        while (temp != null) {
+        while (temp!= null) {
             System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
