@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    padding: 20px;
+}
+
+.logo, .search-bar, .sign-up, .grid-container {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.search-bar input::placeholder {
+    color: #757575;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sign-up .input-group {
+    margin-bottom: 10px;
+}
+
+.sign-up .input-group-inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up .input-group-inline input {
+    width: 48%;
+}
+
+.sign-up input[type="text"], .sign-up input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sign-up .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sign-up .btn:hover {
+    background-color: #357ae8;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: #f8d7da;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 4px;
+}

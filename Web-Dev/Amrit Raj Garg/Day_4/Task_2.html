@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day4_Sign_Up_Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+        .container {
+            background: #fff;
+            padding: 25px;
+            box-shadow: 0 0 150px rgba(0,0,0,0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .group {
+            display: block;
+            margin-bottom: 15px;
+        }
+        .inline {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .inline .control {
+            display: inline-block;
+            width: 48%;
+        }
+        .control {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .control::placeholder {
+            color: #aaa;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inline">
+            <input type="text" class="control" placeholder="First name">
+            <input type="text" class="control" placeholder="First name">
+        </div>
+        <div class="group">
+            <input type="email" class="control" placeholder="Email">
+        </div>
+        <button class="button">Sign Up</button>
+    </div>
+</body>
+</html>
