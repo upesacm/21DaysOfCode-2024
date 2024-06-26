@@ -1,0 +1,22 @@
+.flexbox{
+  display: flex;
+  width: 100%;
+  background-color: lightgray;
+  
+  
+}
+.item1{
+  width: 50px;
+  background-color: lightblue;
+  
+}
+.item3{
+  width: 50px;
+  background-color: lightblue;
+  
+}
+.item2{
+  flex-grow: 1;
+  background-color: rgba(246, 150, 150, 0.694);
+  
+}
