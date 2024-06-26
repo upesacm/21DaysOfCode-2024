@@ -1,0 +1,39 @@
+
+
+class Node:
+    def _init_(self , data):
+        self.data = data
+        self.next = None
+
+    def has_cycle(head):
+        slow = head
+        fast = head
+
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
+                return"cycle"cycle
+
+        return " no cycle"
+     
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+head.next.next.next = Node(4)
+head.next.next.next.next = head.next  # Creating a cycle
+
+# Creating a linked list without a cycle: 1 -> 2 -> 3 -> 4
+head_no_cycle = Node(1)
+head_no_cycle.next = Node(2)
+head_no_cycle.next.next = Node(3)
+head_no_cycle.next.next.next = Node(4)
+
+print(has_cycle(head))          # Output should be: cycle
+print(has_cycle(head_no_cycle))            
+
+
+
+
+
