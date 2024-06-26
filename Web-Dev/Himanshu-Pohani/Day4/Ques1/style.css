@@ -1,0 +1,17 @@
+#img{
+    margin-left: 510px;
+    margin-top: 100px;
+  
+}
+.search{
+    margin-left: 400px;
+    width: 500px;
+    border-radius: 15px;
+    height: 30px;
+    border:rgba(220, 225, 229, 0.994);
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+
+    
+}

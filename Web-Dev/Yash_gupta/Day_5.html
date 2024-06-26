@@ -1,0 +1,153 @@
+<!--Yash Gupta 500125397-->
+<!-- Day-5 (25/06/2024)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #task-1 #flex-container{
+            display: flex;
+        }
+        #task-1 .flex-item{
+            background-color: aquamarine;
+        }
+        #task-1 .flex-item:first-child{
+            background-color: red;
+            width: 50px;
+        }
+        #task-1 .flex-item:last-child{
+            background-color: red;
+            width: 75px;
+        }
+        #task-1 .flex-item:first-child{
+            background-color: red;
+            width: 50px;
+        }
+        #task-2 #flex-container{
+            display: flex;
+            justify-content:space-between;
+            align-items: center; 
+            background-color: #f0f0f0;
+        }
+        #task-2 .flex-item{
+            background-color: red;
+        }
+        #task-3 #flex-container{
+            display: flex;
+            justify-content: space-between;
+            border: solid grey;
+            height: 50px;
+            align-items: center;
+        }
+        #task-3 .flex-item{
+            background-color: red;
+        }
+        #task-5 #flex-container{
+            display: flex;
+            background-color: rgb(154, 60, 191);
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+        }
+        #task-4 {
+            border: solid grey;
+            border-radius: 10px;
+        }
+        #task-4 .flex-container{
+            display: flex;
+            justify-content: space-between;
+        }
+        #task-4 .flex-item{
+            margin: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        #task-4 .number{
+            background-color: rgb(16, 78, 173);
+            border-radius: 10px;
+            width: 40px;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        #task-5 .flex-item{
+            margin: 10px;
+        }
+        #task-5 #home{
+            color: #f0f0f0;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        #task-5 #search{
+            width: 80%;
+            border: none;
+            border-radius: 25px;
+            height: 25px;
+            text-align:center;
+        }
+        #task-5 #download{
+            background-color: rgb(154, 60, 191);
+            border: solid 1px white;
+            border-radius: 5px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section id="task-1">
+        <div id="flex-container">
+            <div class="flex-item">Item-1</div>
+            <div class="flex-item" style="flex:1">Item-2</div>
+            <div class="flex-item">Item-3</div>
+        </div>
+    </section>
+    <br>
+    <section id="task-2">
+        <div id="flex-container">
+            <div class="flex-item">Item-1</div>
+            <div class="flex-item">Item-2</div>
+            <div class="flex-item">Item-3</div>
+            <div class="flex-item">Item-4</div>
+        </div>
+    </section>
+    <br>
+    <section id="task-3">
+        <div id="flex-container">
+            <div class="flex-item">item1</div>
+            <div class="flex-item">item2</div>
+        </div>
+    </section>
+    <br>
+    <section id="task-4">
+        <div class="flex-container">
+            <div class="flex-item">Home</div>
+            <div class="flex-item number">14</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">Notifications</div>
+            <div class="flex-item number">3</div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">Messeges</div>
+            <div class="flex-item number">5</div>
+        </div>
+    </section>
+    <br>
+    <section id="task-5">
+        <div id="flex-container">
+            <div class="flex-item"><a id="home">Home</a></div>
+            <div class="flex-item" style="flex: 1; display: flex; justify-content: center;"><input placeholder="Search"  id="search" ></div>
+            <div class="flex-item"><button id="download">Download</button></div>
+        </div>
+    </section>
+    <br>
+</body>
+</html>
