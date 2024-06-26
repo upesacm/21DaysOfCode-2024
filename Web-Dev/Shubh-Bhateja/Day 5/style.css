@@ -1,0 +1,101 @@
+
+    .container1 {
+      display: flex;
+      margin-bottom: 25px;
+    }
+    .item1 {
+      width: 50px;
+      background-color: aqua;
+    }
+    .item3 {
+      width: 50px;
+      background-color: aqua;
+    }
+    .item2 {
+      background-color: pink;
+      width: 50px;
+      flex-grow: 1;
+    }
+
+    .container2 {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 25px;
+    }
+
+    #i1,
+    #i2,
+    #i3,
+    #i4,
+    #i5 {
+      background-color: pink;
+    }
+
+    .container3 {
+      display: flex;
+      height: 50px;
+      border: 3px solid grey;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #item2,
+    #item1 {
+      background-color: pink;
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid grey;
+      border-radius: 5px;
+      margin: 15px;
+      width: 250px;
+    }
+
+    #home,
+    #Noti,
+    #Msg {
+      display: flex;
+      margin: 5px;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      font-weight: 500;
+
+    }
+    .badge{
+        width: 30px;
+        background-color: #1a8fe8;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        color: white;
+
+    }
+
+    .BOX{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(127, 27, 241);
+        color: white;
+        padding: 10px;
+        font-size: medium;
+    }
+    #Download {
+        background-color: rgb(127, 27, 241);
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        text-align: center;
+        width: 85px;
+        height: 25px;
+      }
+    
+
+   #hola{
+    border-radius: 25px;
+    border-style: none;
+    width: 250px;
+    text-align: start;
+    font-size: small ;
+   }
+      

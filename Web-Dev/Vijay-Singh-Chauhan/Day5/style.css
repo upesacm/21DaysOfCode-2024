@@ -1,0 +1,96 @@
+.dev1{
+    display:flex;
+    margin-bottom:30px;
+}
+.dev1 .item1{
+    width:50px;
+    background-color: rgb(67, 184, 234);
+}
+.dev1 .item2{
+    background-color:rgb(255, 153, 170) ;
+    flex:auto;
+}
+.dev1 .item3{
+    width:75px;
+    background-color: rgb(67, 184, 234);
+}
+.dev2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.dev2 div{
+    background-color: rgb(255, 153, 170) ;;
+}
+.dev3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid;
+    height:50px;
+    margin-bottom: 30px;
+}
+.dev3 div{
+    background-color: rgb(255, 153, 170) ;;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    height:30px;
+    padding:13px;
+}
+nav .home{
+    color:white;
+    font-family: arial;
+    font-weight: 600;
+}
+nav .search-bar input{
+    padding:8px;
+    width:400px;
+    border:none;
+    border-radius: 50px;
+}
+nav .button input{
+    border:2px solid white;
+    color:white;
+    margin-right: -2px;
+    background-color: blueviolet;
+    padding:8px 18px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.dev4{
+    border:2px solid rgb(175, 175, 175); 
+    border-radius: 8px;
+    height:150px;
+    width:400px;
+}
+.dev4 div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:5px;
+    font-size: 24px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.dev4 div #num{
+     display:flex;
+     align-items: center;
+     justify-content: center;
+     border:1px solid;
+     border-radius: 17px;
+     background-color: rgb(96, 96, 255);
+     font-size:23px;
+     color:white;
+    padding:3px 15px;
+}
