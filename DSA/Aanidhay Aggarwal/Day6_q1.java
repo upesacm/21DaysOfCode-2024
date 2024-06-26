@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Vector;
 
 class ListNode {
@@ -29,30 +30,34 @@ public class CheckCycle {
     }
 
     public static ListNode createLinkedList(Vector<Integer> values) {
-    ListNode head = new ListNode(values.get(0));
-    ListNode current = head;
+        ListNode head = new ListNode(values.get(0));
+        ListNode current = head;
 
-    for (int i = 1; i < values.size() - 1; ++i) {
-        current.next = new ListNode(values.get(i));
-        current = current.next;
+        for (int i = 1; i < values.size() - 1; ++i) {
+            current.next = new ListNode(values.get(i));
+            current = current.next;
+        }
+
+        current.next = head;  // Form a cycle
+
+        return head;
     }
 
-    current.next = head;  // Form a cycle
-
-    return head;
-}
-
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the number of nodes in the linked list:");
+        int numNodes = scanner.nextInt();
+
         Vector<Integer> values = new Vector<>();
-        values.add(1);
-        values.add(2);
-        values.add(3);
-        values.add(4);
-        values.add(2);
+
+        System.out.println("Enter the values for the nodes:");
+        for (int i = 0; i < numNodes; ++i) {
+            values.add(scanner.nextInt());
+        }
 
         ListNode head = createLinkedList(values);
 
         String result = checkCycle(head);
-        System.out.println(result);  // Output: cycle
+        System.out.println("Result: " + result);
     }
 }
