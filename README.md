@@ -8,7 +8,7 @@
 ##### Example:
 Linked list: 1 -> 2 -> 3 -> 4 -> 2 (cycle)
 
-Output: cycle..
+Output: cycle.
 
 
 *Question 2:* Find Merge Point in Linked Lists Determine the node where two singly linked lists merge. Return the value of this node.
