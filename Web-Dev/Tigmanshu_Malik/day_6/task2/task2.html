@@ -26,31 +26,7 @@
             color: white;
         }
 
-        .overlay{
-
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .modal{
-
-            border-radius: 10px;
-            border: none;
-            background-color: white;
-            width: 20%;
-            padding: 20px;
-
-        }
-
-        button{
-
-            font-size: 30px;
-        }
+        
 
     </style>
 </head>
@@ -58,29 +34,6 @@
     
     <div class="side">right sidebar</div>
 
-    <div class="overlay" id="overlay">
-
-        <div class="modal">
-
-            <h1>Modal Title</h1>
-
-            <p>This is a modal</p>
-
-            <button onclick="closee()">Close</button>
-
-        </div>
-    </div>
-
-    <script>
-
-        function closee(){
-
-            const container = document.getElementById('overlay')
-
-            container.style.display = "none"
-        }
-
-    </script>
-
+    
 </body>
 </html>
