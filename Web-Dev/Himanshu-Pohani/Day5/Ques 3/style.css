@@ -1,0 +1,16 @@
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid rgb(160, 143, 143);
+  
+ 
+}
+.items{
+  background-color: rgba(246, 150, 150, 0.694);
+  
+  padding: 10px;
+  font-size: 30px;
+  gap: 50px;
+  
+}
