@@ -1,0 +1,40 @@
+#sec1 {
+    display: inline-block;
+}
+
+#sec1 input {
+    width: 80px;
+    height: 1.5rem;
+}
+
+#sec2 {
+    display: inline-block;
+}
+
+#sec2 input {
+    width: 80px;
+    height: 1.5rem;
+}
+
+.email {
+    margin: 5px 0px;
+    width: 170px;
+    height: 1.5rem;
+}
+
+.signup-button {
+    width: 178px;
+    height: 1.8rem;
+    background-color: rgb(57,117,234);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.signup-button:hover {
+    background-color: white;
+    color: rgb(57,117,234);
+    border: solid rgb(57,117,234) 0.5px;
+}

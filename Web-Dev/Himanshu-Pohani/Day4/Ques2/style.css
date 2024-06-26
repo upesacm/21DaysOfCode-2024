@@ -1,0 +1,29 @@
+.first-name{
+    border-radius: 7px;
+    height: 30px;
+    width: 120px;
+    
+}
+.last-name{
+    border-radius: 7px;
+    height: 30px;
+    width: 120px;
+    
+}
+.email{
+    border-radius: 7px;
+    height: 30px;
+    width: 250px;
+    margin-top: 5px;
+    
+
+}
+.signup{
+    border-radius: 7px;
+    height: 40px;
+    width: 200px;
+    margin-top: 5px;
+    background-color: rgba(0, 110, 255, 0.866);
+    color: white;
+    border-color: white;
+}
