@@ -1,0 +1,87 @@
+/*
+
+Question 1:
+Write a function to check if a singly linked list contains a cycle. Return "cycle" if a loop exists, otherwise return "no cycle".
+
+Inputs:
+A singly linked list.
+Output:
+"cycle" if there is a cycle, otherwise "no cycle".
+Example:
+Linked list: 1 -> 2 -> 3 -> 4 -> 2 (cycle)
+
+Output: cycle
+
+ */
+
+
+public class Day6_Q1 {
+
+    private Node head;
+    private Node tail;
+    private int size;
+
+    public Day6_Q1() {
+        this.size = 0;
+    }
+
+    public void insertLast(int val){
+        Node node = new Node(val);
+        if (tail == null){
+            head = node;
+            tail = node;
+        } else {
+            tail.next = node;
+            tail = node;
+        }
+        size++;
+    }
+
+    public void createCycle(int pos) {
+        if (pos < 0 || pos >= size) return;
+        Node temp = head;
+        for (int i = 0; i < pos; i++) {
+            temp = temp.next;
+        }
+        tail.next = temp; // Creating the cycle
+    }
+
+    public String hasCycle() {
+        if (head == null) return "no cycle";
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+                return "cycle";
+            }
+        }
+        return "no cycle";
+    }
+
+    public static void main(String[] args) {
+        Day6_Q1 list = new Day6_Q1();
+        list.insertLast(1);
+        list.insertLast(2);
+        list.insertLast(3);
+        list.insertLast(4);
+
+        System.out.println(list.hasCycle());
+
+        list.createCycle(1);
+        System.out.println(list.hasCycle());
+    }
+
+    private class Node {
+        private int value;
+        private Node next;
+
+        public Node(int value) {
+            this.value = value;
+            this.next = null;
+        }
+    }
+}
