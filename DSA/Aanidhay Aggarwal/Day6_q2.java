@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import java.util.Vector;
+
 class ListNode {
     int val;
     ListNode next;
@@ -28,7 +31,6 @@ public class MergePoint {
             head2 = head2.next;
         }
 
-        // Return the merge point
         return head1.val;
     }
 
@@ -41,14 +43,57 @@ public class MergePoint {
         return len;
     }
 
-    public static void main(String[] args) {
-        ListNode head1 = new ListNode(1);
-        head1.next = new ListNode(2);
-        head1.next.next = new ListNode(3);
+    public static ListNode createLinkedList(Vector<Integer> values) {
+        ListNode head = new ListNode(values.get(0));
+        ListNode current = head;
 
-        ListNode head2 = new ListNode(4);
-        head2.next = new ListNode(5);
-        head2.next.next = head1.next.next;  // Merge point
+        for (int i = 1; i < values.size(); ++i) {
+            current.next = new ListNode(values.get(i));
+            current = current.next;
+        }
+
+        return head;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of nodes in linked list 1:");
+        int numNodes1 = scanner.nextInt();
+
+        Vector<Integer> values1 = new Vector<>();
+
+        System.out.println("Enter the values for linked list 1:");
+        for (int i = 0; i < numNodes1; ++i) {
+            values1.add(scanner.nextInt());
+        }
+
+        ListNode head1 = createLinkedList(values1);
+
+        System.out.println("Enter the number of nodes in linked list 2:");
+        int numNodes2 = scanner.nextInt();
+
+        Vector<Integer> values2 = new Vector<>();
+
+        System.out.println("Enter the values for linked list 2:");
+        for (int i = 0; i < numNodes2; ++i) {
+            values2.add(scanner.nextInt());
+        }
+
+        ListNode head2 = createLinkedList(values2);
+
+        int mergeIndex = values1.size() - 1;
+        ListNode current1 = head1;
+        for (int i = 0; i < mergeIndex; ++i) {
+            current1 = current1.next;
+        }
+
+        ListNode current2 = head2;
+        while (current2.next != null) {
+            current2 = current2.next;
+        }
+
+        current2.next = current1;
 
         int mergePoint = findMergePoint(head1, head2);
         System.out.println("Merge point: " + mergePoint);
