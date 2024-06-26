@@ -1,0 +1,37 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def reverse_list(head):
+    """Reverses the linked list in place and returns the new head."""
+    prev, curr = None, head
+    while curr:
+        next_node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next_node
+    return prev
+
+def print_reverse(head):
+    """Prints elements of a linked list in reverse order without modifying the original list."""
+    # Reverse the list
+    reversed_head = reverse_list(head)
+    
+    # Print the reversed list
+    curr = reversed_head
+    while curr:
+        print(curr.data, end=" ")
+        curr = curr.next
+    
+    # Restore the list to its original state
+    reverse_list(reversed_head)
+
+# Example usage
+# Creating the linked list 1 -> 2 -> 3
+head = Node(1)
+head.next = Node(2)
+head.next.next = Node(3)
+
+print("Linked list in reverse order:")
+print_reverse(head)  # Output should be: 3 2 1
