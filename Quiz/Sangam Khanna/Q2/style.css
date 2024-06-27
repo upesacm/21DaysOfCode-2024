@@ -1,0 +1,46 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282828;
+  color: #fff;
+}
+
+.container {
+  background-color: #141414;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.message {
+  max-width: 500px;
+}
+
+.update-settings {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.update-settings:hover {
+  background-color: #444;
+}
+
+/* Animation for button hover (dark to light) */
+@keyframes button-lighten {
+  from { background-color: #333; }
+  to { background-color: #444; }
+}
+
+.update-settings:hover {
+  animation: button-lighten 0.3s ease;
+}
