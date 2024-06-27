@@ -29,11 +29,11 @@ span{
 }
 .update-btn{
     color: white;
-    width: 80%;
-    height: 2rem;
-    border-radius: 1rem;
+    width: 95%;
+    height: 2.5rem;
+    border-radius: 2rem;
     background-color: rgb(48, 46, 46);
-    margin-left: 3rem;
+    margin-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
