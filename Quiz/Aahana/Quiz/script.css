@@ -1,0 +1,78 @@
+Q1
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 5000px; 
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f55252;
+    color: rgb(231, 171, 171);
+    padding: 10px 20px;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e03333;
+}
+
+Q2
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.section {
+    padding: 50px;
+    height: 1000px; 
+    border-bottom: 1px solid #ccc;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #4b0d0d;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.active {
+        display:flex;
+    }
+}
