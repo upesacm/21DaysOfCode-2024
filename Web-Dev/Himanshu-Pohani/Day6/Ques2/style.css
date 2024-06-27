@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 1000px;
+  background-color: green;
+  color: white;
+  text-align: left;
+  
+  padding: 20px;
+  box-sizing: border-box;
+}

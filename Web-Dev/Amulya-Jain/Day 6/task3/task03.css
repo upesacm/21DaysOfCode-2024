@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    color: white;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(40, 131, 12);
+    position: absolute;
+    right: 0px;
+    z-index: -1;
+}
+
+.overlay {
+    background-color: rgba(100, 100, 100, 0.8);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 70%;
+    height: 30%;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.close-button {
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center; /* Center the button horizontally */
+}

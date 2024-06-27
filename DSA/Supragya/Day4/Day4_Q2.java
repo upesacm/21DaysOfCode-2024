@@ -50,7 +50,8 @@ public class Day4_Q2 {
             }  
             // System.out.println(map2);
             Integer [] arr = set.toArray(new Integer[0]);
-            int diff=Math.abs(arr[0]-arr[1]);
+            // int diff=Math.abs(arr[0]-arr[1]);
+            int diff = map2.get(arr[0])>map2.get(arr[1])?arr[1]-arr[0]:arr[0]-arr[1];
             if(map.containsValue(1) && map2.get(1)==1){
                 return "valid";
             }
