@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Question-5</title>
+        <style>
+            body{
+                margin:0px;
+            }
+            div{
+                display:flex;
+                border:1px solid black;
+                padding:10px;
+                background-color:rgb(99, 18, 174);
+            }
+            p{
+                font-weight:bold;
+                margin-left:20px;
+                color:white;
+            }
+            input{
+                width:400px;
+                padding:-20px;
+                margin-left:120px;
+                border-radius:40px;
+                border:none;
+            }
+            button{
+                margin-left:110px;
+                border:1px solid white;
+                color:white;
+                background-color:rgb(99, 18, 174);
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Home</p>
+            <input type="text" placeholder="      Search">
+            <button>Download</button>
+        </div>
+    </body>
+</html>
