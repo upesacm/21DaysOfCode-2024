@@ -8,22 +8,40 @@
 // # Linked list: 1 -> 2 -> 3 -> 4 -> 2 (cycle)
 // # Output: cycle
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
 }
 
-public class Solution {
-    public String hasCycle(ListNode head) {
-        if (head == null) return "no cycle";
-        ListNode slow = head;
-        ListNode fast = head;
+public class Main {
+    static Node head;
+    static void insert(int data) {
+        Node newNode = new Node(data);
 
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = newNode;
+        }
+    }
+
+    static String hasCycle(Node head) {
+        Node slow = head;
+        Node fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
-
             if (slow == fast) {
                 return "cycle";
             }
@@ -32,16 +50,22 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-        ListNode node3 = new ListNode(3);
-        ListNode node4 = new ListNode(4);
-        node1.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node2;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of nodes: ");
+        int n = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter data for node " + (i + 1) + ": ");
+            int data = scanner.nextInt();
+            insert(data);
+        }
 
-        Solution solution = new Solution();
-        System.out.println(solution.hasCycle(node1));
+        if (n > 1) {
+            Node temp = head;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+            temp.next = head.next;
+        }
+        System.out.println(hasCycle(head));
     }
 }
