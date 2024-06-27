@@ -1,53 +1,21 @@
-# Questions for Day 6 - (26/06/2024)
-## DSA:
-*Question 1:* Write a function to check if a singly linked list contains a cycle. Return "cycle" if a loop exists, otherwise return "no cycle".
-##### Inputs:
-- A singly linked list.
-##### Output:
-- "cycle" if there is a cycle, otherwise "no cycle".
-##### Example:
-Linked list: 1 -> 2 -> 3 -> 4 -> 2 (cycle)
+# Quiz - 1
 
-Output: cycle
+## Web-Dev
+- Upload your answer to quiz folder and add your name folder inside which your answer's file will be added.
+- If file format is not followed properly your answers will not be expected
 
+Q1. Sticky Navigation Bar
 
-*Question 2:* Find Merge Point in Linked Lists Determine the node where two singly linked lists merge. Return the value of this node.
-##### Inputs:
-- Two singly linked lists.
-##### Output:
-- The value of the merging node.
-##### Example:
+- HTML: Create a simple webpage with a header containing a navigation bar. The navigation bar should include links to different sections on the page.
+- CSS: Make the navigation bar sticky using CSS. This means the navigation bar should stay fixed at the top of the screen even when the user scrolls down the page. Use the position property with appropriate values to achieve this. 
+- Also use media queries to turn the navigation bar into a hamburger menu when width is less than 768px.
+- Incorporate and SVG to add hamburger menu.
+Note: make body height to 5000px so you can scroll and see if your navbar is sticky or not.
+Good luck!
 
-Linked list 1: 1 -> 2 -> 3
+Q2. Replicate this image.
+    
+![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/814731e8-fbb0-49cc-ad96-b2891bab0e3e)
 
-Linked list 2: 4 -> 5 -> 3
-
-Output: 3
-
-
-
-
-
-## WEB-DEV:
-1.	Create an element that sticks to the page when scrolling (20px from the bottom and 20px from the right)
-
-     ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/1f96cde8-8ecd-4ea5-be3f-2f65edde736c)
-
-
-2.	Create a sidebar on the right side of the page, width = 100px
-
-     ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/d65264e1-0ffb-4088-b564-d37bd1cdf628)
-
-
-3.	We'll create a modal
-- start from q2.
-create an element that covers the entire page, with background-color: rgba(0, 0, 0, 0.8); (this is called an overlay)
-- make the overlay a flexbox and center its contents horizontally and vertically
-- add a div in the overlay and create the modal
-
-    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/4453d599-f043-4495-b820-e2ef5c5f728f)
-
- 
-
-
-
+## DSA
+ Go to link: https://www.hackerrank.com/21-days-of-code-2024-quiz1
