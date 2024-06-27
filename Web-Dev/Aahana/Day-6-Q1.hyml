@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q1</title>
+    </head>
+    <style>
+        div{
+            position:fixed;
+            bottom:20px;
+            right:20px;
+            background-color:black;
+            color:white;
+        }
+    </style>
+    <body>
+        <div>bottom-right</div>
+    </body>
+</html>
