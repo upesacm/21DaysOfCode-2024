@@ -9,17 +9,18 @@
 // # Linked list 2: 4 -> 5 -> 3
 // # Output: 3
 
-
 import java.util.Scanner;
 
 class Node {
     int data;
     Node next;
+
     Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
+
 public class Main {
     static Node head1;
     static Node head2;
@@ -100,7 +101,6 @@ public class Main {
             }
             temp1.next = temp2.next;
         }
-
         System.out.println("Merge point: " + findMergePoint(head1, head2));
     }
 }
