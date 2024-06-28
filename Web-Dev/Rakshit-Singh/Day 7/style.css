@@ -1,0 +1,53 @@
+*{
+    margin:0;
+}
+header{
+    position:sticky;
+    top:0;
+    background-color: aqua;
+    padding:20px;
+}
+nav a{
+    text-decoration: none;
+    color:blueviolet;
+    padding:10px;
+}
+nav a:hover{
+    background-color: grey;
+}
+
+main{
+    min-height:300rem;
+}
+
+#home{
+    background:burlywood;
+    padding:20px;
+    height:50rem;
+}
+#About_Us{
+    height:50rem;
+    background-color: bisque;
+}
+
+footer{
+    padding:10px;
+    background-color: aqua;
+}
+
+center button{
+    display:none;
+}
+
+@media screen and (max-width:768px){
+    center button{
+        display:block;
+    }
+    #navigation_bar{
+        display:block;
+    }
+    nav{       
+        display:flex;
+        flex-direction: column;
+    }
+}
