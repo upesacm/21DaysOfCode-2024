@@ -98,7 +98,7 @@ class LinkList {
             System.out.print(st.pop() + " ");
         }
         System.out.println();
-    }w
+    }
 }
 
 public class Q1 {
