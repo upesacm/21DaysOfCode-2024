@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 0 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  padding: 2rem 1.5rem;
+  background-color: #222831;
+  color: #fff;
+ }
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 10px;
+}
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+ }
+
+ .nav-mobile {
+  display: none;
+ }
+
+ #check:checked ~ .nav-mobile {
+  display: block;
+ }
+
+ .nav-mobile {
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background: #222831;
+  z-index: 1;
+  width: 200px;
+ }
+
+
+ .nav-mobile a {
+  color: #fff;
+  padding: 1.5rem 1rem;
+  display: block;
+ }
+
+
+@media only screen and (max-width: 992px) {
+  .checkbtn {
+  display: block;
+  font-size: 5rem;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  }
+ .nav-mobile {
+  top: 160px;
+  width: 100%;
+  }
+ .nav-mobile a {
+  font-size: 2rem;
+  padding: 3rem 2rem;
+  }
+ }
