@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Total</title>
+</head>
+<body>
+    <script>
+        // Prices of the items
+        const soupPrice = 10;
+        const burgerPrice = 8;
+        const iceCreamPrice = 5;
+
+        // Quantities of the items ordered
+        const soupQuantity = 1;
+        const burgerQuantity = 3;
+        const iceCreamQuantity = 1;
+
+        // Calculate the total cost
+        const totalCost = (soupPrice * soupQuantity) + (burgerPrice * burgerQuantity) + (iceCreamPrice * iceCreamQuantity);
+
+        // Display the total cost
+        document.body.innerHTML = "The total cost of the order is: " + totalCost + " Rupees";
+    </script>
+</body>
+</html>
