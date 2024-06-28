@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 7 Question 1</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <center>
+
+                <button id="toggle">
+                    Toggle
+                </button>
+            </center>
+            <div id="navigation_bar">
+                <nav>
+                    <a href="#Home">Home</a>
+                    <a href="#About_Us">About Us</a>
+                    <a href="#">Login</a>
+                    <a href="#Contact_Us">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="Home">
+                Home :)
+            </section>
+            <section id="About_Us">
+                About Us
+            </section>
+        </main>
+        <footer id="Contact_Us">
+            Contact Us:
+            email : rakshitsingh31773@gmail.com
+        </footer>
+    </body>
+    <script>
+        var toggle = document.getElementById("toggle");
+        var bar=document.getElementById("navigation_bar");
+        toggle.addEventListener('click',function(){
+            if(bar.style.display=="none"){
+                bar.style.display="block";
+            }else{
+                bar.style.display="none";
+            }
+        })
+    </script>
+</html>
