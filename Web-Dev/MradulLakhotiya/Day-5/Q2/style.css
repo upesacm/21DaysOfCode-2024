@@ -1,9 +1,0 @@
-.flex-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.item {
-    background-color: rgba(255, 0, 0, 0.2);
-}
