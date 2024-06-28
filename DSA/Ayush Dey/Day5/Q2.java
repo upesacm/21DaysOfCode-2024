@@ -47,6 +47,7 @@ public class Q2 {
             }
         }
 
+        
         System.out.println("Enter elements for linked list 2 (enter -1 to stop):");
         while ((value = scanner.nextInt()) != -1) {
             ListNode newNode = new ListNode(value);
