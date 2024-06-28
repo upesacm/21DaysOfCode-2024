@@ -1,33 +1,43 @@
 import java.util.*;
 
-public class Main {
-    public static int maxEqualHeight(int[] stack1, int[] stack2, int[] stack3) {
-        int total1 = 0, total2 = 0, total3 = 0;
-        for (int i : stack1) total1 += i;
-        for (int i : stack2) total2 += i;
-        for (int i : stack3) total3 += i;
+public class EqualStacks {
+    public static int equalizeStacks(int[] stack1, int[] stack2, int[] stack3) {
+        int height1 = Arrays.stream(stack1).sum();
+        int height2 = Arrays.stream(stack2).sum();
+        int height3 = Arrays.stream(stack3).sum();
 
-        while (total1 != total2 || total1 != total3) {
-            if (total1 >= total2 && total1 >= total3) {
-                total1 -= stack1[0];
-                stack1 = Arrays.copyOfRange(stack1, 1, stack1.length);
-            } else if (total2 >= total1 && total2 >= total3) {
-                total2 -= stack2[0];
-                stack2 = Arrays.copyOfRange(stack2, 1, stack2.length);
+        Stack<Integer> s1 = new Stack<>();
+        Stack<Integer> s2 = new Stack<>();
+        Stack<Integer> s3 = new Stack<>();
+
+        for (int i = stack1.length - 1; i >= 0; i--) {
+            s1.push(stack1[i]);
+        }
+        for (int i = stack2.length - 1; i >= 0; i--) {
+            s2.push(stack2[i]);
+        }
+        for (int i = stack3.length - 1; i >= 0; i--) {
+            s3.push(stack3[i]);
+        }
+
+        while (!(height1 == height2 && height3 == height2)) {
+            if (height1 >= height2 && height1 >= height3) {
+                height1 -= s1.pop();
+            } else if (height2 >= height1 && height2 >= height3) {
+                height2 -= s2.pop();
             } else {
-                total3 -= stack3[0];
-                stack3 = Arrays.copyOfRange(stack3, 1, stack3.length);
+                height3 -= s3.pop();
             }
         }
 
-        return total1;
+        return height1;
     }
 
     public static void main(String[] args) {
         int[] stack1 = {3, 2, 1, 1, 1};
         int[] stack2 = {4, 3, 2};
         int[] stack3 = {1, 1, 4, 1};
-
-        System.out.println(maxEqualHeight(stack1, stack2, stack3));  // Output: 5
+        
+        System.out.println(equalizeStacks(stack1, stack2, stack3));
     }
 }
