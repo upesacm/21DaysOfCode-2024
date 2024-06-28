@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 5000px; /* For scrolling */
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-brand {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.section {
+    padding: 50px;
+    height: 1000px; /* Just to make sections visible */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">My Portfolio</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#section1">About Me</a>
+                <a href="#section2">Resume</a>
+                <a href="#section3">Projects</a>
+                <a href="#section4">Contact Me</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <svg width="30" height="30" viewBox="0 0 100 80" fill="#000">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg>
+            </div>
+        </nav>
+    </header>
+    <section id="section1" class="section"><h1>About Me</h1>
+        <p>I'm a passionate and dedicated frontend developer, freshly stepping into the professional world with a strong foundation in HTML, CSS, and JavaScript. I thrive on creating visually appealing and user-friendly websites and am eager to bring fresh ideas and a collaborative spirit to your team. With a keen eye for detail and a commitment to continuous learning, I'm ready to tackle challenging projects and contribute effectively to achieving our shared goals. Let's build something amazing together!</p>
+    </section>
+    <section id="section2" class="section">Resume</section>
+    <section id="section3" class="section">Projects</section>
+    <section id="section4" class="section">Contact Me</section>
+
+    <script> 
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+});
+</script>
+</body>
+</html>
