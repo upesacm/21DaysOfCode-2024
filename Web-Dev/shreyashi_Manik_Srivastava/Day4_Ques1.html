@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.searchbar {
+
+    border-radius: 25px;
+    padding: 10px;
+    color: grey;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 35%;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.container2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0px 0px 24px;
+}
+
+#firstname{
+    display: inline;
+    width: 7vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#email{
+    display: block;
+    width: 15.8vw;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+button{
+    text-align: center;
+    width: 17vw;
+    margin-top: 10px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    row-gap: 10px;
+    column-gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    margin-top:20px ;
+
+}
+.container3 div{
+    background-color: pink;
+    align-self: center;
+}
+    </style>
+</head>
+
+<body>
+    <section class="ques1">
+
+        <div class="container1">
+            <div class="logo"><img src="google.png" alt="logo"></div>
+            <div class="searchbar">Search Google or type a URL</div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container2">
+            <div class="inline">
+
+                <input type="text" id="firstname" placeholder="First name">
+                <input type="text" id="firstname" placeholder="First name">
+            </div>
+            <div class="block">
+                <input type="text" id="email" placeholder="Email">
+            </div>
+            <button class="submit">Sign Up</button>
+        </div>
+    </section>
+    <section class="grid">
+        <div class="container3">
+            
+            <div>Col1</div>
+            <div>Col2</div>
+            <div>Col3</div>
+            <div>Col4</div>
+            <div>Col1</div>
+            <div>Col2</div>
+            <div>Col3</div>
+            <div>Col4</div>
+        </div>
+        </section>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f9f3f3;
+        }
+
+        .column {
+            background-color: #cae3f0; /* Light blue background for item 1 and item 3 */
+            padding: 10px;
+            width: 50px;
+            text-align: center;
+        }
+
+        .column-long {
+            background-color: #f5c2c7; /* Light pink background for item 2 */
+            padding: 10px;
+            flex-grow: 1; /* Takes up remaining space */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="column">item 1</div>
+    <div class="column-long">item 2</div>
+    <div class="column">item 3</div>
+</body>
+</html>

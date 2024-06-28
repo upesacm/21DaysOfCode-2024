@@ -1,0 +1,22 @@
+from bisect import bisect_right
+
+def find_ranks(leaderboard, player_scores):
+    # Remove duplicates and sort in descending order
+    unique_leaderboard = sorted(set(leaderboard), reverse=True)
+    
+    ranks = []
+    
+    for score in player_scores:
+        # Use binary search to find the correct position
+        pos = bisect_right(unique_leaderboard, score)
+        rank = pos + 1  # Rank is 1-based index
+        ranks.append(rank)
+    
+    return ranks
+
+if __name__ == '__main__':
+    leaderboard = [100, 90, 90, 80]
+    player_scores = [70, 80, 105]
+    
+    ranks = find_ranks(leaderboard, player_scores)
+    print(ranks)  # Output: [4, 3, 1]

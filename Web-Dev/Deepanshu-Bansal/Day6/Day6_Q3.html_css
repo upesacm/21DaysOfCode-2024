@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Question-3</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        aside {
+            border: none;
+            height: 710px;
+            margin-left: 1200px;
+            background-color: green;
+            color: white;
+        }
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            cursor: pointer;
+        }
+        .p2{
+            font-weight:bold;
+        }
+        .box{
+            border:none;
+            width:350px;
+            height:120px;
+            padding:10px;
+            background-color:white;
+            border-radius:8px;
+            margin-left:600px;
+            margin-top:280px;
+        }
+        button{
+            cursor:pointer;
+        }
+    </style>
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="overlay">
+        <div class="box">
+            <p class="p2">Model Title</p>
+            <p>This is a model</p>
+            <button onclick="off()">Close</button>
+        </div>
+    </div>
+    <aside>
+        <p class="p1">Bottom-right</p>
+        <button onclick="on()">Overlay</button>
+    </aside>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+/* 1. Request now button */
+.request-now {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* 2. Add to Cart button */
+.add-to-cart {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* 3. Apply on company website and Save buttons */
+.apply {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.save {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border: 2px solid rgb(10, 102, 194);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/* 4. Get started and Download buttons */
+.get-started {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.download {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    border: 2px solid rgb(108, 117, 125);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* 5. Amazon product card */
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.product-card a {
+    color: #0066c0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    color: green;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .delivery {
+    margin: 10px 0;
+}
+
+.product-card .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card .add-to-cart-btn,
+.product-card .buy-now-btn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.product-card .add-to-cart-btn {
+    background-color: rgb(255, 216, 20);
+    color: black;
+}
+
+.product-card .buy-now-btn {
+    background-color: orange;
+    color: black;
+}
