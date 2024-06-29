@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Day 8 Question 3</title>
+    </head>
+    <body>
+        <input type="text" id="name"  placeholder="Enter your name">
+        <button onclick="display()">Display name</button>
+        <p>
+            Hi
+        </p>
+
+    </body>
+    <script>
+        function display(){
+            var a=document.querySelector('p');
+            a.innerHTML="Hi "+document.getElementById("name").value;
+        }
+    </script>
+</html>
