@@ -1,0 +1,42 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    
+} 
+.box{
+    background-color: rgb(49, 46, 46);
+    border: 1px solid rgb(68, 67, 67);
+    border-radius:15px ;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    padding-top: 10px;
+    padding-inline: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 33px;
+   
+}
+.box h3{
+    color: white;
+    font-size: 30px;
+} 
+.box p{
+    color: rgb(168, 167, 167);
+    font-size: 20px;
+    padding-inline: 40px;
+}
+.btn{
+    font-size: 23px;
+    text-align: center;
+    padding: 2% 37% ;
+    border-radius:25px ;
+    background-color: rgb(81, 78, 78);
+    color: white;
+    border: none;
+    text-decoration: none;
+}

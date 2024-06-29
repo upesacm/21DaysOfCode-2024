@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Four Column Grid</title>
+    <style>
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Sets the space between columns to 20px */
+    width: 100vw; /* Takes up the full viewport width */
+    height: 100vh; /* Takes up the full viewport height */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+.grid-item {
+    background-color: #f0f0f0; /* Light grey background for demonstration */
+    padding: 20px; /* Adds some padding inside each item */
+    text-align: center; /* Centers the text */
+    border: 1px solid #ccc; /* Adds a border around each item */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+    </div>
+</body>
+</html>

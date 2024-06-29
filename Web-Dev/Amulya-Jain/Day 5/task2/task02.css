@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    gap: 25%;
+}
+
+li {
+    list-style: none;
+    background-color: rgb(245,185,194);
+}

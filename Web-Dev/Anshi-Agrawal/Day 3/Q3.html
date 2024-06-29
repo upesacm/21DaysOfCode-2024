@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3- Day 3</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <a  href="https://www.amazon.in/stores/page/A3398561-D71B-4ECB-928E-CBC894B64EEE" target="_main" id="link">Back to Amazon</a>
+    <h2>Nike Black Running Shoes</h2>
+    <p style="color:rgb(11, 163, 11)" ><b><b>$39-in stock</b></b></p>
+     <p> Free delivery tomorrow.</p>
+    <button id="Q3_b1">Add to Cart</button>
+    &nbsp;
+    <button id="Q3_b2">Buy now</button>
+    <script>
+        const button1= document.querySelector('#Q3_b1');
+            button1.addEventListener('click',() => {
+                button1.style.backgroundColor = "rgb(243,206,19)";
+                button1.style.borderColor = "rgb(243,206,19)";
+            });
+        const button2= document.querySelector('#Q3_b2');
+            button2.addEventListener('click',() => {
+                button2.style.backgroundColor = "rgb(242, 158, 2)";
+                button2.style.borderColor = "rgb(242, 158, 2)";
+            });
+        const website= document.querySelector('#link');
+        website.addEventListener('click',() =>{
+            website.style.color ="red";
+        });    
+    </script>
+</body>
+</html>
