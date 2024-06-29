@@ -18,7 +18,7 @@ public class MaxStack {
 
     public int pop() {
         if (stack.isEmpty()) {
-            return -1;  // or throw an exception
+            return -1;
         }
         int top = stack.pop();
         if (top == maxStack.peek()) {
