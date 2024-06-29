@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    background-color: black;
+    color: white;
+}
+.container{
+    padding: 2rem;
+    margin: 2rem;
+    width : 550px;
+    height: 30%;
+    background-color: rgb(31, 30, 30);
+    border-radius: 1rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(52, 153, 241);
+}
+h1{
+    font-size: large;
+}
+span{
+    color: rgb(151, 150, 150);
+}
+.update-btn{
+    color: white;
+    width: 95%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: rgb(48, 46, 46);
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
