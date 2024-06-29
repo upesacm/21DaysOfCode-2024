@@ -1,9 +1,12 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isBalanced("{[()]}"));  // Output: YES
-        System.out.println(isBalanced("([)]"));  // Output: NO
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string of brackets:");
+        String s = scanner.next();
+        System.out.println(isBalanced(s));
     }
 
     public static String isBalanced(String s) {
