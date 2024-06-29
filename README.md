@@ -1,35 +1,38 @@
-# Questions for Day 8 – (28/06/2024)
+# Questions for Day 9 – (29/06/2024)
 ## DSA:
-**Question 1:** You have three stacks of cylinders with varying heights. Remove cylinders from the top of the stacks so that all stacks are of the same height, and return this maximum possible height.
-
+**Question 1:**  Design a stack that supports push, pop, and retrieving the maximum element efficiently.
 ##### Inputs:
-- Three arrays of integers representing the heights of cylinders in each stack.
+- Operations to be performed on the stack.
 ##### Output:
-•	The maximum possible height where all stacks are equal.
+-	Results of the operations.
 ##### Example:
-stack1 = [3, 2, 1, 1, 1]
-
-stack2 = [4, 3, 2]
-
-stack3 = [1, 1, 4, 1]
-
-##### Output: 5
-
-**Question 2:** Implement a stack using two queues. The stack should support standard operations like push, pop, and top.
-##### Inputs/Outputs:
-- Methods for stack operations.
-  
-Example:
 
 stack.push(1)
 
 stack.push(2)
 
-stack.top()  # Output: 2
+stack.get_max()  # Output: 2
 
-stack.pop()  # Output: 2
+stack.pop()
 
-stack.top()  # Output: 1
+stack.get_max()  # Output: 1
+
+
+<br>
+<br>
+
+
+**Question 2:**  Check if a given string of brackets is balanced. The brackets include (), {}, and [].
+##### Inputs:
+- A string consisting of bracket characters.
+##### Output:
+-	"YES" if the brackets are balanced, otherwise "NO".
+##### Example:
+string = "{[()]}"
+
+Output: YES
+
+
 
 
 
@@ -40,10 +43,11 @@ stack.top()  # Output: 1
 ## WEB-DEV:
 
 
-Note: do these exercises in the Console (right-click > Inspect > Console)
-           Use a script tag to link an html file with JS.
-1.	Use alert(...); to display your name in a popup.
-2.	Using math, calculate 10 + 5 - 2 in the Console.
-3.	Use document.body.innerHTML = ...; to display your name on the web page.
-4.	At a restaurant, you order 1 soup for $10, 3 burgers for $8 each, and 1 ice cream for $5. Use JavaScript to calculate the cost of the order.
-5.	At a restaurant, you order 1 coffee ($5), 2 bagels ($3 each), and 1 soup ($9). Calculate the cost and save it in a variable called 'cost'.
+1.	Create a variable called 'hour' and save the current hour of the day(use 24-hour format and save it as a number between 0 and 23).If hour is between 6 and 12, display 'Good morning!' in the console. If hour is between 13 and 17, display 'Good afternoon!' in the console. Otherwise, display 'Good night!' in the console
+2.	Imagine an amusement park that has a discount for children (6 years and younger) or seniors (65 years and older). Create a variable 'age' and save a person's age inside. Create an if-statement that checks if the person qualifies for a discount. If they do, display 'Discount' in the console. Otherwise, display 'No discount' in the console. Note: try to use the || operator in your solution. Try changing the 'age' variable to display different messages.
+3.	Create an array of numbers: const nums = [10, 20, 30]; Modify the last value in this array and change it to 99.
+4.	Create a for loop that counts up from 0 to 10, but counts up by 2 (0, 2, 4, ..., 8, 10).
+5.	Create a for loop that counts down from 5 to 0.
+
+
+
