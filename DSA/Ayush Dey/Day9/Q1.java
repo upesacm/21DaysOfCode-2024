@@ -38,7 +38,7 @@ public class Q1 {
                     break;
                 default:
                     System.out.println("Invalid choice. Please choose a valid operation.");
-            }
+            } 
         }
     }
 
