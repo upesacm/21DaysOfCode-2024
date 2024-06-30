@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class QueueUsingTwoStacks {
@@ -24,9 +25,19 @@ public class QueueUsingTwoStacks {
 
     public static void main(String[] args) {
         QueueUsingTwoStacks queue = new QueueUsingTwoStacks();
-        queue.enqueue(1);
-        queue.enqueue(2);
-        System.out.println(queue.dequeue());
-        System.out.println(queue.dequeue());
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of operations: ");
+        int n = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter 1 to enqueue, 2 to dequeue: ");
+            int operation = scanner.nextInt();
+            if (operation == 1) {
+                System.out.print("Enter the element to enqueue: ");
+                int element = scanner.nextInt();
+                queue.enqueue(element);
+            } else if (operation == 2) {
+                System.out.println("Dequeued element: " + queue.dequeue());
+            }
+        }
     }
 }
