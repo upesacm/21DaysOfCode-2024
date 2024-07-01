@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting by 2s</title>
+</head>
+<body>
+    <h1>Counting Up by 2s (0 to 10)</h1>
+    <p id="countResult"></p>
+
+    <script>
+        let countString = "";  // Initialize an empty string to store the results
+
+        for (let i = 0; i <= 10; i += 2) {
+          countString += `${i} `;  // Add each count value to the string, separated by spaces
+        }
+
+        document.getElementById("countResult").textContent = countString.trim(); // Display the formatted string
+    </script>
+</body>
+</html>
