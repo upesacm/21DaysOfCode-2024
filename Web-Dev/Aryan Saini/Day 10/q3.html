@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q3</title>
+</head>
+<body>
+    <button id="headsButton">heads</button>
+    <button id="tailsButton">tails</button>
+    <p id="result"></p>
+    
+    <script>
+        const headsButton = document.getElementById('headsButton');
+        const tailsButton = document.getElementById('tailsButton');
+        const resultParagraph = document.getElementById('result');
+
+        headsButton.addEventListener('click', () => {
+            resultParagraph.textContent = 'You chose: heads';
+        });
+
+        tailsButton.addEventListener('click', () => {
+            resultParagraph.textContent = 'You chose: tails';
+        });
+    </script>
+</body>
+</html>
