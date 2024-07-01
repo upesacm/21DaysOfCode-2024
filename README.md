@@ -1,34 +1,40 @@
-# Questions for Day 10 – (30/06/2024)
+# Questions for Day 11 – (01/07/2024)
 ## DSA:
 
 
 
-**Question 1:** Write a function to reverse a queue using recursive calls.
+**Question 1:** Given a grid with blocked and unblocked cells, find the minimum number of moves required to reach from the start to the goal.
 ##### Inputs:
-- A queue.
+- The grid configuration, start and goal positions.
 ##### Output:
-- The reversed queue.
+- The minimum number of moves.
 ##### Example:
-queue = [1, 2, 3]
+grid = [
 
-Output: [3, 2, 1]
+    ['.', '.', '.'],
+    
+    ['.', 'X', '.'],
+    
+    ['.', '.', '.']
+    
+]
 
-**Question 2:**  Implement a queue using two stacks. The queue should support standard operations like enqueue and dequeue.
+start = (0, 0)
 
+goal = (2, 2)
+
+##### Output: 4
+**Question 2:**  Implement a basic priority queue with insert and extract-min operations.
 ##### Inputs/Outputs:
-- Methods for queue operations.
+- Methods for priority queue operations.
 ##### Example:
+priority_queue.insert(4)
 
-queue.enqueue(1)
+priority_queue.insert(2)
 
-queue.enqueue(2)
+priority_queue.extract_min()  # Output: 2
 
-queue.dequeue()  # Output: 1
-
-queue.dequeue()  # Output: 2
-
-
-
+priority_queue.extract_min()  # Output: 4
 
 
 
@@ -39,19 +45,15 @@ queue.dequeue()  # Output: 2
 ## WEB-DEV:
 
 
-1.	Create a <button>Hello</button>. Use document.querySelector('button') to get the button from the page, and then display it in the console.
-2.	Continuing from 1, create another button < button>Hello< /button> below. Using JavaScript, change the text in the second button to 'Hello <YourName>!' (hint: add a class and use .querySelector).
-3.	Create 2 buttons 'heads' and 'tails', and a paragraph ( < p>< / p>) underneath. When clicking the 'heads' button, display 'You chose: heads' in the paragraph. When the 'tails' button, display 'You chose: tails'.
+1.	Create a variable called 'add' and save a function inside. This function will console.log(2 + 3).
+2.	create a function runTwice(fun) that takes a function (as a parameter) and runs it twice. 
+Eg. runTwice(function() { console.log('<Your_Name>'); }); => console.log('<Your_name>') 
+twice 
+3.	Create the button below. When clicking the button, after 1 second, the text inside the button changes to 'Finished!!. (Hint: use setTimeout() and the DOM)
 
-   
-    ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/0c05d0a7-d3ca-45c9-8671-1605b89f09dc)
-
-4.	Create a text box (< input>) and a submit button. When clicking 'Submit', display 'Your name is: ${text}' on the page (${text} = the text inside the text box) (hint: use .value to get the text inside an <input>)
+ ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/4b68f7a8-fc00-43a7-a390-475b79031690)
 
 
-  	![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/d593b7b9-8574-4ecd-8fea-c14cc348b89a)
-
-6.	Write a JavaScript function that toggles the visibility of an HTML element when a button is clicked. Initially, the element should be hidden. Clicking the button should toggle the visibility of the element between hidden and visible states.(hint: change display to none/block)
 
 
 
