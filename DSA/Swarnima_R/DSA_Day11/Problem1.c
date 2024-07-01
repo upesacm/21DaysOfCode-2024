@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 1000  // Increase MAX for larger grids
+#define MAX 1000 
 
 typedef struct {
     int x, y, moves;
