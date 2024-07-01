@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="change" style="font-size: 60px;" onclick="setTimeout(Change, 1000)">Click Me</button>
+
+    <script>
+
+        const add = () => {
+
+            console.log(2 + 3)
+        }
+
+        function runTwice(func){
+
+            for(let i = 0; i < 2; i++)
+                func()
+        }
+
+        function display(){
+            console.log("Tigmanshu")
+        }
+
+        runTwice(display)
+
+        function Change(){
+
+            const container = document.getElementById('change')
+            container.innerHTML = "Finished !!!"
+        }
+
+    </script>
+</body>
+</html>
