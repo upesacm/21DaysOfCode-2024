@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Gulati - Day-10, Q-5</title>
+</head>
+<body>
+    <style>
+        #toggleElement {
+            display: none; 
+            margin-top: 20px; 
+            padding: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Visibility</button>
+    <div id="toggleElement">
+        This is the element to toggle visibility.
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            var element = document.getElementById('toggleElement');
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
