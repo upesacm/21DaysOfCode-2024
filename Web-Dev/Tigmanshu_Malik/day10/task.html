@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day10</title>
+</head>
+<body>
+    <button id="logHelloBtn" class="spaced">Create a Hello</button>
+    
+    <button id="changeTextBtn" class="spaced">Hello</button>
+    
+    <button id="headsBtn" class="spaced">Heads</button>
+    <button id="tailsBtn" class="spaced">Tails</button>
+    <p id="choiceDisplay" class="spaced"></p>
+    
+    <input type="text" id="nameInput" placeholder="Enter your name" class="spaced">
+    <button id="submitNameBtn" class="spaced">Submit</button>
+    <p id="nameDisplay" class="spaced"></p>
+    
+    <button id="toggleVisibilityBtn" class="spaced">Toggle Visibility</button>
+    <div id="toggleElement" class="spaced" style="display: none;">This is a toggle element</div>
+
+    <script>
+        document.querySelector('#logHelloBtn').addEventListener('click', function() {
+            console.log('Create a Hello');
+        });
+
+        document.querySelector('#changeTextBtn').addEventListener('click', function() {
+            this.textContent = 'Hello !';
+        });
+
+        document.querySelector('#headsBtn').addEventListener('click', function() {
+            document.querySelector('#choiceDisplay').textContent = 'You chose: heads';
+        });
+
+        document.querySelector('#tailsBtn').addEventListener('click', function() {
+            document.querySelector('#choiceDisplay').textContent = 'You chose: tails';
+        });
+
+        document.querySelector('#submitNameBtn').addEventListener('click', function() {
+            const name = document.querySelector('#nameInput').value;
+            document.querySelector('#nameDisplay').textContent = `Your name is: ${name}`;
+        });
+
+        document.querySelector('#toggleVisibilityBtn').addEventListener('click', function() {
+            const toggleElement = document.querySelector('#toggleElement');
+            if (toggleElement.style.display === 'none') {
+                toggleElement.style.display = 'block';
+            } else {
+                toggleElement.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
