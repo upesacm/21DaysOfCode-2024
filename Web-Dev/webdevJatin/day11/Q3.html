@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click Example</title>
+</head>
+<body>
+    <button id="myButton">Click me</button>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            setTimeout(function() {
+                document.getElementById('myButton').innerText = 'Finished!!';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
