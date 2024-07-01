@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Modification Example</title>
+</head>
+<body>
+    <h1>Array Modification</h1>
+    <p>Original array: [10, 20, 30]</p>
+    <p id="modifiedArray"></p>
+
+    <script>
+        const nums = [10, 20, 30];
+
+        // Modify the last element using its index
+        nums[nums.length - 1] = 99;
+
+        // Update the HTML content to display the modified array
+        const modifiedArrayPara = document.getElementById("modifiedArray");
+        modifiedArrayPara.textContent = `Modified array: ${nums}`; // Template literal for formatted string
+    </script>
+</body>
+</html>

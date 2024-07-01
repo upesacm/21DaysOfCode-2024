@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amusement Park Discount Checker</title>
+</head>
+<body>
+    <h1>Amusement Park Discount</h1>
+    <p>Enter your age:</p>
+    <input type="number" id="ageInput">
+    <button onclick="checkDiscount()">Check Discount</button>
+    <p id="discountResult"></p>
+
+    <script>
+        function checkDiscount() {
+          const age = document.getElementById("ageInput").value;
+          const discountAge = 6; // Minimum age for children's discount
+          const seniorAge = 65;   // Minimum age for senior's discount
+
+          if (age <= discountAge || age >= seniorAge) {
+            document.getElementById("discountResult").textContent = "Discount!";
+          } else {
+            document.getElementById("discountResult").textContent = "No discount.";
+          }
+        }
+    </script>
+</body>
+</html>
