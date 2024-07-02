@@ -3,38 +3,24 @@
 
 
 
-**Question 1:** Given a grid with blocked and unblocked cells, find the minimum number of moves required to reach from the start to the goal.
+
+**Question 1:**  Write a function to compute the n-th Fibonacci number using recursion.
 ##### Inputs:
-- The grid configuration, start and goal positions.
+-	An integer n.
 ##### Output:
-- The minimum number of moves.
+- The n-th Fibonacci number.
 ##### Example:
-grid = [
+n = 5
+##### Output: 5
 
-    ['.', '.', '.'],
-    
-    ['.', 'X', '.'],
-    
-    ['.', '.', '.']
-    
-]
-
-start = (0, 0)
-
-goal = (2, 2)
-
-##### Output: 4
-**Question 2:**  Implement a basic priority queue with insert and extract-min operations.
-##### Inputs/Outputs:
-- Methods for priority queue operations.
+**Question 2:**  Given a number, recursively sum its digits until a single digit is obtained.
+##### Inputs:
+- A large integer.
+##### Output:
+- The single digit result.
 ##### Example:
-priority_queue.insert(4)
-
-priority_queue.insert(2)
-
-priority_queue.extract_min()  # Output: 2
-
-priority_queue.extract_min()  # Output: 4
+number = 9875
+##### Output: 2
 
 
 
@@ -45,13 +31,12 @@ priority_queue.extract_min()  # Output: 4
 ## WEB-DEV:
 
 
-1.	Create a variable called 'add' and save a function inside. This function will console.log(2 + 3).
-2.	create a function runTwice(fun) that takes a function (as a parameter) and runs it twice. 
-Eg. runTwice(function() { console.log('<Your_Name>'); }); => console.log('<Your_name>') 
-twice 
-3.	Create the button below. When clicking the button, after 1 second, the text inside the button changes to 'Finished!!. (Hint: use setTimeout() and the DOM)
+1.	Using DayJS, get the date 5 days after today and display it in the format: '< Month> < Day of Month>'
+2.	Calculate 1 month after today and display in the same format as < Month> < Day of Month>.
+3.	DayJS has a .subtract(...) method which subtracts time from a date. Calculate 1 month before today and display in same format as above.
+4.	Get a date from DayJS and display it in this format: '< Day of Week>' (The format should be 'Monday', 'Tuesday', etc.)
+5.	Create a function isWeekend(date) that takes a DayJS object, and returns whether the date is 'Saturday' or 'Sunday'.
 
- ![image](https://github.com/upesacm/21DaysOfCode-2024/assets/133881515/4b68f7a8-fc00-43a7-a390-475b79031690)
 
 
 
