@@ -3,7 +3,7 @@ function runTwice(fun) {
     fun();
 }
 
-document.getElementById('runTwiceBtn').onclick = function() {
+document.getElementById('runBtn').onclick = function() {
   runTwice(function() {
       console.log('<Your_Name>');
   });
