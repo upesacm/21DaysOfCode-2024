@@ -1,21 +1,20 @@
 #include <stdio.h>
 
-int recSumDigits(int n);
+long long int recSumDigits(long long int n);
 
-int main(){
-    int n;
+long long int main(){
+    long long int n;
     printf("Enter the number : ");
-    scanf("%d",&n);
+    scanf("%llu",&n);
 
-    printf("Single digit obtained after recursive sum : %d",recSumDigits(n));
+    printf("Single digit obtained after recursive sum : %llu",recSumDigits(n));
     return 0;
 }
-
-int recSumDigits(int n){
+long long int recSumDigits(long long int n){
     if(n<10){
         return n;
     }
-    int sum = 0;
+    long long int sum = 0;
     while(n>0){
         sum+=n%10;
         n/=10;
