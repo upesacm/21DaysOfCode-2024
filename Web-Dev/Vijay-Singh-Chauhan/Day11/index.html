@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+    <button id="finish">Finished!</button>
+
+    <script>
+        const add=function(){
+            console.log(2+3);
+        }
+        add();
+
+        function runTwice(fun){
+            fun();
+            fun();
+        }
+        runTwice(function(){
+            console.log('vijay singh Chauhan');
+        });
+
+        
+
+        var btn=document.getElementById('finish');
+         btn.addEventListener('click',function(){
+            setTimeout(function(){
+                 btn.outerText='Finished!!';
+               
+            },(1000));
+        });
+
+
+    </script>
+    
+</body>
+</html>
