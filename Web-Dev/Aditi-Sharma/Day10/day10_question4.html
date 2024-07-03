@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"> 
+    <button>Submit</button>
+    <p>Your Name is _____</p>
+    <script>
+        const input_box = document.querySelector('input');
+const but = document.querySelector('button');
+const text = document.querySelector('p');
+
+but.addEventListener('click' , () => {
+    text.textContent = "Your Name is "+ input_box.value;
+    input_box.value = '';
+});
+    </script>
+</body>
+</html>
