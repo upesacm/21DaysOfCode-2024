@@ -1,26 +1,30 @@
-# Questions for Day 12 – (02/07/2024)
+# Questions for Day 13 – (03/07/2024)
 ## DSA:
-
-
-
-
-**Question 1:**  Write a function to compute the n-th Fibonacci number using recursion.
+**Question 1:**  Determine if a string can be segmented into a space-separated sequence of dictionary words.
 ##### Inputs:
--	An integer n.
+-	A string and a dictionary of words.
 ##### Output:
-- The n-th Fibonacci number.
+-	"YES" if the string can be segmented, otherwise "NO".
 ##### Example:
-n = 5
-##### Output: 5
 
-**Question 2:**  Given a number, recursively sum its digits until a single digit is obtained.
+string = "applepie"
+
+dictionary = ["apple", "pie"]
+
+##### Output: YES
+
+**Question 2:** Create a function to check if a number is a palindrome using recursion.
 ##### Inputs:
-- A large integer.
+-	An integer.
 ##### Output:
-- The single digit result.
+- "YES" if the number is a palindrome, otherwise "NO".
 ##### Example:
-number = 9875
-##### Output: 2
+number = 121
+##### Output: YES
+
+
+
+
 
 
 
@@ -30,15 +34,14 @@ number = 9875
 
 ## WEB-DEV:
 
+Today we will apply everything that we have learnt, and try to make a Coin Toss game in three steps.
+1.	Generate a random number with Math.random(). Save it in a variable. 
+2.	Create an if-statement and check: If the number is less than 0.5, then save the result in a variable called 'result'.
+3.	Let's say we're trying to guess the result. Create a variable called 'guess' and save your guess ('heads' or 'tails'). 
+If your guess matches the result, display 'You win!' in the console
+ If your guess does not match the result, display 'You lose!'
 
-1.	Using DayJS, get the date 5 days after today and display it in the format: '< Month> < Day of Month>'
-2.	Calculate 1 month after today and display in the same format as < Month> < Day of Month>.
-3.	DayJS has a .subtract(...) method which subtracts time from a date. Calculate 1 month before today and display in same format as above.
-4.	Get a date from DayJS and display it in this format: '< Day of Week>' (The format should be 'Monday', 'Tuesday', etc.)
-5.	Create a function isWeekend(date) that takes a DayJS object, and returns whether the date is 'Saturday' or 'Sunday'.
-
-
-
+You can make it visually appealing by using your own creativity.
 
 
 
