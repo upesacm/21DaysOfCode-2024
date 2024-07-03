@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/weekday.js"></script>
+</head>
+<body>
+    <p id="date"></p>
+
+    <script>
+        dayjs.extend(window.dayjs_plugin_weekday);
+        var today = dayjs();
+        var formattedDate = today.format('dddd');
+        document.getElementById('date').innerText = formattedDate;
+    </script>
+</body>
+</html>
