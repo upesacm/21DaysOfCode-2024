@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 UpesACM</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+</head>
+
+<body>
+    <script>
+        // Que1
+        const dayjs = require('dayjs');
+
+        function getDateFiveDaysAfterToday() {
+            const today = dayjs();
+            const fiveDaysAfterToday = today.add(5, 'day');
+            const month = fiveDaysAfterToday.month() + 1;
+            const day = fiveDaysAfterToday.date();
+            return `${month} ${day}`;
+        }
+
+        console.log(getDateFiveDaysAfterToday());
+        
+        // Que2
+        let futureMonth = today.add(1, "month")
+        let formattedMonth = futureMonth.format("MMMM D");
+        console.log(formattedMonth);
+
+        // Que3
+        let pastMonth = today.subtract(1, "month")
+        let formattedPastMonth = pastMonth.format("MMMM D");
+        console.log(formattedPastMonth);
+        
+        // Que4
+        let dayOfWeek = today.format('dddd')
+        console.log(dayOfWeek);
+
+        // Que5
+        function isWeekend(date) {
+            if (date.day === 6 || date.day === 7) {
+                console.log('WEEKEND')
+            }
+            console.log('WEEKDAY')
+        }
+        isWeekend(today);
+
+    </script>
+</body>
+
+</html>
