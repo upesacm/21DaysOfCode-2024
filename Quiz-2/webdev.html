@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicated Tweet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tweet {
+            width: 500px;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            margin: 20px auto;
+        }
+        .tweet-header {
+            display: flex;
+            align-items: center;
+        }
+        .tweet-header img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            margin-right: 10px;
+        }
+        .tweet-header .name {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .tweet-header .handle {
+            color: #657786;
+        }
+        .tweet-content {
+            margin-top: 10px;
+        }
+        .tweet-link {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            border: 1px solid #e1e8ed;
+            border-radius: 5px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+        .tweet-link div {
+            background-color: #e1e8ed;
+            padding: 10px;
+            width: 100px;
+        }
+        .tweet-link div img {
+            max-width: 100%;
+            height: auto;
+        }
+        .tweet-link span {
+            padding: 10px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <div class="tweet-header">
+            <img src="https://www.google.com/imgres?q=upes%20acm%20logo%20white%20background&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100063610826638&imgrefurl=https%3A%2F%2Fwww.facebook.com%2Fupesacm%2F&docid=UKZ61PYKuVJkKM&tbnid=iAO10s_Fig95GM&vet=12ahUKEwiIuOug6I2HAxVVh68BHWFIBN4QM3oFCIgBEAA..i&w=408&h=408&hcb=2&ved=2ahUKEwiIuOug6I2HAxVVh68BHWFIBN4QM3oFCIgBEAA" >
+            <div>
+                <span class="name">UPESACM</span>
+                <span class="handle">@upesacm</span>
+            </div>
+        </div>
+        <div class="tweet-content">
+            Tired of coding tutorials that leave you lost in a sea of information? Crave a challenge that pushes you to build real-world skills? UPES ACM & ACM-W Student Chapters have your back!
+        </div>
+        <a href="https://konfhub.com" class="tweet-link">
+            <div>
+                <img src="https://via.placeholder.com/100x60" alt="Thumbnail">
+            </div>
+            <span>
+                The 21DOC challenge
+                <span class="handle">@konfhub</span>
+            </span>
+        </a>
+    </div>
+</body>
+</html>
