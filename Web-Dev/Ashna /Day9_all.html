@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting based on hour</title>
+    <script>
+        function displayGreeting() {
+            const date = new Date();
+            const hour = date.getHours();
+            let message = '';
+
+            if (hour >= 6 && hour <= 12) {
+                message = 'Good morning!';
+            } else if (hour >= 13 && hour <= 17) {
+                message = 'Good afternoon!';
+            } else {
+                message = 'Good night!';
+            }
+
+            console.log(message);
+            document.getElementById('greeting').textContent = message;
+        }
+    </script>
+</head>
+<body onload="displayGreeting()">
+    <h1 id="greeting"></h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Check</title>
+    <script>
+        function checkDiscount() {
+            const age = 70; // Change this value to test different ages
+            const message = (age <= 6 || age >= 65) ? 'Discount' : 'No discount';
+
+            console.log(message);
+            document.getElementById('discount').textContent = message;
+        }
+    </script>
+</head>
+<body onload="checkDiscount()">
+    <h1 id="discount"></h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Array</title>
+    <script>
+        function modifyArray() {
+            const nums = [10, 20, 30];
+            nums[nums.length - 1] = 99;
+
+            console.log(nums);
+            document.getElementById('array').textContent = `Modified array: ${nums}`;
+        }
+    </script>
+</head>
+<body onload="modifyArray()">
+    <h1 id="array"></h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Up by 2</title>
+    <script>
+        function countUpByTwo() {
+            let result = '';
+            for (let i = 0; i <= 10; i += 2) {
+                result += i + ' ';
+            }
+
+            console.log(result.trim());
+            document.getElementById('countUp').textContent = result.trim();
+        }
+    </script>
+</head>
+<body onload="countUpByTwo()">
+    <h1 id="countUp"></h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down from 5</title>
+    <script>
+        function countDownFromFive() {
+            let result = '';
+            for (let i = 5; i >= 0; i--) {
+                result += i + ' ';
+            }
+
+            console.log(result.trim());
+            document.getElementById('countDown').textContent = result.trim();
+        }
+    </script>
+</head>
+<body onload="countDownFromFive()">
+    <h1 id="countDown"></h1>
+</body>
+</html>

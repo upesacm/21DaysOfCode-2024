@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Selector</title>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+    <button class="helloButton">Hello</button>
+
+    <script>
+        // Use document.querySelector to get the second button
+        const helloButton = document.querySelector('.helloButton');
+
+        // Change the text in the second button to 'Hello !'
+        helloButton.textContent = 'Hello !';
+    </script>
+</body>
+</html>

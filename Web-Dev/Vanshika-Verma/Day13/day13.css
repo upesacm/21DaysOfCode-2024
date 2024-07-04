@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+}
+h1{
+    color: #FFC436;
+    font-size: 35px;
+  
+}
+.con{
+    background-color: aquamarine;
+    height: 250px;
+    width: 400px;
+    border: 2px solid black;
+   
+}
+button{
+    font-size: 20px;
+    background-color: bisque;
+}
