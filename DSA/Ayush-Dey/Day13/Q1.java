@@ -1,5 +1,5 @@
-// Question-1
-// Author - Ayush Dey
+/* Question-1
+Author - Ayush Dey*/
 
 import java.util.*;
 
