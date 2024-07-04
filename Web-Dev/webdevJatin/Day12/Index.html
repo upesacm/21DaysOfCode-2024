@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Calculation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <u>Calendar</u>
+    <h1 id="dateDisplay"></h1>
+    <h1 id="day"></h1>
+    <h1 id="new-display"></h1>
+    <h1 id="prev-month"></h1>
+    <h1 id="week-end"></h1>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.6/dayjs.min.js"></script>
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        let today = dayjs();
+        let daytoday=today.format("dddd")
+        let futureDate = today.add(5, "day");
+        let onemonth = today.add(1,"month");
+        let lastmonth = today.subtract(1,"month");
+        let dayofweek = today.format("dddd");
+        let weekend=isWeekend(today);
+        function isWeekend(date)
+        {
+            const dayofweek=date.day();
+            return dayofweek==0 || dayofweek==1;
+        }
+
+
+        let formattedDate = futureDate.format("MMMM D");
+        let newformat = onemonth.format("MMMM D");
+        let format = lastmonth.format("MMMM D");
+
+
+        document.getElementById("dateDisplay").textContent = formattedDate;
+        document.getElementById("new-display").textContent = newformat;
+        document.getElementById("prev-month").textContent = format;
+        document.getElementById("day").textContent = daytoday;
+        document.getElementById("week-end").textContent=`${dayofweek} - ${weekend ? "It's a weekend" : "It's a weekday"}`;
+
+      });
+
+    </script>
+
+  </body>
+</html>

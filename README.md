@@ -1,48 +1,20 @@
-# Questions for Day 13 – (03/07/2024)
-## DSA:
-**Question 1:**  Determine if a string can be segmented into a space-separated sequence of dictionary words.
-##### Inputs:
--	A string and a dictionary of words.
-##### Output:
--	"YES" if the string can be segmented, otherwise "NO".
-##### Example:
+# Quiz - 2
 
-string = "applepie"
+## Web-Dev
+- Upload your answer to Quiz-2 folder and add your name folder inside which your answer's file will be added.
+- If file format is not followed properly your answers will not be accepted.
 
-dictionary = ["apple", "pie"]
+Q1. Replicate Tweet
 
-##### Output: YES
+Replicate the image of this tweet using HTML and CSS.
 
-**Question 2:** Create a function to check if a number is a palindrome using recursion.
-##### Inputs:
--	An integer.
-##### Output:
-- "YES" if the number is a palindrome, otherwise "NO".
-##### Example:
-number = 121
-##### Output: YES
+![image](https://github.com/upesacm/21DaysOfCode-2024/assets/142733510/934246d7-67c0-438e-a8dd-2abaca18dd9c)
 
+This is the iamge of the chapter's logo.
 
+![image](https://github.com/upesacm/21DaysOfCode-2024/assets/142733510/0689debb-2e3d-4af4-bbf8-b2cca09a8d2a)
 
+Good luck!
 
-
-
-
-
-
-
-
-## WEB-DEV:
-
-Today we will apply everything that we have learnt, and try to make a Coin Toss game in three steps.
-1.	Generate a random number with Math.random(). Save it in a variable. 
-2.	Create an if-statement and check: If the number is less than 0.5, then save the result in a variable called 'result'.
-3.	Let's say we're trying to guess the result. Create a variable called 'guess' and save your guess ('heads' or 'tails'). 
-If your guess matches the result, display 'You win!' in the console
- If your guess does not match the result, display 'You lose!'
-
-You can make it visually appealing by using your own creativity.
-
-
-
-
+## DSA
+ Go to link: [https://www.hackerrank.com/21-days-of-code-2024-quiz-2](https://www.hackerrank.com/21-days-of-code-2024-quiz-2)

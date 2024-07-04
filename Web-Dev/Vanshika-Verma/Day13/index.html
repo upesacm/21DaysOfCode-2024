@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day13.css">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="con">
+    <h1>Coin Toss Game</h1>
+    <p>Guess the result of the coin toss:</p>
+    <button onclick="gr('heads')">Heads</button>
+    <button onclick="gr('tails')">Tails</button>
+    <p class="result" id="result"></p>
+    </div>
+    <script>
+    function gr(guess)
+    {
+    let rn = Math.random();
+    let result = rn < 0.5 ? 'heads' : 'tails';
+    let msg = guess === result ? 'You win!' : 'You lose!';
+    document.getElementById('result').textContent = msg + ' The coin toss result was: ' + result + '.';
+    }
+    </script>
+</body>
+</html>
