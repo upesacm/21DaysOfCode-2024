@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+  </head>
+  <body>
+    <script>
+        // question 1
+      let today = dayjs();
+
+      let futureDate = today.add(5, "day");
+
+      let formattedDate = futureDate.format("MMMM D");
+      console.log(formattedDate);
+    //   question 2
+      let futureMonth = today.add(1,"month")
+      let formattedMonth = futureMonth.format("MMMM D");
+      console.log(formattedMonth);
+    //   question 3
+      let pastMonth = today.subtract(1,"month")
+      let formattedPastMonth = pastMonth.format("MMMM D");
+      console.log(formattedPastMonth);
+      //   question 4
+      let dayOfWeek = today.format('dddd')
+      console.log(dayOfWeek)    
+    //   question 5
+      function isWeekend(date){
+        if(date.day === 6 || date.day === 7){
+            console.log('WEEKEND')
+        }
+        console.log('WEEKDAY')
+      }
+      isWeekend(today);
+
+    </script>
+  </body>
+</html>
