@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Set minimum viewport height */
+      background-color: #f0f0f0; /* Light gray background */
+    }
+
+    .container {
+      background-color: #fff; /* White container */
+      padding: 30px;
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      text-align: center;
+    }
+
+    .result {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .outcome {
+      font-size: 32px;
+      color: green; /* Green for win, change for lose */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="result">
+      The result was: <span id="result"></span>
+    </div>
+    <div class="outcome" id="outcome"></div>
+  </div>
+
+  <script>
+    // Generate a random result (heads or tails)
+    const result = Math.random() < 0.5 ? 'heads' : 'tails';
+    document.getElementById('result').textContent = result;
+
+    // Define your guess (replace with 'heads' or 'tails')
+    let guess = 'heads';  // Change this to your guess
+
+    // Check if guess matches result and display message
+    const outcomeElement = document.getElementById('outcome');
+    if (guess === result) {
+      outcomeElement.textContent = 'You Win!';
+      outcomeElement.style.color = 'green';  // Green for win
+    } else {
+      outcomeElement.textContent = 'You Lose!';
+      outcomeElement.style.color = 'red';   // Change to red for lose (optional)
+    }
+  </script>
+</body>
+</html>
