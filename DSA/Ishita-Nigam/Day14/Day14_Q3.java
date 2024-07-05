@@ -5,7 +5,6 @@ public class Day14_Q3 {
     public static int minBulbsToLightHallway(int n, int[] hallway) {
         int[] maxRange = new int[n];
 
-        // Initialize maxRange array
         for (int i = 0; i < n; i++) {
             if (hallway[i] == -1) {
                 maxRange[i] = -1;
