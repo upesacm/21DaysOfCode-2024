@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tweet {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    padding: 15px;
+    display: flex;
+    align-items: start;
+}
+
+.profile-pic {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.content-section {
+    padding: 15px;
+    flex: 1;
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tweet-info {
+    display: flex;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.handle {
+    color: #657786;
+    font-size: 0.875rem;
+}
+
+.tweet-body {
+    font-size: 1rem;
+    color: #14171a;
+}
+
+.tweet-body p {
+    margin: 0 0 10px 0;
+}
+
+.link-preview {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    background-color: #fff;
+    width: fit-content;
+}
+
+.link-grey-box {
+    background-color: #e1e8ed;
+    width: 100px;
+    height: 80px;
+}
+
+.link-content {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 1rem;
+    color: black;
+}
+
+.link-domain {
+    font-size: 0.875rem;
+    color: #657786;
+}
+
+.link-title {
+    font-size: 1rem;
+    color: black;
+}

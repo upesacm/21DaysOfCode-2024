@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.main{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.overlay{
+
+    display: flex;
+    gap: 5px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.bottom{
+
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.bottom p{
+
+    padding: 5px;
+
+}
