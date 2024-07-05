@@ -22,7 +22,6 @@ int treeHeight(TreeNode* rootNode) {
 }
 
 int main() {
-    // Create the binary tree
     TreeNode* rootNode = (TreeNode*)malloc(sizeof(TreeNode));
     rootNode->value = 3;
     rootNode->leftChild = (TreeNode*)malloc(sizeof(TreeNode));
@@ -42,7 +41,6 @@ int main() {
     rootNode->rightChild->rightChild->leftChild = NULL;
     rootNode->rightChild->rightChild->rightChild = NULL;
 
-    // Calculate the height of the tree
     int heightOfTree = treeHeight(rootNode);
     printf("The height of the binary tree is: %d\n", heightOfTree);
 
