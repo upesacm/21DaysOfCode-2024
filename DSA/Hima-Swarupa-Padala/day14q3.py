@@ -61,5 +61,3 @@ def min_bulbs_to_turn_on(n, hallway):
 n = 9
 hallway2 = [2, 3, 4, -1, 2, 0, 0, -1, 0]
 print(min_bulbs_to_turn_on(n, hallway2))  
-
-
