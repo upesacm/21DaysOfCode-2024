@@ -7,4 +7,5 @@ def min_moves_to_non_decreasing(n, height):
 
 n = 6
 height = [5, 6, 3, 3, 7, 1]
-print(min_moves_to_non_decreasing(n, height))  
+print(min_moves_to_non_decreasing(n, height))
+
