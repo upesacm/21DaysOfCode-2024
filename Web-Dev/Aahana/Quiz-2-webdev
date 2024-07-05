@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q1</title>
+        <style>
+            .photo {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            .container {
+                display: flex;
+                margin: 20px;
+            }
+            .info-acm {
+                margin-left: 20px;
+            }
+            .heading {
+                margin-top: 0;
+                margin-bottom: 2px;
+                font-weight: bold;
+                font-family: Arial, sans-serif;
+            }
+            span {
+                color: rgb(96, 96, 96);
+                font-weight: normal;
+                font-family: Arial, sans-serif;
+            }
+            .description {
+                margin-top: 4px;
+                width: 360px;
+                font-family: Arial, sans-serif;
+            }
+            .box {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                column-gap: 8px;
+                border-width: 1px;
+                border-color: rgb(205, 203, 203);
+                border-style: solid;
+                border-radius: 12px;
+                overflow: hidden;
+                height: 77px;
+                align-items: center;
+            }
+            .color {
+                background-color: rgb(205, 203, 203);
+                width: 100%;
+                height: 100%;
+            }
+            .link {
+                color: rgb(150, 150, 150);
+                font-size: 15px;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .DOC {
+                font-family: Arial, sans-serif;
+                font-size: 17px;
+                margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img class="photo" src="acm-logo.png" alt="ACM Logo">
+            </div>
+            <div class="info-acm">
+                <div>
+                    <p class="heading">UPESACM <span>@upesacm</span></p>
+                </div>
+                <div>
+                    <p class="description">
+                        Tired of coding tutorials that leave you lost in a sea of information? 
+                        Crave a challenge that pushes you to build real-world skills?
+                        UPES ACM & ACM-W Student Chapters have your back!
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="color"></div>
+                    <div>
+                        <p class="link">konfhub.com</p>
+                        <p class="DOC">The 21DOC challenge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
