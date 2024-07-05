@@ -1,50 +1,55 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node {
-    int data;
-    struct Node* left;
-    struct Node* right;
-} Node;
+typedef struct TreeNode {
+    int value;
+    struct TreeNode* leftChild;
+    struct TreeNode* rightChild;
+} TreeNode;
 
-int height(Node* root) {
-    if (root == NULL) {
+int treeHeight(TreeNode* rootNode) {
+    if (rootNode == NULL) {
         return 0;
     } else {
-        int left_height = height(root->left);
-        int right_height = height(root->right);
-        if (left_height > right_height) {
-            return left_height + 1;
+        int leftHeight = treeHeight(rootNode->leftChild);
+        int rightHeight = treeHeight(rootNode->rightChild);
+        if (leftHeight > rightHeight) {
+            return leftHeight + 1;
         } else {
-            return right_height + 1;
+            return rightHeight + 1;
         }
     }
 }
 
 int main() {
-    // Create the binary tree
-    Node* root = (Node*)malloc(sizeof(Node));
-    root->data = 3;
-    root->left = (Node*)malloc(sizeof(Node));
-    root->right = (Node*)malloc(sizeof(Node));
-    root->left->data = 2;
-    root->right->data = 5;
-    root->left->left = (Node*)malloc(sizeof(Node));
-    root->right->left = (Node*)malloc(sizeof(Node));
-    root->right->right = (Node*)malloc(sizeof(Node));
-    root->left->left->data = 1;
-    root->right->left->data = 4;
-    root->right->right->data = 6;
-    root->left->left->left = NULL;
-    root->left->left->right = NULL;
-    root->right->left->left = NULL;
-    root->right->left->right = NULL;
-    root->right->right->left = NULL;
-    root->right->right->right = NULL;
+    TreeNode* rootNode = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->value = 3;
+    rootNode->leftChild = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->rightChild = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->leftChild->value = 2;
+    rootNode->rightChild->value = 5;
+    rootNode->leftChild->leftChild = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->rightChild->leftChild = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->rightChild->rightChild = (TreeNode*)malloc(sizeof(TreeNode));
+    rootNode->leftChild->leftChild->value = 1;
+    rootNode->rightChild->leftChild->value = 4;
+    rootNode->rightChild->rightChild->value = 6;
+    rootNode->leftChild->leftChild->leftChild = NULL;
+    rootNode->leftChild->leftChild->rightChild = NULL;
+    rootNode->rightChild->leftChild->leftChild = NULL;
+    rootNode->rightChild->leftChild->rightChild = NULL;
+    rootNode->rightChild->rightChild->leftChild = NULL;
+    rootNode->rightChild->rightChild->rightChild = NULL;
+    rootNode->leftChild->rightChild = NULL; 
+    rootNode->leftChild->leftChild->leftChild = NULL;
+    rootNode->leftChild->leftChild->rightChild = NULL;
+    rootNode->rightChild->leftChild->leftChild = NULL;
+    rootNode->rightChild->leftChild->rightChild = NULL;
+    rootNode->rightChild->rightChild->leftChild = NULL;
+    rootNode->rightChild->rightChild->rightChild = NULL;
 
-    // Calculate the height of the tree
-    int height_of_tree = height(root);
-    printf("Height of the tree: %d\n", height_of_tree);
+    int heightOfTree = treeHeight(rootNode);
+    printf("The height of the binary tree is: %d\n", heightOfTree);
 
     return 0;
 }
