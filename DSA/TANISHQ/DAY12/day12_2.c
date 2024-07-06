@@ -1,31 +1,33 @@
 #include<stdio.h>
 
-int sum_digit(int n )
+int fibonacci(int n)
 {
-    if(n>10)
+    if(n==0)
     {
-        return n;
+        return 0;
     }
-    else{
-        int sum=0;
-        while(n>0)
-        {
-            sum+= n % 10;
-            n/=10;
-        }
-        return sum_digit(n);
+    else if(n==1)
+    {
+        return 1;
     }
+    else {
+        return fibonacci(n-1) +fibonacci(n-2);
+    }
+
 }
 
 int main()
 {
-    int num;
-    printf("Enter the interger:")
-    scanf("%d", &num);
+    int n ;
+    printf('Enter a postive number');
+    scanf("%d", &n);
+    if(n<0)
+    {
+        printf("Error:enter the postive number");
+        return 1;
 
-    int result = sum_digit(n);
-    printf("    The result is :", result);
+    }
+    int result = fibonacci(n);
+    printf("enter the positive number:%d\n": n , result);
     return 0;
-
-
 }
