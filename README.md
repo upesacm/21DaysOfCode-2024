@@ -1,36 +1,38 @@
-# Questions for Day 15 – (05/07/2024)
+# Questions for Day 16 – (06/07/2024)
 ## DSA:
-**Question 1:**  Write a function to determine the height of a binary tree. The height is defined as the number of edges between the root and the furthest leaf.
+**Question 1:** Postorder Traversal
+Write a function to perform a postorder traversal (left-right-root) on a binary tree.
 ##### Inputs:
 -	The root node of the binary tree.
 ##### Output:
--	The height of the tree.
+-	The values of the nodes in postorder.
 ##### Example:
+# Binary Tree:
 ```
-Binary Tree:
-      3
-     / \
-    2   5
-   /   / \
-  1   4   6
-```
-##### Output: 2
+       1
+      / \
+     2   3
+    / \
+   4   5
+ ```
+## Output: [4, 5, 2, 3, 1]
 
-**Question 2:** Implement a function to perform a level order traversal (breadth-first traversal) on a binary tree.
+**Question 2:**  Inorder Traversal
+Implement a function to perform an inorder traversal (left-root-right) on a binary tree.
 ##### Inputs:
 -	The root node of the binary tree.
 ##### Output:
-- The values of the nodes in level order.
+- The values of the nodes in inorder.
 ##### Example:
 ```
 Binary Tree:
-      3
+      1
      / \
-    9  20
-       / \
-      15  7
+    2   3
+   / \
+  4   5
 ```
-##### Output: [3, 9, 20, 15, 7]
+##### Output: [4, 2, 5, 1, 3]
 
 
 
@@ -41,9 +43,9 @@ Binary Tree:
 
 ## WEB-DEV:
 
-1.	 Create a React component called ButtonClicker that displays a button. When clicked, the button should change its text from "Click me" to "Clicked!".
-2.	Create a React component called LikeButton that displays a button labeled "Like". When clicked, it should increment a count displayed next to the button indicating how many times it's been clicked.
-3.	Create a React component called TrafficLight that displays a traffic light with three colors: Red, Yellow, and Green. Implement a button that toggles the state of the traffic light (Red -> Green -> Yellow -> Red).
+1. Create a React functional component called GreetUser that takes a username prop and displays a personalized greeting. If no username is provided, display a generic greeting.
+2. Create a React component called NameForm that includes a form with a single input field (name). Display an alert with the entered name when the form is submitted.
+3. Create a React component called InputLengthChecker that includes an input field for text. Display a message indicating "Too short" if the input length is less than 5 characters, otherwise display "Long enough".
 
 
 
