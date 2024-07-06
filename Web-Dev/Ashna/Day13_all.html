@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+        }
+    </style>
+    <script>
+        function playGame(guess) {
+            const randomNumber = Math.random();
+            let result = '';
+
+            if (randomNumber < 0.5) {
+                result = 'heads';
+            } else {
+                result = 'tails';
+            }
+
+            if (guess === result) {
+                document.getElementById('result').textContent = `The coin landed on ${result}. You win!`;
+            } else {
+                document.getElementById('result').textContent = `The coin landed on ${result}. You lose!`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Coin Toss Game</h1>
+    <p>Guess the result of the coin toss:</p>
+    <button onclick="playGame('heads')">Heads</button>
+    <button onclick="playGame('tails')">Tails</button>
+    <p id="result"></p>
+</body>
+</html>

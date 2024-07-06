@@ -1,29 +1,36 @@
-# Questions for Day 13 – (03/07/2024)
+# Questions for Day 15 – (05/07/2024)
 ## DSA:
-**Question 1:**  Determine if a string can be segmented into a space-separated sequence of dictionary words.
+**Question 1:**  Write a function to determine the height of a binary tree. The height is defined as the number of edges between the root and the furthest leaf.
 ##### Inputs:
--	A string and a dictionary of words.
+-	The root node of the binary tree.
 ##### Output:
--	"YES" if the string can be segmented, otherwise "NO".
+-	The height of the tree.
 ##### Example:
+```
+Binary Tree:
+      3
+     / \
+    2   5
+   /   / \
+  1   4   6
+```
+##### Output: 2
 
-string = "applepie"
-
-dictionary = ["apple", "pie"]
-
-##### Output: YES
-
-**Question 2:** Create a function to check if a number is a palindrome using recursion.
+**Question 2:** Implement a function to perform a level order traversal (breadth-first traversal) on a binary tree.
 ##### Inputs:
--	An integer.
+-	The root node of the binary tree.
 ##### Output:
-- "YES" if the number is a palindrome, otherwise "NO".
+- The values of the nodes in level order.
 ##### Example:
-number = 121
-##### Output: YES
-
-
-
+```
+Binary Tree:
+      3
+     / \
+    9  20
+       / \
+      15  7
+```
+##### Output: [3, 9, 20, 15, 7]
 
 
 
@@ -34,14 +41,9 @@ number = 121
 
 ## WEB-DEV:
 
-Today we will apply everything that we have learnt, and try to make a Coin Toss game in three steps.
-1.	Generate a random number with Math.random(). Save it in a variable. 
-2.	Create an if-statement and check: If the number is less than 0.5, then save the result in a variable called 'result'.
-3.	Let's say we're trying to guess the result. Create a variable called 'guess' and save your guess ('heads' or 'tails'). 
-If your guess matches the result, display 'You win!' in the console
- If your guess does not match the result, display 'You lose!'
-
-You can make it visually appealing by using your own creativity.
+1.	 Create a React component called ButtonClicker that displays a button. When clicked, the button should change its text from "Click me" to "Clicked!".
+2.	Create a React component called LikeButton that displays a button labeled "Like". When clicked, it should increment a count displayed next to the button indicating how many times it's been clicked.
+3.	Create a React component called TrafficLight that displays a traffic light with three colors: Red, Yellow, and Green. Implement a button that toggles the state of the traffic light (Red -> Green -> Yellow -> Red).
 
 
 

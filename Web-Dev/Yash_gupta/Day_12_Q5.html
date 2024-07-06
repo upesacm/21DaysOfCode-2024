@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayJS Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</head>
+<body>
+    <p id="result"></p>
+
+    <script>
+        function isWeekend(date) {
+            const day = date.format('dddd');
+            return day === 'Saturday' || day === 'Sunday';
+        }
+        var today = dayjs();
+        var result = isWeekend(today)?'YAAY Party Time':'We have some work to do';
+        document.getElementById('result').innerText = result;
+    </script>
+</body>
+</html>
