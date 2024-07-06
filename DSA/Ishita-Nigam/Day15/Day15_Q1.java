@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Definition for a binary tree node.
 class TreeNode {
     int val;
     TreeNode left;
@@ -15,22 +14,17 @@ class TreeNode {
 
 public class Day15_Q1 {
 
-    // Function to determine the height of the binary tree.
     public static int height(TreeNode root) {
-        // Base case: if the tree is empty, return -1 (height of an empty tree)
         if (root == null) {
             return -1;
         }
 
-        // Calculate the height of the left and right subtrees.
         int leftHeight = height(root.left);
         int rightHeight = height(root.right);
 
-        // Return the maximum of leftHeight and rightHeight, plus one for the current node.
         return Math.max(leftHeight, rightHeight) + 1;
     }
 
-    // Function to build the tree from input
     public static TreeNode buildTree(int n, int[][] nodes) {
         if (n == 0) {
             return null;
@@ -62,9 +56,9 @@ public class Day15_Q1 {
         int[][] nodes = new int[n][3];
         System.out.println("Enter the nodes in the format: value left_index right_index (-1 for no child):");
         for (int i = 0; i < n; i++) {
-            nodes[i][0] = scanner.nextInt(); // Node value
-            nodes[i][1] = scanner.nextInt(); // Left child index
-            nodes[i][2] = scanner.nextInt(); // Right child index
+            nodes[i][0] = scanner.nextInt();
+            nodes[i][1] = scanner.nextInt();
+            nodes[i][2] = scanner.nextInt();
         }
 
         TreeNode root = buildTree(n, nodes);
