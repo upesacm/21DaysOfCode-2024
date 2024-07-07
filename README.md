@@ -1,38 +1,48 @@
-# Questions for Day 16 – (06/07/2024)
+# Questions for Day 17 – (07/07/2024)
 ## DSA:
-**Question 1:** Postorder Traversal
-Write a function to perform a postorder traversal (left-right-root) on a binary tree.
+**Question 1:** 
+Given a binary search tree (BST) and two nodes, find their lowest common ancestor (LCA).
 ##### Inputs:
--	The root node of the binary tree.
+-	The root node of the BST.
+Two nodes for which the LCA is to be found.
 ##### Output:
--	The values of the nodes in postorder.
+-	The value of the LCA node.
 ##### Example:
-# Binary Tree:
+# BST:
 ```
-       1
-      / \
-     2   3
-    / \
-   4   5
+       20
+      /  \
+    10    30
+   /  \  /  \
+  5   15 25  35
  ```
-## Output: [4, 5, 2, 3, 1]
+#### Nodes: 5, 30
+#### Output: 20
+<br>
 
-**Question 2:**  Inorder Traversal
-Implement a function to perform an inorder traversal (left-root-right) on a binary tree.
+**Question 2:** 
+Given a binary search tree (BST) and a value, insert the value into the BST while maintaining its properties.
 ##### Inputs:
--	The root node of the binary tree.
+-	The root node of the BST.
+The value to be inserted.
 ##### Output:
-- The values of the nodes in inorder.
+- The root node of the updated BST.
 ##### Example:
 ```
-Binary Tree:
-      1
-     / \
-    2   3
-   / \
-  4   5
+ BST:
+       4
+      / \
+     2   7
+    / \
+   1   3
+Insert: 5
+Updated BST:
+       4
+      / \
+     2   7
+    / \ /
+   1  3 5
 ```
-##### Output: [4, 2, 5, 1, 3]
 
 
 
@@ -42,11 +52,12 @@ Binary Tree:
 
 
 ## WEB-DEV:
-
-1. Create a React functional component called GreetUser that takes a username prop and displays a personalized greeting. If no username is provided, display a generic greeting.
-2. Create a React component called NameForm that includes a form with a single input field (name). Display an alert with the entered name when the form is submitted.
-3. Create a React component called InputLengthChecker that includes an input field for text. Display a message indicating "Too short" if the input length is less than 5 characters, otherwise display "Long enough".
-
+Today, we aim to explore the necessity and function of databases. Given that many of us will be setting up MySQL, we'll focus on foundational questions.
+1.	Create a database named ACM21DOC.
+2.	Create a table named STUDENTS as followed:
+[ Name VARCHAR(15) NOT NULL, Bdate DATE, Sex CHAR]
+3.	Input some dummy entry and use SELECT * FROM STUDENTS to display all the entry.
+Submit all the queries performed in a .txt file
 
 
 
