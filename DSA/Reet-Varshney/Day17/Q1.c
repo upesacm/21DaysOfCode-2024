@@ -33,7 +33,7 @@ TreeNode* findCommonAncestor(TreeNode* rootNode, int val1, int val2) {
 void printAncestorValue(TreeNode* rootNode, int val1, int val2) {
     TreeNode* ancestor = findCommonAncestor(rootNode, val1, val2);
     if (ancestor != NULL) {
-        printf("The common ancestor of %d and %d is %d\n", val1, val2, ancestor->value);
+        printf("The common node of %d and %d is %d\n", val1, val2, ancestor->value);
     } else {
         printf("Common ancestor not found\n");
     }
