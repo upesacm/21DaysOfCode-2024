@@ -1,7 +1,12 @@
-import React from "react";
+
 import Button from './web-task/button.jsx'
 import Count from './web-task/count.jsx'
 import Traffic from './web-task/traffic.jsx'
+import Greet from './web-task/greet.jsx'
+import Name from './web-task/name.jsx'
+import Length from './web-task/length.jsx'
+
+
 import './App.css';
 
 
@@ -17,6 +22,9 @@ function App() {
           <Button />
           <Count />
           <Traffic/>
+          <Greet/>
+          <Name/>
+          <Length/>
          
         </div>
       </main>
