@@ -1,63 +1,44 @@
-# Questions for Day 17 – (07/07/2024)
+# Questions for Day 18 – (07/08/2024)
 ## DSA:
 **Question 1:** 
-Given a binary search tree (BST) and two nodes, find their lowest common ancestor (LCA).
+Write a function to return the top view of a binary tree, which is the set of nodes visible when the tree is viewed from above.
 ##### Inputs:
--	The root node of the BST.
-Two nodes for which the LCA is to be found.
+- The root node of the binary tree.
 ##### Output:
--	The value of the LCA node.
+- The values of the nodes in the top view.
 ##### Example:
-# BST:
+# Binary Tree:
 ```
-       20
-      /  \
-    10    30
-   /  \  /  \
-  5   15 25  35
+       1
+      / \
+     2   3
+    / \ / \
+   4  5 6  7
  ```
-#### Nodes: 5, 30
-#### Output: 20
+#### Output: [4, 2, 1, 3, 7]
 <br>
 
 **Question 2:** 
-Given a binary search tree (BST) and a value, insert the value into the BST while maintaining its properties.
+Given a Huffman tree and a binary string, decode the string into the original text.
 ##### Inputs:
--	The root node of the BST.
-The value to be inserted.
+- The root node of the Huffman tree.
+- A binary string.
 ##### Output:
-- The root node of the updated BST.
+- The decoded text.
 ##### Example:
 ```
- BST:
-       4
-      / \
-     2   7
-    / \
-   1   3
-Insert: 5
-Updated BST:
-       4
-      / \
-     2   7
-    / \ /
-   1  3 5
+Huffman Tree: {(A: 3), (B: 1), (C: 1)}
+Binary String: "1001011"
 ```
-
-
-
-
-
-
-
+#### Output: "ABCA"
+<br>
 
 ## WEB-DEV:
-Today, we aim to explore the necessity and function of databases. Given that many of us will be setting up MySQL, we'll focus on foundational questions.
-1.	Create a database named ACM21DOC.
-2.	Create a table named STUDENTS as followed:
-[ Name VARCHAR(15) NOT NULL, Bdate DATE, Sex CHAR]
-3.	Input some dummy entry and use SELECT * FROM STUDENTS to display all the entry.
+Today, we will work on SQL queries to manipulate and retrieve data from the employees table.
+1. Write a SQL query to retrieve all columns from the employees table.
+2. Write a SQL query to retrieve the names of employees who have a salary greater than $50,000, sorted in descending order by salary.
+3. Write a SQL query to calculate the average salary of all employees.
+4. Write a SQL query to insert a new employee into the employees table with the following details: emp_id as 106, emp_name as 'John Doe', salary as $60,000, and dept_id as 3.
+5. Write a SQL query to update the salary of an employee with emp_id 101 to $65,000 in the employees table.
+
 Submit all the queries performed in a .txt file
-
-
-
