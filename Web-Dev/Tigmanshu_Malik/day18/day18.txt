@@ -1,0 +1,17 @@
+
+CREATE TABLE employee(
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(20),
+    salary INT,
+    dept_id INT
+);
+
+SELECT * FROM employee;
+
+SELECT emp_name FROM employee WHERE salary > 50000 ORDER BY salary DESC;
+
+SELECT AVG(salary) AS average_sal FROM employee;
+
+INSERT INTO employee VALUES(106, 'John Doe', 60000, 3);
+
+UPDATE employee SET salary = 65000 WHERE emp_id = 101;
