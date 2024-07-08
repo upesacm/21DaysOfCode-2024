@@ -26,5 +26,6 @@ root.left.right = Node(1, 'C')
 
 huffman_tree = root
 binary_string = "1001011"
+
 decoded_text = decode_huffman(huffman_tree, binary_string)
 print(decoded_text)  
