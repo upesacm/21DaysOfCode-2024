@@ -1,0 +1,18 @@
+-- 1st quetion
+CREATE DATABASE ACM21DOC;
+
+-- 2nd question
+USE ACM21DOC;
+CREATE TABLE STUDENTS (
+    Name VARCHAR(15) NOT NULL,
+    Bdate DATE,
+    Gender CHAR(1)
+);
+
+-- 3rd question
+INSERT INTO STUDENTS (Name, Bdate, Gender) VALUES
+('Mann', '2000-01-15', 'M'),
+('shreya', '1999-06-25', 'F'),
+('swikriti', '2001-03-30', 'F');
+
+SELECT * FROM STUDENTS;
