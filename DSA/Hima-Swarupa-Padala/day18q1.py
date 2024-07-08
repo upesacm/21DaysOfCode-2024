@@ -1,5 +1,4 @@
-class TreeNode:
-    
+class TreeNode:  
     def __init__(self, value):
         self.value = value
         self.left = None
@@ -12,11 +11,9 @@ def top_view(root):
     hd_dict = {}
     node_dict = {}
 
-    def traverse(node, hd, level):
-        
+    def traverse(node, hd, level):       
         if not node:
-            return
-            
+            return            
         if hd not in hd_dict or level < hd_dict[hd]:
             hd_dict[hd] = level
             node_dict[hd] = node.value
@@ -39,6 +36,5 @@ if __name__ == "__main__":
     root.right.left = TreeNode(6)
     root.right.right = TreeNode(7)
 
-    top_view_nodes = top_view(root)
-    
+    top_view_nodes = top_view(root)    
     print(top_view_nodes)
