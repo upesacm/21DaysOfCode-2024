@@ -1,0 +1,145 @@
+import React from 'react';
+
+const GreetUser = ({ username }) => {
+  return (
+    <div>
+      {username ? (
+        <h1>Hello, {username}!</h1>
+      ) : (
+        <h1>Hello, Guest!</h1>
+      )}
+    </div>
+  );
+};
+
+export default GreetUser;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet User</title>
+</head>
+<body>
+    <div id="greet-user">
+        <h1>Hello, Guest!</h1>
+    </div>
+
+    <script>
+        function greetUser(username) {
+            const greetUserDiv = document.getElementById('greet-user');
+            greetUserDiv.innerHTML = username ? `<h1>Hello, ${username}!</h1>` : '<h1>Hello, Guest!</h1>';
+        }
+
+        // Example usage:
+        greetUser('John'); // Change the name to test with a different username
+    </script>
+</body>
+</html>
+
+import React, { useState } from 'react';
+
+const NameForm = () => {
+    const [name, setName] = useState('');
+
+    const handleChange = (event) => {
+        setName(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        alert(`Entered name: ${name}`);
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <label>
+                Name:
+                <input type="text" value={name} onChange={handleChange} />
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    );
+};
+
+export default NameForm;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Form</title>
+</head>
+<body>
+    <form id="name-form">
+        <label>
+            Name:
+            <input type="text" id="name-input" />
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const nameForm = document.getElementById('name-form');
+        const nameInput = document.getElementById('name-input');
+
+        nameForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert(`Entered name: ${nameInput.value}`);
+        });
+    </script>
+</body>
+</html>
+ import React, { useState } from 'react';
+
+const InputLengthChecker = () => {
+    const [input, setInput] = useState('');
+
+    const handleChange = (event) => {
+        setInput(event.target.value);
+    };
+
+    const message = input.length < 5 ? "Too short" : "Long enough";
+
+    return (
+        <div>
+            <label>
+                Enter text:
+                <input type="text" value={input} onChange={handleChange} />
+            </label>
+            <p>{message}</p>
+        </div>
+    );
+};
+
+export default InputLengthChecker;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Length Checker</title>
+</head>
+<body>
+    <div>
+        <label>
+            Enter text:
+            <input type="text" id="input-field" />
+        </label>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        const inputField = document.getElementById('input-field');
+        const messageParagraph = document.getElementById('message');
+
+        inputField.addEventListener('input', () => {
+            const inputValue = inputField.value;
+            const message = inputValue.length < 5 ? "Too short" : "Long enough";
+            messageParagraph.textContent = message;
+        });
+    </script>
+</body>
+</html>
