@@ -1,50 +1,44 @@
-# Questions for Day 15 – (05/07/2024)
+# Questions for Day 18 – (07/08/2024)
 ## DSA:
-**Question 1:**  Write a function to determine the height of a binary tree. The height is defined as the number of edges between the root and the furthest leaf.
+**Question 1:** 
+Write a function to return the top view of a binary tree, which is the set of nodes visible when the tree is viewed from above.
 ##### Inputs:
--	The root node of the binary tree.
+- The root node of the binary tree.
 ##### Output:
--	The height of the tree.
+- The values of the nodes in the top view.
+##### Example:
+# Binary Tree:
+```
+       1
+      / \
+     2   3
+    / \ / \
+   4  5 6  7
+ ```
+#### Output: [4, 2, 1, 3, 7]
+<br>
+
+**Question 2:** 
+Given a Huffman tree and a binary string, decode the string into the original text.
+##### Inputs:
+- The root node of the Huffman tree.
+- A binary string.
+##### Output:
+- The decoded text.
 ##### Example:
 ```
-Binary Tree:
-      3
-     / \
-    2   5
-   /   / \
-  1   4   6
+Huffman Tree: {(A: 3), (B: 1), (C: 1)}
+Binary String: "1001011"
 ```
-##### Output: 2
-
-**Question 2:** Implement a function to perform a level order traversal (breadth-first traversal) on a binary tree.
-##### Inputs:
--	The root node of the binary tree.
-##### Output:
-- The values of the nodes in level order.
-##### Example:
-```
-Binary Tree:
-      3
-     / \
-    9  20
-       / \
-      15  7
-```
-##### Output: [3, 9, 20, 15, 7]
-
-
-
-
-
-
-
+#### Output: "ABCA"
+<br>
 
 ## WEB-DEV:
+Today, we will work on SQL queries to manipulate and retrieve data from the employees table.
+1. Write a SQL query to retrieve all columns from the employees table.
+2. Write a SQL query to retrieve the names of employees who have a salary greater than $50,000, sorted in descending order by salary.
+3. Write a SQL query to calculate the average salary of all employees.
+4. Write a SQL query to insert a new employee into the employees table with the following details: emp_id as 106, emp_name as 'John Doe', salary as $60,000, and dept_id as 3.
+5. Write a SQL query to update the salary of an employee with emp_id 101 to $65,000 in the employees table.
 
-1.	 Create a React component called ButtonClicker that displays a button. When clicked, the button should change its text from "Click me" to "Clicked!".
-2.	Create a React component called LikeButton that displays a button labeled "Like". When clicked, it should increment a count displayed next to the button indicating how many times it's been clicked.
-3.	Create a React component called TrafficLight that displays a traffic light with three colors: Red, Yellow, and Green. Implement a button that toggles the state of the traffic light (Red -> Green -> Yellow -> Red).
-
-
-
-
+Submit all the queries performed in a .txt file
