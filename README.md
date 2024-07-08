@@ -1,36 +1,48 @@
-# Questions for Day 15 – (05/07/2024)
+# Questions for Day 17 – (07/07/2024)
 ## DSA:
-**Question 1:**  Write a function to determine the height of a binary tree. The height is defined as the number of edges between the root and the furthest leaf.
+**Question 1:** 
+Given a binary search tree (BST) and two nodes, find their lowest common ancestor (LCA).
 ##### Inputs:
--	The root node of the binary tree.
+-	The root node of the BST.
+Two nodes for which the LCA is to be found.
 ##### Output:
--	The height of the tree.
+-	The value of the LCA node.
 ##### Example:
+# BST:
 ```
-Binary Tree:
-      3
-     / \
-    2   5
-   /   / \
-  1   4   6
-```
-##### Output: 2
+       20
+      /  \
+    10    30
+   /  \  /  \
+  5   15 25  35
+ ```
+#### Nodes: 5, 30
+#### Output: 20
+<br>
 
-**Question 2:** Implement a function to perform a level order traversal (breadth-first traversal) on a binary tree.
+**Question 2:** 
+Given a binary search tree (BST) and a value, insert the value into the BST while maintaining its properties.
 ##### Inputs:
--	The root node of the binary tree.
+-	The root node of the BST.
+The value to be inserted.
 ##### Output:
-- The values of the nodes in level order.
+- The root node of the updated BST.
 ##### Example:
 ```
-Binary Tree:
-      3
-     / \
-    9  20
-       / \
-      15  7
+ BST:
+       4
+      / \
+     2   7
+    / \
+   1   3
+Insert: 5
+Updated BST:
+       4
+      / \
+     2   7
+    / \ /
+   1  3 5
 ```
-##### Output: [3, 9, 20, 15, 7]
 
 
 
@@ -40,11 +52,12 @@ Binary Tree:
 
 
 ## WEB-DEV:
-
-1.	 Create a React component called ButtonClicker that displays a button. When clicked, the button should change its text from "Click me" to "Clicked!".
-2.	Create a React component called LikeButton that displays a button labeled "Like". When clicked, it should increment a count displayed next to the button indicating how many times it's been clicked.
-3.	Create a React component called TrafficLight that displays a traffic light with three colors: Red, Yellow, and Green. Implement a button that toggles the state of the traffic light (Red -> Green -> Yellow -> Red).
-
+Today, we aim to explore the necessity and function of databases. Given that many of us will be setting up MySQL, we'll focus on foundational questions.
+1.	Create a database named ACM21DOC.
+2.	Create a table named STUDENTS as followed:
+[ Name VARCHAR(15) NOT NULL, Bdate DATE, Sex CHAR]
+3.	Input some dummy entry and use SELECT * FROM STUDENTS to display all the entry.
+Submit all the queries performed in a .txt file
 
 
 

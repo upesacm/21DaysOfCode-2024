@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicated Tweet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f8fa;
+        }
+        .tweet-container {
+            background-color: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            width: 600px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .tweet-header img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+        }
+        .tweet-header .username {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .tweet-header .handle {
+            color: #657786;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .tweet-content {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .tweet-link {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            padding: 8px;
+            max-width: 400px;
+        }
+        .tweet-link img {
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        .tweet-link .link-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .tweet-link .link-text .domain {
+            color: #657786;
+            font-size: 12px;
+        }
+        .tweet-link .link-text .title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="tweet-header">
+            <img src="/Users/jatinbalchandani/Downloads/upesacm.png" alt="UPES ACM Logo">
+            <div>
+                <span class="username">UPESACM</span>
+                <span class="handle">@upesacm</span>
+            </div>
+        </div>
+        <div class="tweet-content">
+            Tired of coding tutorials that leave you lost in a sea of information? Crave a challenge that pushes you to build real-world skills? UPES ACM & ACM-W Student Chapters have your back!
+        </div>
+        <a href="https://konfhub.com" class="tweet-link">
+            <img src="/Users/jatinbalchandani/Downloads/upesacm2.png" alt="Link Icon">
+            <div class="link-text">
+                <span class="domain">konfhub.com</span>
+                <span class="title">The 21DOC challenge</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
