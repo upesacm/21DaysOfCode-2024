@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
+// Node definition
 struct Node {
     int data;
     struct Node *left, *right;
