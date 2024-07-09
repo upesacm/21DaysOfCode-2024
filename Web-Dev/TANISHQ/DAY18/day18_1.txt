@@ -1,0 +1,27 @@
+//CREATING DATABASE FOR EMPLOYEES 
+
+CREATE DATABASE employees;
+
+//CREATING TABLE FOR EMPLOYEES
+
+CREATE TABLE employees{
+    EmployeeId INT;
+    NAME VARCHAR(15);
+    DEPT VARCHAR(15);
+    SALARY INT
+};
+
+
+INSERT INTO employees(EmployeeId, NAME , DEPT , SALARY ) VALUES (101, "RAMESH" , "CS" , 50000);
+INSERT INTO employees(EmployeeId, NAME , DEPT , SALARY ) VALUES (102, "SURESH" , "CS" , 70000);
+INSERT INTO employees(EmployeeId, NAME , DEPT , SALARY ) VALUES (103, "NISHANT" , "CS" , 80000);
+INSERT INTO employees(EmployeeId, NAME , DEPT , SALARY ) VALUES (104, "RAMESH" , "CS" , 90000);
+INSERT INTO employees(EmployeeId, NAME , DEPT , SALARY ) VALUES (105, "RAMESH" , "CS" , 100000);
+
+
+//Write a SQL query to retrieve all columns from the employees table.
+
+SELECT * FROM employees;
+
+
+
