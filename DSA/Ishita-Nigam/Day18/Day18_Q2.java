@@ -1,5 +1,4 @@
 import java.util.*;
-
 class HuffmanNode {
     char data;
     HuffmanNode left;
