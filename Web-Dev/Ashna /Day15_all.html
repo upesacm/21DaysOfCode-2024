@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker, Like Button, Traffic Light</title>
+    <style>
+        .traffic-light {
+            display: flex;
+            flex-direction: column;
+            width: 50px;
+            margin-bottom: 20px;
+        }
+        .light {
+            width: 50px;
+            height: 50px;
+            margin: 5px 0;
+            border-radius: 50%;
+            background-color: grey;
+            opacity: 0.3;
+        }
+        .light.red {
+            background-color: red;
+            opacity: 1;
+        }
+        .light.yellow {
+            background-color: yellow;
+            opacity: 1;
+        }
+        .light.green {
+            background-color: green;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Button Clicker</h1>
+    <button id="button-clicker">Click me</button>
+    <br><br>
+
+    <h1>Like Button</h1>
+    <div>
+        <button id="like-button">Like</button>
+        <span id="like-count"> 0</span>
+    </div>
+    <br><br>
+
+    <h1>Traffic Light</h1>
+    <div>
+        <div class="traffic-light">
+            <div id="red-light" class="light"></div>
+            <div id="yellow-light" class="light"></div>
+            <div id="green-light" class="light"></div>
+        </div>
+        <button id="change-light-button">Change Light</button>
+    </div>
+
+    <script>
+        // Button Clicker
+        const buttonClicker = document.getElementById('button-clicker');
+        buttonClicker.addEventListener('click', () => {
+            buttonClicker.textContent = 'Clicked!';
+        });
+
+        // Like Button
+        const likeButton = document.getElementById('like-button');
+        const likeCount = document.getElementById('like-count');
+        likeButton.addEventListener('click', () => {
+            let count = parseInt(likeCount.textContent);
+            likeCount.textContent = ` ${++count}`;
+        });
+
+        // Traffic Light
+        let currentLight = 'Red';
+        const redLight = document.getElementById('red-light');
+        const yellowLight = document.getElementById('yellow-light');
+        const greenLight = document.getElementById('green-light');
+        const changeLightButton = document.getElementById('change-light-button');
+
+        const updateTrafficLight = () => {
+            redLight.classList.remove('red');
+            yellowLight.classList.remove('yellow');
+            greenLight.classList.remove('green');
+            switch (currentLight) {
+                case 'Red':
+                    redLight.classList.add('red');
+                    break;
+                case 'Yellow':
+                    yellowLight.classList.add('yellow');
+                    break;
+                case 'Green':
+                    greenLight.classList.add('green');
+                    break;
+            }
+        };
+
+        changeLightButton.addEventListener('click', () => {
+            switch (currentLight) {
+                case 'Red':
+                    currentLight = 'Green';
+                    break;
+                case 'Green':
+                    currentLight = 'Yellow';
+                    break;
+                case 'Yellow':
+                    currentLight = 'Red';
+                    break;
+            }
+            updateTrafficLight();
+        });
+
+        // Initialize the traffic light
+        updateTrafficLight();
+    </script>
+</body>
+</html>
