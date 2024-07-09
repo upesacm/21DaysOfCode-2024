@@ -1,44 +1,70 @@
-# Questions for Day 18 – (07/08/2024)
+# Questions for Day 19 – (07/09/2024)
 ## DSA:
 **Question 1:** 
-Write a function to return the top view of a binary tree, which is the set of nodes visible when the tree is viewed from above.
+Given an undirected graph, find the shortest reach (in terms of the number of edges) from a starting node to all other nodes using Breadth-First Search (BFS).
 ##### Inputs:
-- The root node of the binary tree.
+- The number of nodes and edges in the graph.
+- A list of edges.
+- The starting node.
 ##### Output:
-- The values of the nodes in the top view.
-##### Example:
-# Binary Tree:
-```
-       1
-      / \
-     2   3
-    / \ / \
-   4  5 6  7
- ```
-#### Output: [4, 2, 1, 3, 7]
+- The shortest reach to each node from the starting node.
 <br>
 
 **Question 2:** 
-Given a Huffman tree and a binary string, decode the string into the original text.
+Implement a function to perform a Depth-First Search (DFS) on a graph.
 ##### Inputs:
-- The root node of the Huffman tree.
-- A binary string.
+- The number of nodes and edges in the graph.
+- A list of edges.
+- The starting node.
 ##### Output:
-- The decoded text.
-##### Example:
-```
-Huffman Tree: {(A: 3), (B: 1), (C: 1)}
-Binary String: "1001011"
-```
-#### Output: "ABCA"
+- The nodes visited in DFS order.
 <br>
 
 ## WEB-DEV:
-Today, we will work on SQL queries to manipulate and retrieve data from the employees table.
-1. Write a SQL query to retrieve all columns from the employees table.
-2. Write a SQL query to retrieve the names of employees who have a salary greater than $50,000, sorted in descending order by salary.
-3. Write a SQL query to calculate the average salary of all employees.
-4. Write a SQL query to insert a new employee into the employees table with the following details: emp_id as 106, emp_name as 'John Doe', salary as $60,000, and dept_id as 3.
-5. Write a SQL query to update the salary of an employee with emp_id 101 to $65,000 in the employees table.
+Today, we will work on SQL queries involving table joins and data manipulation in the employees and departments tables.
+
+### Notes:
+1. **Create the employees table:**
+```sql
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    emp_name VARCHAR(100) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL,
+    dept_id INT NOT NULL
+);
+```
+
+2. **Insert dummy data into employees table:**
+```sql
+INSERT INTO employees (emp_name, salary, dept_id) VALUES
+('Alice Johnson', 60000.00, 1),
+('Bob Smith', 55000.00, 2),
+('Charlie Brown', 70000.00, 1),
+('Diana Lee', 65000.00, 3),
+('Eve Wang', 58000.00, 2);
+```
+
+3. **Create departments table for joining example:**
+```sql
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100) NOT NULL
+);
+```
+
+4. **Insert dummy data into departments table:**
+```sql
+INSERT INTO departments (dept_id, dept_name) VALUES
+(1, 'Engineering'),
+(2, 'Marketing'),
+(3, 'Finance');
+```
+
+### Tasks:
+1. Write a SQL query to insert a new department into the departments table only if the department with dept_id = 4 does not already exist.
+2. Write a SQL query to retrieve the total salary expenses for each department from the employees table, joined with the departments table.
+3. Update the salary of all employees in the employees table who belong to the 'Engineering' department by increasing their salary by 5%.
+4. Write a SQL statement to delete the employees table from the database.
+5. Write a SQL statement to drop the ACM21DOC database.
 
 Submit all the queries performed in a .txt file
