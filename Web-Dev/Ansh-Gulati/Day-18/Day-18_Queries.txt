@@ -1,0 +1,32 @@
+-- Database Creation
+CREATE DATABASE Day_18_Of_Code;
+use Day_18_Of_Code;
+
+
+-- Insertion of Dummy Values
+INSERT INTO employees (emp_id, emp_name, salary, dept_id) VALUES
+    (101, "Ansh Gulati", 55000, 1),
+    (102, "Mridul Singh", 48000, 2),
+    (103, "Kriti Aggarwal", 62000, 1),
+    (104, "Hunny Singh", 71000, 3),
+    (105, "Vansh Kamboj", 53000, 2);
+
+
+-- Exercise - 1
+SELECT * FROM employees;
+
+
+-- Exercise - 2
+SELECT emp_name FROM employees WHERE salary > 50000 ORDER BY salary DESC;
+
+
+-- Exercise - 3
+SELECT AVG(salary) AS average_salary FROM employees;
+
+
+-- Exercise - 4
+INSERT INTO employees (emp_id, emp_name, salary, dept_id) VALUES (106, "Rabir Kapoor", 60000, 3);
+
+
+-- Exercise - 5
+UPDATE employees SET salary = 65000 WHERE emp_id = 101;
