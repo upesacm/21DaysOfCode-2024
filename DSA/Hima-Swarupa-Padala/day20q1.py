@@ -24,3 +24,6 @@ def can_be_colored(vertices, edges):
 vertices = 4
 edges = [(1, 2), (1, 3), (2, 4), (3, 4)]
 print(can_be_colored(vertices, edges)) 
+
+
+
