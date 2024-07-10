@@ -1,70 +1,54 @@
-# Questions for Day 19 – (07/09/2024)
+# Questions for Day 20 – (07/10/2024)
 ## DSA:
 **Question 1:** 
-Given an undirected graph, find the shortest reach (in terms of the number of edges) from a starting node to all other nodes using Breadth-First Search (BFS).
+Given an undirected graph, determine if it is possible to color the vertices of the graph using at most 2 colors such that no two adjacent vertices share the same color.
 ##### Inputs:
-- The number of nodes and edges in the graph.
+- The number of vertices and edges in the graph.
 - A list of edges.
-- The starting node.
 ##### Output:
-- The shortest reach to each node from the starting node.
+- "YES" if the graph can be colored using 2 colors, otherwise "NO".
+##### Example:
+#### Graph:
+```
+  1 -- 2
+  |    |
+  3 -- 4
+```
+#### Vertices: 4
+#### Edges: [(1, 2), (1, 3), (2, 4), (3, 4)]
+#### Output: YES
 <br>
 
 **Question 2:** 
-Implement a function to perform a Depth-First Search (DFS) on a graph.
+Implement Dijkstra's algorithm to find the shortest path from a starting node to all other nodes in a weighted graph.
 ##### Inputs:
-- The number of nodes and edges in the graph.
-- A list of edges.
+- The number of vertices and edges in the graph.
+- A list of edges with their weights.
 - The starting node.
 ##### Output:
-- The nodes visited in DFS order.
+- The shortest path distance to each node from the starting node.
+##### Example:
+#### Graph:
+```
+  1 --(4)-- 2
+  |        / |
+ (1)     (2) |
+  |   (3)    |
+  3 -------- 4
+```
+#### Vertices: 4
+#### Edges: [(1, 2, 4), (1, 3, 1), (2, 4, 2), (3, 4, 3)]
+#### Start: 1
+#### Output: [0, 4, 1, 4]
 <br>
 
 ## WEB-DEV:
-Today, we will work on SQL queries involving table joins and data manipulation in the employees and departments tables.
-
-### Notes:
-1. **Create the employees table:**
-```sql
-CREATE TABLE employees (
-    emp_id INT AUTO_INCREMENT PRIMARY KEY,
-    emp_name VARCHAR(100) NOT NULL,
-    salary DECIMAL(10, 2) NOT NULL,
-    dept_id INT NOT NULL
-);
-```
-
-2. **Insert dummy data into employees table:**
-```sql
-INSERT INTO employees (emp_name, salary, dept_id) VALUES
-('Alice Johnson', 60000.00, 1),
-('Bob Smith', 55000.00, 2),
-('Charlie Brown', 70000.00, 1),
-('Diana Lee', 65000.00, 3),
-('Eve Wang', 58000.00, 2);
-```
-
-3. **Create departments table for joining example:**
-```sql
-CREATE TABLE departments (
-    dept_id INT PRIMARY KEY,
-    dept_name VARCHAR(100) NOT NULL
-);
-```
-
-4. **Insert dummy data into departments table:**
-```sql
-INSERT INTO departments (dept_id, dept_name) VALUES
-(1, 'Engineering'),
-(2, 'Marketing'),
-(3, 'Finance');
-```
+Today, we will continue working on SQL queries to manipulate and retrieve data from the employees and departments tables.
 
 ### Tasks:
-1. Write a SQL query to insert a new department into the departments table only if the department with dept_id = 4 does not already exist.
-2. Write a SQL query to retrieve the total salary expenses for each department from the employees table, joined with the departments table.
-3. Update the salary of all employees in the employees table who belong to the 'Engineering' department by increasing their salary by 5%.
-4. Write a SQL statement to delete the employees table from the database.
-5. Write a SQL statement to drop the ACM21DOC database.
+1. Write a SQL query to retrieve the names of employees and their corresponding department names.
+2. Write a SQL query to calculate the total number of employees in each department.
+3. Write a SQL query to retrieve the names of employees who have a salary greater than the average salary of the employees in their department.
+4. Write a SQL query to delete all employees who belong to the 'Marketing' department from the employees table.
 
-Submit all the queries performed in a .txt file
+Submit all the queries performed in a .txt file.
