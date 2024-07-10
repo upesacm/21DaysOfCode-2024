@@ -84,4 +84,5 @@ public class Q1 {
         }
         return findNode(root.right, val);
     }
+    scanner.close();
 }
