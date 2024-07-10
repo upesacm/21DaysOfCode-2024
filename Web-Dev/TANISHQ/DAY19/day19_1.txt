@@ -1,0 +1,38 @@
+CREATE TABLE employees (
+    emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    emp_name VARCHAR(100) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL,
+    dept_id INT NOT NULL
+);
+
+Insert dummy data into employees table:
+
+INSERT INTO employees (emp_name, salary, dept_id) VALUES
+('Alice Johnson', 60000.00, 1),
+('Bob Smith', 55000.00, 2),
+('Charlie Brown', 70000.00, 1),
+('Diana Lee', 65000.00, 3),
+('Eve Wang', 58000.00, 2);
+
+Create departments table for joining example:
+
+CREATE TABLE departments (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(100) NOT NULL
+);
+
+Insert dummy data into departments table:
+INSERT INTO departments (dept_id, dept_name) VALUES
+(1, 'Engineering'),
+(2, 'Marketing'),
+(3, 'Finance');
+
+QUESTION 1
+
+INSERT INTO departments(dept_id,dept_name)
+SELECT 4, 'New departments'
+WHERE NOT EXIST (
+    SELECT 1
+    FROM departments
+    WHERE dept_id=4
+)
