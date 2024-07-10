@@ -1,0 +1,23 @@
+--question1
+INSERT INTO departments (dept_id, dept_name)
+SELECT 4, 'Human Resources'
+WHERE NOT EXISTS (SELECT 1 FROM departments WHERE dept_id = 4);
+
+--question2
+SELECT d.dept_name, SUM(e.salary) AS total_salary_expense
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+GROUP BY d.dept_name;
+
+--question3
+UPDATE employees e
+JOIN departments d ON e.dept_id = d.dept_id
+SET e.salary = e.salary * 1.05
+WHERE d.dept_name = 'Engineering';
+
+--question4
+DROP TABLE employees;
+
+--question5
+DROP DATABASE ACM21DOC;
+
