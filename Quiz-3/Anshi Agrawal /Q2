@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Calculate Sum:</h2>
+    <button onclick="
+    sum =sum+2;
+    console.log(`Sum:${sum}`);"
+    >+2</button>
+    <button onclick="
+    sum =sum+3;
+    console.log(`Sum:${sum}`);"
+    >+3</button>
+    <button onclick="
+    sum =sum+4;
+    console.log(`Sum:${sum}`);"
+    >+4</button>
+    <button onclick="
+    sum =sum+5;
+    console.log(`Sum:${sum}`);"
+    >+5</button>
+    <button onclick="
+    sum --;
+    console.log(`Sum:${sum}`);"
+    >-1</button>
+    <button onclick="
+    sum =sum-2;
+    console.log(`Sum:${sum}`);"
+    >-2</button>
+    <button onclick="
+    sum =sum-3;
+    console.log(`Sum:${sum}`);"
+    >-3</button>
+    <button
+    onclick="
+    sum = 0;
+    console.log(`Reset\nSum:${sum}`);">Reset</button>
+    <script>
+        let sum=0;
+        console.log(`Initial Sum:${sum}`);
+    </script>
+</body>
+</html>
