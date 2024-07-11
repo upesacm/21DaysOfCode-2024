@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body 
+        {
+            font-family:Arial, Helvetica, sans-serif; 
+        }
+        button {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="upd(2)">+2</button>
+        <button onclick="upd(3)">+3</button>
+        <button onclick="upd(4)">+4</button>
+        <button onclick="upd(5)">+5</button>
+        <button onclick="upd(-1)">-1</button>
+        <button onclick="upd(-2)">-2</button>
+        <button onclick="upd(-3)">-3</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <div>
+        <br>
+        <p>Sum: <span id="sum">0</span></p>
+    </div>
+
+    <script>
+        let cursum = 0
+        function upd(val) 
+        {
+            cursum += val
+            document.getElementById('sum').textContent= cursum
+        }
+        function reset() {
+            cursum = 0
+            document.getElementById('sum').textContent= cursum
+        }
+    </script>
+</body>
+</html>
