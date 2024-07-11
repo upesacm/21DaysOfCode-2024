@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+
+    <script>
+        alert("Abhijit Goenka");
+        console.log(10+5-2);
+        document.body.innerHTML="Abhijit Goenka";
+    </script>
+
+    
+<h1>Welcome to Resturant</h1>
+<div class="order" id="bill1">
+    <h2>Table 1</h2>
+    <p>1 Soup: $10</p>
+    <p>3 Burgers: $8 each</p>
+    <p>1 Ice Cream: $5</p>
+    <p>Total Cost: <span id="total1"></span></p>
+</div>
+
+
+<script>
+    const soupPrice1 = 10;
+    const burgerPrice = 8;
+    const iceCreamPrice = 5;
+    const totalOrder1 = soupPrice1 + (burgerPrice * 3) + iceCreamPrice;
+    document.getElementById('total1').innerText = `$${totalOrder1}`;
+
+    
+</script>
+
+<div class="order2" id="bill2">
+    <h2>Table 2</h2>
+    <p>1 coffe: $10</p>
+    <p>2 bagels: $3 each</p>
+    <p>1 soup: $9</p>
+    <p>Toatal Bill: <span id="total2"></span></p>
+</div>
+<script>
+    const coff = 5;
+    const bagelprice = 3;
+    const soupprice = 9;
+    const totalBill2= coff + (bagelprice * 2) + soupprice;
+    const cost=totalBill2;
+    document.getElementById('total2').innerText = `$${cost}`;
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>

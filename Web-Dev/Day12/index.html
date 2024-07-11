@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+  </head>
+  <body>
+    <script>
+        // Q1
+      let today = dayjs()
+      let fudate = today.add(5, "day");
+      let frdate = fudate.format("MMMM D")
+      console.log(frdate)
+
+      // Q2
+      let fumonth = today.add(1,"month")
+      let frmonth = fumonth.format("MMMM D")
+      console.log(frmonth)
+
+
+      // Q3
+      let pmonth = today.subtract(1,"month")
+      let frpmonth = pmonth.format("MMMM D")
+      console.log(frpmonth)
+
+      // Q4
+      const dow= today.format('dddd')
+        console.log(dow) 
+
+    //   Q5
+      function weekend(date)
+      {
+        if(date.day === 6 || date.day === 7)
+        {
+            console.log('WEEKEND')
+        }
+        console.log('WEEKDAY')
+      }
+      weekend(today)
+
+    </script>
+  </body>
+</html>

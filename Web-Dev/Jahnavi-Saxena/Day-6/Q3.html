@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q3</title>
+        <style>
+            .sidebar{
+                position:fixed;
+                bottom:0px;
+                right:0px;
+                width:100px;
+                color:white;
+                top:0px;
+                background-color:green;
+            }
+            .overlay{
+                background-color:rgba(0,0,0,0.8);
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                position:fixed;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+            }
+            .modal{
+                background-color:white;
+                width:400px;
+                padding-inline-start:15px;
+                padding-block:15px;
+                border-radius:5px;
+            }
+            .title{
+                font-size:40px;
+                font-weight:bold;
+                font-family:Arial;
+            }
+            .content{
+                margin-top:8px;
+                font-size:20px;
+                margin-bottom:8px;
+                font-family:Arial;
+            }
+            button{
+                margin-bottom:8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sidebar">
+<            rigth-sidebar
+        </div>
+
+        <div class="overlay">
+            <div class="modal">
+                <div class="title">Modal Title</div>
+                <div class="content">This is a modal</div>
+                <button>Close</button>
+            </div>
+        </div>
+    </body>
+</html>

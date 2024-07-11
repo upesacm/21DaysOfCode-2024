@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Day 3</title>
+        <style>
+            .b1:hover{
+                background-color: blue;
+            }
+            .b2:hover{
+                background-color: rgb(182, 182, 249);
+            }
+            .b3:hover{
+                background-color: rgb(194, 136, 248);
+            }
+            .b4:hover{
+                background-color: rgb(108,117,125);
+                color: white;
+            }
+            .a:hover{
+                background-color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="b1" style="background-color: rgb(10,102,194); border-radius: 15px; color: white">Apply on company website</button>
+        <button class="b2" style="background-color: white; color: rgb(10,102,194); border: solid  rgb(10,102,194); border-radius: 15px;">Save</button><br><br> 
+        <button class="b3" style="background-color: rgb(121,82,179); color: white; border-radius: 4 px;">Get started</button>
+        <button class="b4" style="background-color: white; color: rgb(108,117,125); border-radius: 4px; border: solid  rgb(108,117,125)">Download</button><br><br>
+        <a href="  ">Back to Amazon</a>
+        <h2><b>Nike Black Running Shoes</b></h2>
+        <p style="color: green;">$39 - in stock.</p>
+        <p>Free delivery tomorrow</p>
+        <button class="b5" style="background-color: yellow; border-radius: 15px;">Add to Cart</button>
+        <button class="b6" style="background-color: orange; border-radius: 15px;">Buy now</button>   
+    </body>
+    <script>
+        const button5= document.querySelector('.b5');
+            button5.addEventListener('click',() => {
+                button5.style.backgroundColor = "rgb(248, 248, 160)";
+            });
+        const button6= document.querySelector('.b6');
+            button6.addEventListener('click',() => {
+                button6.style.backgroundColor = "rgb(243, 212, 155)";
+            });
+    </script>
+</html>

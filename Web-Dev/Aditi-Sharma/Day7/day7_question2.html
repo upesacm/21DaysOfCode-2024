@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Box</title>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgb(67, 67, 67) ;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.learn-more {
+    color: #3ea6ff;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.button {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(132, 132, 132);
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <p class="title">Your watch history is off</p>
+        <p class="message">You can change your setting at any time to get the latest videos tailored to you. <a href="#" class="learn-more">Learn more</a></p>
+        <button class="button">Update setting</button>
+    </div>
+</body>
+</html>

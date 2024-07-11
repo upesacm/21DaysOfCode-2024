@@ -1,0 +1,70 @@
+.Request{
+    background-color: #000000; /* Green */
+    color: #ffffff;
+    width: 150px;
+    height: 50px;
+}
+
+.AddCart{
+    background-color: rgb(255,216,20);
+    width: 280px;
+    height: 60px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 30px;
+}
+.container-1{
+    display: flex;
+    gap: 30px;
+}
+.AddCompany{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(10,102,194);
+    border-radius: 40px;
+    font-size: 20px;
+}
+.Save{
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    color: rgb(10,102,194) ;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgb(10,102,194); /* Green */
+    border-radius: 40px;
+}
+.GetStarted{
+    width: 180px;
+    height: 60px;
+    background-color: rgb(121,82,179) ;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Download{
+    width: 180px;
+    height: 60px;
+    border: 2px solid rgb(108,117,125) ;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: rgb(108,117,125);
+}
+.AddCart2{
+    background-color: rgb(255,216,20);
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 14px;
+}
+.BuyNow{
+    background-color: orange;
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    color: rgb(0, 0, 0);   
+    font-size: 14px;
+}

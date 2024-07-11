@@ -1,0 +1,22 @@
+body{
+    height: 90rem;
+}
+p{
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+.fixed{
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 20;
+    margin-bottom: 20;
+    background-color: #000000;
+    color: white;
+    font-size: 30px;
+    text-align: end;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

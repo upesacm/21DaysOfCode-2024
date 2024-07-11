@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Question-1</title>
+        <style>
+            div{
+                border:2px solid black;
+                height:180px;
+                width:500px;
+            }
+            img{
+                position:relative;
+                margin-left:150px;
+                margin-top:20px;
+            }
+            input{
+                width:350px;
+                height:40px;
+                border-radius:20px;
+                margin-left:80px;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="google.png">
+            <br>
+            <input type="text" placeholder="    Search Google ot type a URL">
+        </div>
+    </body>
+</html>

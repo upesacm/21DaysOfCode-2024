@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.stk{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: inline;
+    z-index: 1;
+}
+.d2{
+    background-color: rgb(132, 193, 41);
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    height:800px;
+    color: white;
+}

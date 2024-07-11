@@ -1,6 +1,6 @@
 public class Q2 {
 
-    public static int Solution(int k, int[] arr) {
+    public static int solution(int k, int[] arr) {
         int count = 0;
 
         for (int i = 0; i < arr.length; i++) {
@@ -18,7 +18,7 @@ public class Q2 {
         int k = 3;
         int[] arr ={1, 3, 2, 6, 1, 2};
 
-        int result = Solution(k, arr);
+        int result = solution(k, arr);
         System.out.println(result);
     }
 }

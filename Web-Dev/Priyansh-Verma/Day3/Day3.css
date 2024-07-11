@@ -1,0 +1,90 @@
+.button{
+    margin: 2.5px;
+    text-align: center;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: rgb(10,92,184);
+}
+#btn2:hover{
+    background-color: rgba(10, 102, 194, 0.089);
+    border-width: 2.5px;
+}
+#btn3:hover{
+    background-color: rgb(91,42,139);
+}
+#btn4:hover{
+    background-color:rgb(108,117,125);
+    color: white;
+}
+#btn5:hover{
+    background-color: rgb(235,196,00);
+}
+#btn6:hover{
+    background-color: rgb(235, 146,00);
+}
+#btn5:active,#btn6:active{
+    opacity: 0.5;
+}
+#btn1{
+    background-color:rgb(10,102,194);
+    border: 1px solid rgb(10,102,194);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    padding:11px 22px;
+    }
+#btn2{
+    border: 1px solid rgb(10,102,194);
+    color: rgb(10,102,194);
+    background-color: white;
+    border-radius: 25px;
+    padding:9px 22px;
+    font-weight: bold;
+}
+#btn3{
+    background-color: rgb(121,82,179);
+    border-color: rgb(121,82,179);
+    color: white;
+    padding:11px 22px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    width: 115px;
+}
+#btn4{
+    color: rgb(108,117,125);
+    border: 1px solid rgb(108,117,125);
+    border-radius: 4px;
+    padding:11px 22px;
+    background-color: white;
+    font-weight: bold;
+    width: 115px;
+}
+#btn5{
+    background-color: rgb(255,216,20);
+    border-radius: 24px;
+    border: none;
+    display: inline-block;
+    padding: 8px;
+    width: 120px;
+}
+#btn6{
+    background-color: rgb(255, 166, 0);
+    border-radius: 24px;
+    border: none;
+    display: inline-block;
+    padding: 8px;
+    width: 120px;
+}
+#link:hover{
+    color: orange;
+}
+.product{
+    font-size: x-large;
+    font-weight: bold;
+}
+.info{
+    color: rgb(9, 140, 9);
+    font-weight: bold;
+}

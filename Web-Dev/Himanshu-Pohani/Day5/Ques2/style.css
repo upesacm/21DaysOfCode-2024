@@ -1,0 +1,14 @@
+.flexbox{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+ 
+}
+.items{
+  background-color: rgba(246, 150, 150, 0.694);
+  
+  padding: 10px;
+  font-size: 30px;
+  
+}

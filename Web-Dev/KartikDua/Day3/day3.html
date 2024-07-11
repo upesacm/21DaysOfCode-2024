@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartik Dua Day3</title>
+    <link rel="stylesheet" href="day3.css">
+</head>
+<body>
+    </br></br>
+    <!-- Q3. -->
+    <button class="button-dark">Apply on company website</button>
+    <button class="button-light">Save</button>
+    </br></br>
+    <!-- Q4. -->
+    <button class="button-start">Get started</button>
+    <button class="button-download">Download</button>
+    </br></br>
+    <!-- Q5. -->
+    <a href="https://amazon.com" class="amazon-link" type="text/html">Back to Amazon</a>
+    <h1>
+        <b>Nike Black Running Shoes</b>
+    </h1>
+    <div style="color:green;">
+       <b><h3>
+        $39-in stock</h3>
+       </b>
+    </div>
+    <div>Free delivery tomorrow.</div>
+    <button class="add-to-cart" onclick="handleButtonClick(this)">Add to Cart</button>
+    <button class="buy-now" onclick="handleButtonClick(this)">Buy Now</button>
+    <script>
+        function handleButtonClick(button) {
+            button.classList.add('clicked');
+            setTimeout(function() {
+                button.classList.remove('clicked');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

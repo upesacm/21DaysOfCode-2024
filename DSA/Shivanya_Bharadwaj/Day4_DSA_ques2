@@ -1,0 +1,24 @@
+from collections import Counter
+
+def is_valid_string(s):
+    char_count = Counter(s)
+    freq_count = Counter(char_count.values())
+    
+    if len(freq_count) == 1:
+        return "valid"
+    
+    elif len(freq_count) == 2:
+        freq1, freq2 = freq_count.keys()
+        count1, count2 = freq_count.values()
+        
+        if (freq1 == 1 and count1 == 1) or (freq2 == 1 and count2 == 1):
+            return "valid"
+        
+        if (abs(freq1 - freq2) == 1) and ((freq1 > freq2 and count1 == 1) or (freq2 > freq1 and count2 == 1)):
+            return "valid"
+    
+    return "invalid"
+
+# Example usage
+string = input("Enter the string: ")
+print(is_valid_string(string))

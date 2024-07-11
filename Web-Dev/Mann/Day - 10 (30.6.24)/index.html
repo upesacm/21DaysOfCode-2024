@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> .para3{
+        display: none;
+    } </style>
+</head>
+<body>
+    <!-- 1st question -->
+    <button id = "btn">Hello</button>
+    <!-- 2nd question -->
+    <button id="btn2">Hello</button><hr>
+    <!-- 3rd question -->
+    <button id = "tails">Tails</button>
+    <button id = "heads">Heads</button><br>
+    <p class = "para"></p> <hr>
+    <!-- 4th question -->
+    <input id="search" type="text" > <button id="btn5" type="submit">Submit</button>
+    <p > Your name is : <span id ="para2"></span> </p>
+    <hr>
+    <!-- 5th question -->
+     <p class="para3" >HI ACM</p>
+     <button id="btn6">Show</button>
+    <script>
+        let btn = document.querySelector('#btn')
+        console.log(btn);
+        document.querySelector('#btn2').textContent = 'Hello!';
+        let para = document.querySelector('.para')
+        let heads = document.querySelector('#heads')
+        let tails = document.querySelector('#tails')
+        heads.addEventListener('click',()=>{
+            para.textContent = 'You chose: Heads'
+        })
+        tails.addEventListener('click',()=>{
+            para.textContent = 'You chose: Tails'
+        })
+        let btn5 = document.querySelector('#btn5')
+        let para2 = document.querySelector('#para2')
+
+        btn5.addEventListener('click',()=>{
+            let search = document.querySelector('#search').value
+            para2.textContent = search;
+        })
+        let btn6 = document.querySelector('#btn6')
+        let para3 = document.querySelector('.para3')
+        btn6.addEventListener('click',()=>{
+            para3.style.display = 'block';
+        })
+
+
+    </script>
+</body>
+</html>

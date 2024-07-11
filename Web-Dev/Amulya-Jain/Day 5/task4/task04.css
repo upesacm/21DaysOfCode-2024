@@ -1,0 +1,41 @@
+section {
+    border: solid grey 1px;
+    border-radius: 20px;
+    height: 120px;
+    width: 250px;
+}
+
+ul {
+    padding: 5%;
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+.item1 {
+    gap: 65%;
+}
+
+.item2 {
+    gap: 46%;
+}
+
+.item3 {
+    gap: 52%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    border: solid black 0.5px;
+    border-radius: 100px;
+    width: 30px;
+    color: white;
+    background-color: rgb(65,108,236);
+}

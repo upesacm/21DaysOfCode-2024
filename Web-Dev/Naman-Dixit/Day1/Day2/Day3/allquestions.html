@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .Applyoncompanywebsite {
+            background-color: rgb(10, 102, 194); /* Blue background */
+            color: white; /* White text */
+            padding: 10px 15px; /* Padding for the button */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Inline block element */
+            font-size: 16px; /* Text size */
+            margin: 4px 2px; /* Margin around the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border: none;
+            border-radius: 22px; /* Rounded corners */
+            transition: all 0.2s ease-in-out; /* Add transition for animations */
+        }
+
+        .Applyoncompanywebsite:hover {
+            background-color: rgb(7, 71, 135); /* Darker blue on hover */
+        }
+
+        .Applyoncompanywebsite:active {
+            background-color: rgb(5, 51, 96); /* Even darker blue on click */
+            transform: scale(0.95); /* Scale down slightly on click */
+        }
+
+        .spacer {
+            display: inline-block;
+            width: 10px; /* Add width for spacing */
+        }
+
+        .save {
+            background-color: white; /* White background */
+            color: rgb(10, 102, 194); /* Blue text */
+            padding: 10px 15px; /* Padding for the button */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Inline block element */
+            font-size: 16px; /* Text size */
+            margin: 4px 2px; /* Margin around the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border: 1px solid rgb(10, 102, 194); /* Blue border */
+            border-radius: 22px; /* Rounded corners */
+            transition: all 0.2s ease-in-out; /* Add transition for animations */
+        }
+
+        .save:hover {
+            background-color: rgb(80, 164, 219); /* Lighter blue on hover */
+            border-color: rgb(80, 164, 219); /* Change border color on hover */
+        }
+
+        .save:active {
+            background-color: rgb(51, 134, 179); /* Darker blue on click */
+            border-color: rgb(51, 134, 179); /* Change border color on click */
+            transform: scale(0.95); /* Scale down slightly on click */
+        }
+
+        .button {
+            /* Default button styles */
+            background-color: rgb(89, 89, 242);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer; /* Change cursor on hover */
+            transition: all 0.2s ease-in-out; /* Smooth transition for animations */
+        }
+
+        .button:hover {
+            background-color: rgb(67, 67, 182); /* Darker blue on hover */
+        }
+
+        .button:active {
+            background-color: rgb(48, 48, 130); /* Even darker blue on click */
+            transform: scale(0.95); /* Scale down slightly on click */
+        }
+
+        .download {
+            background-color: white; /* White background */
+            color: rgb(108, 117, 125); /* Gray text */
+            padding: 13px 22px; /* Padding for the button */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Inline block element */
+            font-size: 16px; /* Text size */
+            margin: 4px 2px; /* Margin around the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border: 1px solid rgb(108, 117, 125); /* Gray border */
+            border-radius: 8px; /* Rounded corners */
+            transition: all 0.2s ease-in-out; /* Add transition for animations */
+        }
+
+        .download:hover {
+            background-color: rgb(81, 88, 94); /* Darker gray on hover */
+            border-color: rgb(81, 88, 94); /* Change border color on hover */
+        }
+
+        .download:active {
+            background-color: rgb(54, 58, 63); /* Even darker gray on click */
+            border-color: rgb(54, 58, 63); /* Change border color on click */
+            transform: scale(0.95); /* Scale down slightly on click */
+        }
+
+        
+        .but1 {
+  background-color: rgb(255, 216, 20); /* Orange background */
+  color: black; /* Black text */
+  padding: 10px 15px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block element */
+  font-size: 16px; /* Text size */
+  margin: 4px 2px; /* Margin around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none;
+  border-radius: 22px; /* Rounded corners */
+  transition: all 0.2s ease-in-out; /* Smooth transition for animations */
+}
+
+
+.but1:active {
+    background-color: rgb(306, 259, 24) ;
+  transform: scale(0.95); /* Scale down slightly on click */
+}
+
+.but2 {
+  background-color: #eea907; /* Dark green background */
+  color: black; /* Black text */
+  padding: 10px 22px; /* Padding for the button */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block element */
+  font-size: 16px; /* Text size */
+  margin: 4px 2px; /* Margin around the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  border: none;
+  border-radius: 22px; /* Rounded corners */
+  transition: all 0.2s ease-in-out; /* Smooth transition for animations */
+}
+
+.but2:active {
+    background-color: rgb(286, 203, 8) ;
+  transform: scale(0.95); /* Scale down slightly on click */
+}
+
+
+    </style>
+</head>
+<body>
+    <button class="Applyoncompanywebsite">Apply on Company Website</button>
+    <div class="spacer"></div>
+    <button class="save">Save</button>
+
+    <br><br>
+    <button class="button">Get started</button>
+    <div class="spacer"></div>
+    <button class="download">Download</button>
+    <br><br>
+
+    <a href="https://www.amazon.com/sspa/click?ie=UTF8&spc=MTozODc5NjIwNjAzMzMwMjczOjE3MTg5NTY1MTE6c3BfbXRmOjMwMDIwOTYzODczODAwMjo6MDo6&url=%2FPoramea-Laceless-Sneakers-Running-Gradient%2Fdp%2FB0BWYFLJHC%2Fref%3Dsr_1_13_sspa%3Fcrid%3D1GLLRDI565N1N%26dib%3DeyJ2IjoiMSJ9.l84R9i0lByuHgNKEb0y7M7zV8SxzOYdVplx2jc3z0aZF3nq2pie2y8CzI88P1P8WXd7fqe3YhMZEqFH3SMwVbvCXMlFYGHWSN26riNfKe4cj5YrffEFNAIimsNzl8b54EwRQEnm8ot8ZPNYrv-X-E5J1RPJ9BgZlpy4PDcuJkwNNXBtlXwuN5bY09U7lsxBVeEr36YRHBlEIaBfqU2nPXMVY0V8ggJEJEy5wtkjDalaWIFUUuaXBVVyJmYk19fWjlt1fS0x_Mn8A4prQ9Dk3FcTg-XjLQWr_ouNVpuSfrHU.nnwCsHX8KJUc-e3Lybe7f74f7sE4VETcYL62HMSankc%26dib_tag%3Dse%26keywords%3DNIKE%2Brunning%2Bblack%2Bshoes%2Bfor%2Bmen%26qid%3D1718956511%26sprefix%3Dnike%2Brunning%2Bblack%2Bshoes%2Bfor%2Bmen%252Caps%252C279%26sr%3D8-13-spons%26sp_csd%3Dd2lkZ2V0TmFtZT1zcF9tdGY%26psc%3D1" style="color: red;" onmouseover="this.style.color='blue'">Back to amazon</a>
+    <h3>Nike Black Running Shoes</h3>
+<p style="color: green;">$39 - in stock<br></p>
+<p> Free delivery tomorrow</p>
+
+<button class="but1">Add to Cart</button>
+<div class="spacer"></div>
+<button class="but2">Buy now</button>
+</body>
+
+</body>
+</html>

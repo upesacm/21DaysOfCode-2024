@@ -1,0 +1,55 @@
+<!--Yash Gupta 500125397-->
+<!-- Day-6 (26/06/2024)-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100%;
+        background-color: green;
+        color: white;
+        padding: 10px;
+      }
+      body {
+        position: relative;
+      }
+
+      #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #overlay-block{
+        background-color: white;
+        width: 50%;
+        padding: 15px;
+        border-radius: 20px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="overlay-block">
+        <h2>Modal Title</h2>
+        <p>This is a modal</p>
+        <button>Close</button>
+      </div>
+    </div>
+    <div id="sidebar">rightside bar</div>
+  </body>
+</html>

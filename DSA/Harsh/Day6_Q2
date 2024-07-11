@@ -1,0 +1,90 @@
+/*
+
+Question 2:
+Find Merge Point in Linked Lists Determine the node where two singly linked lists merge. Return the value of this node.
+
+Inputs:
+Two singly linked lists.
+Output:
+The value of the merging node.
+Example:
+Linked list 1: 1 -> 2 -> 3
+
+Linked list 2: 4 -> 5 -> 3
+
+Output: 3
+
+ */
+
+public class Day6_Q2 {
+    private static class Node {
+        int value;
+        Node next;
+
+        public Node(int value) {
+            this.value = value;
+            this.next = null;
+        }
+    }
+
+        // Function to find the merge point of two linked lists
+        public static int findMergePoint(Node head1, Node head2) {
+        int len1 = getLength(head1);
+        int len2 = getLength(head2);
+
+        Node longer = len1 >= len2 ? head1 : head2;
+        Node shorter = len1 < len2 ? head1 : head2;
+
+        int difference = Math.abs(len1 - len2);
+
+        // Move the pointer of the longer list by the difference in lengths
+            for (int i = 0; i < difference; i++) {
+                longer = longer.next;
+            }
+
+            // Traverse both lists simultaneously to find the merge point
+            while (longer != null && shorter != null) {
+                if (longer == shorter) {
+                    return longer.value;
+                }
+                longer = longer.next;
+                shorter = shorter.next;
+            }
+
+            return -1;
+        }
+
+        // Function to get the length of a linked list
+        private static int getLength(Node head) {
+            int length = 0;
+            Node current = head;
+            while (current != null) {
+                length++;
+                current = current.next;
+            }
+            return length;
+        }
+
+        public static void main(String[] args) {
+
+            Node mergeNode = new Node(3);
+
+            Node head1 = new Node(1);
+            head1.next = new Node(2);
+            head1.next.next = mergeNode;
+
+            Node head2 = new Node(4);
+            head2.next = new Node(5);
+            head2.next.next = mergeNode;
+
+            mergeNode.next = new Node(6);
+            mergeNode.next.next = new Node(7);
+
+            int mergePointValue = findMergePoint(head1, head2);
+            if (mergePointValue != -1) {
+                System.out.println("The merge point is: " + mergePointValue);
+            } else {
+                System.out.println("There is no merge point.");
+            }
+        }
+}

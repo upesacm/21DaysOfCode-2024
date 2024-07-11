@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+  </head>
+  <body>
+    <h1 id="result"></h1>
+    <script >
+        const resultElement = document.getElementById("result");
+
+function isWeekend(date) {
+  const day = date.format("dddd");
+  return day === "Saturday" || day === "Sunday";
+}
+
+const today = dayjs();
+const isTodayWeekend = isWeekend(today);
+resultElement.innerText = `Is today a weekend? ${isTodayWeekend ? "Yes" : "No"}`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Gulati - Day-10, Q-3</title>
+</head>
+
+<body>
+    <button id="headsButton">Heads</button>
+    <button id="tailsButton">Tails</button>
+    <p id="result"></p>
+
+    <script>
+        document.getElementById('headsButton').addEventListener('click', function () {
+            document.getElementById('result').innerText = 'You chose: heads';
+        });
+
+        document.getElementById('tailsButton').addEventListener('click', function () {
+            document.getElementById('result').innerText = 'You chose: tails';
+        });
+    </script>
+</body>
+
+</html>

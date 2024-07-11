@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+const char* func(int threshold, int t[], int n) 
+{
+    int students = 0;
+    
+
+    for (int i = 0; i < n; i++)
+    {
+        if (t[i] <= 0)
+        {
+            students++;
+        }
+    }
+    
+    
+    if (students < threshold)
+    {
+        return "YES";
+    } 
+    else 
+    {
+        return "NO";
+    }
+}
+
+int main()
+{
+    int threshold, t[n], n;
+    
+   
+    printf("Enter the threshold number of students: ");
+    scanf("%d", &threshold);
+    
+    printf("Enter the number of students: ");
+    scanf("%d", &n);
+    
+    printf("Enter the arrival times of the students: ");
+    
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &t[i]);
+    }
+    
+    printf("%s\n", func(threshold, t, n));
+    
+    return 0;
+}

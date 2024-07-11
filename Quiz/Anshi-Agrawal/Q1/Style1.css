@@ -1,0 +1,31 @@
+body{
+    height: 90rem;
+}
+#navi{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+
+}
+p{
+    font-size: 20px;
+}
+#content{
+    display: inline-block;
+    background-color: aqua;
+    
+}
+#about{
+    align-items: center;
+}
+#contact{
+    display: inline-block;
+
+    align-items: end;
+    bottom: 0;
+    right: 30px;
+
+}

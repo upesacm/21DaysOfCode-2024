@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicated Tweet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f8fa;
+        }
+        .tweet-container {
+            background-color: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 10px;
+            width: 600px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .tweet-header img {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+        }
+        .tweet-header .username {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .tweet-header .handle {
+            color: #657786;
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        .tweet-content {
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .tweet-link {
+            display: flex;
+            align-items: center;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            padding: 8px;
+            max-width: 400px;
+        }
+        .tweet-link img {
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        .tweet-link .link-text {
+            display: flex;
+            flex-direction: column;
+        }
+        .tweet-link .link-text .domain {
+            color: #657786;
+            font-size: 12px;
+        }
+        .tweet-link .link-text .title {
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="tweet-header">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fupesacm%2F&psig=AOvVaw0O12XHn9hsH2O4BXsk1r9W&ust=1720196885475000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJDVn_jmjYcDFQAAAAAdAAAAABAE" alt="UPES ACM Logo">
+            <div>
+                <span class="username">UPESACM</span>
+                <span class="handle">@upesacm</span>
+            </div>
+        </div>
+        <div class="tweet-content">
+            Tired of coding tutorials that leave you lost in a sea of information? Crave a challenge that pushes you to build real-world skills? UPES ACM & ACM-W Student Chapters have your back!
+        </div>
+        <a href="https://konfhub.com" class="tweet-link">
+            <img src="data:image/png;base64,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" alt="Link Icon">
+            <div class="link-text">
+                <span class="domain">konfhub.com</span>
+                <span class="title">The 21DOC challenge</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

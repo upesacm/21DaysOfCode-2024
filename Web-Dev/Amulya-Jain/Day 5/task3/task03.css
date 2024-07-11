@@ -1,0 +1,14 @@
+.box {
+    border: solid rgb(133, 133, 133) 1px;
+}
+
+ul {
+    display: flex;
+    gap: 88%;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: rgb(245,185,194);
+}

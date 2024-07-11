@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DayJS Date Calculations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/advancedFormat.min.js"></script>
+    <script>
+        // Function to get the date 5 days after today and display it in the format '< Month> < Day of Month>'
+        function getFiveDaysAfter() {
+            const fiveDaysAfter = dayjs().add(5, 'day');
+            return fiveDaysAfter.format('MMMM D');
+        }
+
+        // Function to get the date 1 month after today and display it in the format '< Month> < Day of Month>'
+        function getOneMonthAfter() {
+            const oneMonthAfter = dayjs().add(1, 'month');
+            return oneMonthAfter.format('MMMM D');
+        }
+
+        // Function to get the date 1 month before today and display it in the format '< Month> < Day of Month>'
+        function getOneMonthBefore() {
+            const oneMonthBefore = dayjs().subtract(1, 'month');
+            return oneMonthBefore.format('MMMM D');
+        }
+
+        // Function to get a date and display it in the format '< Day of Week>'
+        function getDayOfWeek(date) {
+            return dayjs(date).format('dddd');
+        }
+
+        // Function to check if a given date is a weekend
+        function isWeekend(date) {
+            const dayOfWeek = dayjs(date).day();
+            return dayOfWeek === 6 || dayOfWeek === 0;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Displaying the results
+            document.getElementById('five-days-after').innerText = getFiveDaysAfter();
+            document.getElementById('one-month-after').innerText = getOneMonthAfter();
+            document.getElementById('one-month-before').innerText = getOneMonthBefore();
+            
+            const today = dayjs();
+            document.getElementById('day-of-week').innerText = getDayOfWeek(today);
+            document.getElementById('is-weekend').innerText = isWeekend(today) ? 'Yes' : 'No';
+        });
+    </script>
+</head>
+<body>
+    <h1>DayJS Date Calculations</h1>
+    <p>Date 5 days after today: <span id="five-days-after"></span></p>
+    <p>Date 1 month after today: <span id="one-month-after"></span></p>
+    <p>Date 1 month before today: <span id="one-month-before"></span></p>
+    <p>Today is: <span id="day-of-week"></span></p>
+    <p>Is today a weekend? <span id="is-weekend"></span></p>
+</body>
+</html>

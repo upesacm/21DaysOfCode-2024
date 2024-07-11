@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.right-sidebar {
+    background-color: lightcoral;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+}

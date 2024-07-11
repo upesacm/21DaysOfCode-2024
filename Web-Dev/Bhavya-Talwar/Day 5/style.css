@@ -1,0 +1,134 @@
+.container1 {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.item1 {
+    background-color: rgba(56, 232, 248, 0.616);
+    width: 50px;
+    height: 35px;
+    font-size: x-large;
+
+}
+
+.item2 {
+    flex: 1;
+    background-color: pink;
+    height: 35px;
+    font-size: xx-large;
+}
+
+.item3 {
+    background-color: rgba(56, 232, 248, 0.616);
+    width: 75px;
+    height: 35px;
+    font-size: x-large;
+}
+
+.ques2 {
+    margin: 50px;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.items {
+    background-color: pink;
+    font-size: x-large;
+}
+
+.container3 {
+    display: flex;
+    height: 50px;
+    border: 2px solid gray;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: pink;
+    font-size: x-large;
+}
+
+.container4 {
+    margin: 20px;
+    height: 10.5vw;
+    width: 30vw;
+    border: 1px solid gray;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 12px 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.notif {
+    background-color: rgb(15, 15, 228);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px 10px 3px 10px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(134, 32, 229);
+    justify-content: space-between;
+    padding: 5px 4px 5px 4px;
+    align-items: center;
+}
+
+.home {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+nav button {
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(134, 32, 229);
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+}
+
+.home {
+    padding-left: 10px;
+}
+
+#search {
+
+    border-radius: 25px;
+    padding: 10px;
+    color: grey;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 55%;
+    font-size: 17px;
+    padding-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}

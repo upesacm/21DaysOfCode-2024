@@ -1,0 +1,103 @@
+
+
+.apply {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: none;
+    font-size: 18px;
+    transition-property: background-color;
+}
+.apply:hover{
+    background-color: rgb(20, 91, 163);    
+}
+.save {
+    color: rgb(10, 102, 194);
+    border: 1px solid rgb(10, 102, 194);
+    background-color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 550;
+    transition-property: background-color;
+}
+.save:hover{
+    background-color: rgba(20, 91, 163, 0.118);    
+}
+
+
+.get {
+    background-color:  rgb(139, 95, 205);
+    color: white;
+    padding: 9px 20px 9px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 550;
+    transition-property: background-color;
+}
+.get:hover{
+    background-color:rgb(121, 82, 179);
+}
+.download{
+    color: rgb(108, 117, 125);
+    border: 1px solid rgb(108, 117, 125);
+    background-color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 550;
+    transition-property: background-color,color;
+}
+.download:hover{
+    background-color:rgba(108, 117, 125, 0.853); 
+    color: white;
+}
+.replicate h4 a{
+    color: blue;
+    transition-property: color;
+}
+.replicate h4 a:hover{
+    color:brown;
+}
+.price{
+    color: green;
+}
+.button6{
+    background-color: rgb(255, 216, 20);
+    color: black;
+    padding: 7px 25px 7px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+    transition-property: background-color;
+}
+.button6:hover{
+    background-color:rgb(241, 207, 37) ;
+}
+.button6:active{
+    background-color:rgba(242, 207, 31, 0.484) ;
+}
+
+.button7{
+    background-color: rgb(237, 150, 49);
+    color: black;
+    padding: 7px 25px 7px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+    transition-property: background-color;
+}
+.button7:hover{
+    background-color:rgb(248, 148, 34) ;
+}
+.button7:active{
+    background-color:rgba(248, 148, 34, 0.484) ;
+}

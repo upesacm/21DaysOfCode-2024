@@ -1,0 +1,24 @@
+.container
+{
+    background-color: rgb(67, 63, 63);
+    padding:50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+.container.head
+{
+    color: white;
+    text-align: end;
+}
+.container.text
+{
+    color: white;
+    text-align: center;
+}

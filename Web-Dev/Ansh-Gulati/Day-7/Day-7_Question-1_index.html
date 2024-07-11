@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh gulati, Quiz-1, q-1</title>
+    <link rel="stylesheet" href="Day-7_Question-1_style.css">
+    <script src="https://kit.fontawesome.com/1df07718e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <i id="icon" onclick="displaynav()" class="fa fa-bars"></i>
+        <div id="hamburger">
+            <a href="#logo">Ansh Gulati</a>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+            <a href="#Services">Services</a>
+        </div>
+        <a href="#logo">Ansh Gulati</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Services">Services</a>
+    </nav>
+    <header>
+
+    </header>
+</body>
+
+<script>
+    function displaynav()
+    {
+        document.getElementById("hamburger").style.display = "flex";
+        document.getElementById("icon").classList.remove("fa-bars");
+        document.getElementById("icon").classList.add("fa-close");
+    }
+</script>
+
+</html>

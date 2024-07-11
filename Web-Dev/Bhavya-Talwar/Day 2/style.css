@@ -1,0 +1,84 @@
+.button1 button {
+    background-color: black;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.button2 button {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    padding: 12px 75px 12px 75px;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: none;
+    font-size: 20px;
+}
+
+.apply {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    border: none;
+    font-size: 18px;
+}
+
+.save {
+    color: rgb(10, 102, 194);
+    border: 1px solid rgb(10, 102, 194);
+    background-color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.get {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    padding: 9px 20px 9px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.download{
+    color: rgb(108, 117, 125);
+    border: 1px solid rgb(108, 117, 125);
+    background-color: white;
+    padding: 9px 20px 9px 20px;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 550;
+}
+.replicate h4 a{
+    color: blue
+}
+.price{
+    color: green;
+}
+.button6{
+    background-color: rgb(255, 216, 20);
+    color: black;
+    padding: 7px 25px 7px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+}
+.button7{
+    background-color: rgb(224, 164, 35);
+    color: black;
+    padding: 7px 25px 7px 25px;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    font-size: 15px;
+}

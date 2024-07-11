@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Question-3</title>
+    </head>
+    <style>
+        .bfirst{
+            background:rgb(10,102,194);
+            color:white;
+            border:none;
+            border-radius:20px;
+        }
+        .bsecond{
+            background:white;
+            color:rgb(10,102,194);
+            border:1px solid rgb(10,102,194);
+            border-radius:20px;
+        }
+    </style>
+    <body>
+        <button class="bfirst">Apply on company website</button>
+        <button class="bsecond">Save</button>
+    </body>
+</html>

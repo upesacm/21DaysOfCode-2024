@@ -1,0 +1,42 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Tailwind CSS output (if you are generating a separate CSS file)
+public/css/
+dist/
+build/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.swp
+
+# GitHub Pages
+gh-pages/
+
+# Ignore any other custom build or output directories
+out/

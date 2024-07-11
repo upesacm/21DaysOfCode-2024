@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.item {
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.item1 {
+    width: 50px; 
+    background-color: #3498db;
+}
+
+.item2 {
+    flex-grow: 1; 
+    background-color: #2ecc71;
+}
+
+.item3 {
+    width: 75px; 
+    background-color: #e74c3c;
+}

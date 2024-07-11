@@ -1,0 +1,30 @@
+.button{
+    background-color: rgb(255,216,20);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    cursor: pointer;
+    
+}
+.buy{
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    width: 100px;
+    cursor: pointer;
+
+}
+.backtoamazon:hover{
+    color: rgba(193, 5, 5, 0.996);
+    
+}
+.button:active{
+    background-color: rgb(203, 188, 113);
+}
+.buy:active{
+    background-color:rgb(241, 197, 116) ;
+}

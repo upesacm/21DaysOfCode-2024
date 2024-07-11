@@ -1,0 +1,18 @@
+#b1{
+    background-color:rgb(121,82,179);
+    color: white;
+    width:150px;
+    height:50px;
+    border-radius: 6px;
+    border-color:rgb(121,82,179);
+    font-weight: bolder;
+}
+#b2{
+    background-color: white;
+    color:rgb(108,117,125);
+    width: 150px;
+    height:50px;
+    border-radius: 6px;
+    border-color: rgb(108,117,125);
+    font-weight: bolder;
+}

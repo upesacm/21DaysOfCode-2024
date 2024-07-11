@@ -1,0 +1,26 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Product Sans', sans-serif;
+}
+
+.google-logo {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Product Sans', sans-serif;
+    display: flex;
+}
+
+.google-logo span:nth-child(1) { color: #4285F4; } /* G - Blue */
+.google-logo span:nth-child(2) { color: #EA4335; } /* o - Red */
+.google-logo span:nth-child(3) { color: #FBBC05; } /* o - Yellow */
+.google-logo span:nth-child(4) { color: #34A853; } /* g - Green */
+.google-logo span:nth-child(5) { color: #EA4335; } /* l - Red */
+.google-logo span:nth-child(6) { color: #4285F4; } /* e - Blue */

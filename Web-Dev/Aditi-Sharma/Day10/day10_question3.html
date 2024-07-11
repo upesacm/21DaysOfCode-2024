@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="heads">Heads</button>
+    <button id="tails">Tails</button>
+    <p id="text">You Chose ______ </p>
+    <script>
+        const heads = document.getElementById('heads');
+const tails = document.getElementById('tails');
+const res = document.getElementById('text');
+
+heads.addEventListener('click', () => {
+    res.innerHTML = "You Chose Heads";
+});
+
+tails.addEventListener('click', () => {
+    res.innerHTML = "You Chose Tails";
+});
+    </script>
+</body>
+</html>

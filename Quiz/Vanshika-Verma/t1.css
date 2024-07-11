@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    height: 5000px;
+}
+.nav-bar {
+    align-items: center;
+    position: fixed;
+    background-color: #181818 ;
+    padding: 13px 55px;
+    font-size: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu li 
+{ 
+    padding-left: 35px;
+}
+.menu li a {
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF ;
+    
+}
+.menu li a:hover:after {width: 100%;}
+.open {
+    font-size: 1.5rem;
+    display: none;
+    top: 50%;
+    right: 20px;
+    position: absolute;
+    color:  #FFF ;
+    cursor: pointer;
+    
+    transform: translateY(-50%);
+}
+.close {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+    color:  #FFF ;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+#check {display: none;}
+@media(max-width: 768px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color:  #181818 ;
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li{ 
+        margin-top: 40px; 
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    .open , .close {
+        display: block;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+}

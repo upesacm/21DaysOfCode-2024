@@ -4,31 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="sample.css">
 </head>
 <body>
     <section>
         <button class="">Abhijit</button> <button>500106633</button>
-
         <br>
         <h2>Hello</h2>
         <br>
         <h2>It has been nice knowing you all.</h2>
         <br>
         <a href="https://www.upesacmw.org">Go to upesacmw</a>
-        
+        <br>
+        <button class="request">Request now</button>
+        <br>
+        <button class="add-cart" >Add to Cart</button>
+        <br>
+        <button class="apply" >Apply to company website</button>
+        <button class="save" >Save</button>
+        <br>
+        <button class="get" >Get started</button>
+        <button class="downlaod"  >Download</button>
     </section>
+
     <br>
     <hr>
+
     <section>
-        <a href="https://www.amazon.com">Back to Amazon</a>
+        <a class="amazon-link" href="https://www.amazon.com">Back to Amazon</a>
         <br>
-        <h2>Nike black running Shoes.</h2>
+        <p class="nike"><b>Nike black running Shoes.</b></p> 
         <br>
         <h2>$39- in stock </h2>
         <br>
-        <h2>Free delivery tomorrow.</h2>
-        <button class="">Add to Cart</button> <button>Buy now</button>
-
+        <p>Free delivery tomorrow.</p>
+        <button class="cart">Add to Cart</button> <button class="buy">Buy now</button>
     </section>
+
+    <style>
+        .amazon-link:hover
+        {
+            color: orange;
+        }
+        .nike
+        {
+            font-size: xx-large;
+        }
+        h2
+        {
+            color: green;
+        }
+        .cart
+        {
+            background-color:yellow;
+            border-radius: 20px;
+            border: 0px;
+            cursor: pointer;
+        }
+        .cart:active 
+        {
+            transform: scale(0.95);
+        }
+        .buy
+        {
+            background-color:rgb(226, 149, 72);
+            border-radius: 20px;
+            border: 0px;
+            cursor: pointer;
+        }
+        .buy:active 
+        {
+            transform: scale(0.95);
+        }
+    </style>
+    
 </body>
 </html>

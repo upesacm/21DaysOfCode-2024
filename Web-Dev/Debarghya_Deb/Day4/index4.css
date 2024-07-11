@@ -1,0 +1,70 @@
+.page{
+    flex-direction: column;
+    gap: 40px;
+}
+
+.google{
+    margin-left: 400px;
+    width: 50%;
+}
+
+.Search{
+    border-radius: 30px;
+    width: 500px;
+    height: 30px;
+    text-align: left;
+    
+}
+
+
+.formDetails{
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nameDetails{
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    text-align: center;
+}
+
+
+.nameFields{
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(27, 26, 26, 0.986);
+}
+
+.email{
+    height: 35px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgba(27, 26, 26, 0.986);
+}
+
+.submitButton{
+    height: 35px;
+    width: 260px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(11, 46, 173, 0.816);
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns:   80px 80px 80px 40px;
+    
+}
+
+.grid-item{
+    background-color: orange;
+    justify-content: space-between;
+
+}

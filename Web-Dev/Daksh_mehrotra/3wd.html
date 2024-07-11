@@ -3,10 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Example</title>
+    <title>Button Example</title>
+    <style>
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .apply-button {
+            background-color: rgb(10, 102, 194);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .save-button {
+            background-color: white;
+            color: rgb(10, 102, 194);
+            padding: 10px 20px;
+            border: 2px solid rgb(10, 102, 194);
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .apply-button:hover, .save-button:hover {
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
-    <!-- Anchor tag linking to www.upesacmw.org opening in a new tab -->
-    <a href="https://www.upesacmw.org" target="_blank">Visit UPES ACM-W</a>
+    <div class="button-container">
+        <button class="apply-button">Apply on company website</button>
+        <button class="save-button">Save</button>
+    </div>
 </body>
 </html>

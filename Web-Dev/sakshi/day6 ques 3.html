@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100%;
+            background-color: green;
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            background-color: white;
+            width: 80%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .modal-header {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .modal-body {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .modal-footer {
+            text-align: right;
+        }
+
+        .close-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+    <title>day 6</title>
+</head>
+<body>
+    <!-- Question 3-->
+    <div class="sidebar">right sidebar</div>
+
+    <div class="overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">Modal Title</div>
+            <div class="modal-body">This is a modal</div>
+            <div class="modal-footer">
+                <button class="close-btn" onclick="closeModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showModal() {
+            document.getElementById('modalOverlay').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').style.display = 'none';
+        }
+
+        // Show the modal for demonstration purposes
+        showModal();
+    </script>
+</body>
+</html>

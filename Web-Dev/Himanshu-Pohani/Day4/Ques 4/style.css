@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+
+    border: 1px solid #ddd;
+    background-color: rgba(214, 89, 152, 0.475);
+  }
+  

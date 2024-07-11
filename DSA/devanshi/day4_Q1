@@ -1,0 +1,86 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+
+bool pal(char *str, int start, int end)
+{
+    while (start < end) 
+    {
+        if (str[start] != str[end])
+        {
+            return false;
+        }
+        start++;
+        end--;
+    }
+    return true;
+}
+
+
+int count(char *str, int l) 
+{
+    int n = strlen(str);
+    if (l > n)
+    {
+        return 0;
+    }
+
+
+    char **x = (char **)malloc(n * sizeof(char *));
+    int count = 0;
+
+    for (int i = 0; i <= n - l; i++)
+    {
+        if (pal(str, i, i + l - 1)) 
+        {
+            bool found = false;
+            
+            char *y = (char *)malloc((l + 1) * sizeof(char));
+            strncpy(y, str + i, l);
+            y[l] = '\0';
+
+            
+            for (int j = 0; j < count; j++) {
+                if (strcmp(x[j], y) == 0) {
+                    found = true;
+                    break;
+                }
+            }
+
+           
+            if (!found) {
+                x[count] = y;
+                count++;
+            } else {
+                free(y);
+            }
+        }
+    }
+
+ 
+    for (int i = 0; i < count; i++)
+    {
+        free(x[i]);
+    }
+    free(x);
+
+    return count;
+}
+
+int main() {
+    char str[100];
+    int l;
+
+    printf("Enter the string: ");
+    scanf("%s", str);
+    printf("Enter the length of the substrings: ");
+    scanf("%d", &l);
+
+    int result = count(str, l);
+    printf("Number of distinct palindromic substrings of length %d: %d\n", l, result);
+
+    return 0;
+}
+     

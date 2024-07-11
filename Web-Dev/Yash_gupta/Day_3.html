@@ -1,0 +1,144 @@
+<!--Yash Gupta 500125397-->
+<!-- Day-3 (23/06/2024)-->
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <style>
+       
+        #button1{
+            background-color: rgb(10,102,194);
+            color: white;
+            border: none;
+            padding: 10px 40px;
+            text-align: center;
+            font-size: 15px;
+            margin: 4px 2px;
+            border-radius: 25px;
+        }
+
+        #button1:hover{
+            background-color: rgb(7, 72, 138);
+            cursor: pointer;
+        }
+
+        #button2{
+            background-color: white;
+            color: rgb(10,102,194);
+            border: solid rgb(10,102,194);
+            padding: 10px 40px;
+            text-align: center;
+            font-size: 15px;
+            margin: 4px 2px;
+            border-radius: 25px;
+        }
+
+        #button2:hover{
+            background-color: rgb(155, 205, 255);
+            cursor: pointer;
+        }
+
+        #button3{
+            background-color: rgb(121,82,179);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            text-align: center;
+            font-size: 15px;
+            margin: 4px 2px;
+            border-radius: 5px;
+        }
+        #button3:hover{
+            cursor: pointer;
+            background-color: rgb(107, 57, 182);
+        }
+
+        #button4{
+            background-color: white;
+            color: rgb(108,117,125);
+            border: solid rgb(108,117,125);
+            border-radius: 5px;
+            padding: 10px 25px;
+            text-align: center;
+            font-size: 15px;
+            margin: 4px 2px;
+        }
+        #button4:hover{
+            cursor: pointer;
+            background-color: rgb(108,117,125);
+            color: white;
+        }
+
+        #button5{
+            background-color: rgb(255,216,20);
+            color: black;
+            border: none;
+            padding: 5px 15px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 25px;
+        }
+        #button5:hover{
+            background-color: rgb(224, 190, 20);
+            cursor: pointer;   
+        }
+        #button5.clicked{
+            opacity: 0.4;
+        }
+        #button6{
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 5px 15px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 25px;
+        }
+        #button6:hover{
+            background-color: rgb(219, 143, 1);
+            cursor: pointer;
+        }
+        #button6.clicked{
+            opacity: 0.4;
+        }
+        #back:hover{
+            color:rgb(212, 138, 0);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+     <!-- Task-1 -->
+    <div>
+        <button id="button1">Apply on company website</button>
+        <button id="button2">Save</button>
+    </div>
+    <br>
+     <!-- Task-2 -->
+    <div>
+        <button id="button3">Get started</button>
+        <button id="button4">Download</button>
+    </div>
+    <br>
+     <!-- Task-3 -->
+    <div>
+        <a href="https://www.amazon.in" target="_blank" id="back">Back to Amazon</a>
+        <h3>Nike Black Running Shoes</h3>
+        <p style="color:green">$39 - in stock.</p>
+        <p>Free delivery tomorrow.</p>
+        <button id="button5">Add to Cart</button>
+        <button id="button6">Buy now</button>
+      </div>
+      
+      <script>
+        document.getElementById('button5').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+
+        document.getElementById('button6').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+    </script>
+
+</body>
+</html>

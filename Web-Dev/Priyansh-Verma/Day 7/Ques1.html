@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Bar</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #260303;
+    height: 5000px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #260303;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+#navbar .nav-links li {
+    margin: 0 15px;
+}
+
+#navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div {
+    padding: 100px 20px;
+}
+
+div h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul class="nav-links">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
+    </nav>
+    <div id="section1">
+        <h1>Section 1</h1>
+        <p>Content</p>
+    </div>
+    <div id="section2">
+        <h1>Section 2</h1>
+        <p>Content</p>
+    </div>
+    <div id="section3">
+        <h1>Section 3</h1>
+        <p>Content</p>
+    </div>
+    <div id="section4">
+        <h1>Section 4</h1>
+        <p>Content</p>
+    </div>
+</body>
+</html>

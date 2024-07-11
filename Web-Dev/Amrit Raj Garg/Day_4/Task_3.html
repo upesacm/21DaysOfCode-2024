@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day4_Grid_Layout</title>
+    <style>
+        body {         
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px 20px;
+            width: 100%;
+        }
+        .item {
+            background-color: #f8bcbc;    
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">col1</div>
+        <div class="item">col2</div>
+        <div class="item">col3</div>
+        <div class="item">col4</div>
+        <div class="item">col1</div>
+        <div class="item">col2</div>
+        <div class="item">col3</div>
+        <div class="item">col4</div>
+    </div>
+</body>
+</html>

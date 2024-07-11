@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        display: flex;
+        align-items: end;
+        justify-content: flex-end;
+        border: 3px solid black;
+        height: 250px;
+        width: 500px;
+      }
+      .box1 h2 {
+        border: 1px solid;
+        background-color: black;
+        color: white;
+        margin-right: 20px;
+      }
+
+      /* box2 */
+
+      .box2 {
+        display: flex;
+        justify-content: flex-end;
+        border: 3px solid rgb(139, 139, 139);
+        height: 250px;
+        width: 500px;
+        margin-top: 20px;
+      }
+      .box2 .div2 {
+        background-color: green;
+        width: 100px;
+        height: 100%;
+      }
+      .div2 .div3 {
+        color: white;
+      }
+      .box2 .div4 {
+        border: 3px solid;
+        width: 200px;
+      }
+
+      .container {
+        display: flex;
+        height: 50vh;
+        margin-top: 20px;
+        width: 90vh;
+      }
+
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+        width: 70%;
+        height: 50vh;
+      }
+
+      .right {
+        background-color: #228b22;
+        width:106px;
+        
+        height: 50vh;
+        color:white;
+      }
+
+      .modal {
+        margin-left: 40px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        width: 300px;
+      }
+
+      .modal-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .modal-content {
+        margin-bottom: 10px;
+      }
+
+      .close {
+        background-color: #898989;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <h2>Bottom-right;</h2>
+    </div>
+
+    <div class="box2">
+      <div class="div2">
+        <div class="div3">right sidebar</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <div class="modal">
+          <h2 class="modal-title">Modal Title</h2>
+          <p class="modal-content">This is a modal</p>
+          <button class="close">Close</button>
+        </div>
+      </div>
+      <div class="right">
+        <p style="text-align: center; padding: 20px">right sidebar</p>
+      </div>
+    </div>
+  </body>
+</html>

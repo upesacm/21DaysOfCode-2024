@@ -1,0 +1,10 @@
+.sticky-element{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

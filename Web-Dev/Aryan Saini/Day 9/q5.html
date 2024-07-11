@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+
+</head>
+<body>
+    <p id="countOutput"></p>
+    <script>
+        let output = '';
+        for (let i = 5; i >= 0; i--) {
+            output += i + ' ';
+        }
+        document.getElementById('countOutput').textContent = `Loop from 5 to 0: ${output.trim()}`;
+    </script>
+</body>
+</html>

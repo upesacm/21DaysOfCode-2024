@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:  #9b59b6;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            display: none;
+        }
+    </style>
+    <script>
+        function playCoinFlip(guess) {
+            var randomNumber = Math.random();
+            var result = randomNumber < 0.5 ? 'heads' : 'tails';
+            var resultText = document.getElementById('result');
+            if (guess === result) {
+                resultText.textContent = "Result: " + result + ". You win!";
+            } else {
+                resultText.textContent = "Result: " + result + ". You lose!";
+            }
+            resultText.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Coin Flip Game</h1>
+    <button onclick="playCoinFlip('heads')">Play Heads</button>
+    <button onclick="playCoinFlip('tails')">Play Tails</button>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.button{
+    background-color: rgb(121, 82, 179); 
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  
+}
+.download{
+    background-color: white;
+    color: rgb(108,117,125);
+    border-color: rgb(108,117,125);
+    padding: 15px 30px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+.button:hover{
+    
+    background-color: rgb(101, 50, 178)
+}
+.download:hover{
+    background-color: rgba(119, 115, 115, 0.796);
+    color: white;
+}

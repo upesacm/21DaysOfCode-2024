@@ -1,6 +1,6 @@
 public class Q1 {
 
-    public static int Solution(int day, int month, int[] candy) {
+    public static int solution(int day, int month, int[] candy) {
         int count = 0;
 
         for (int i = 0; i < candy.length - month; i++) {
@@ -22,7 +22,7 @@ public class Q1 {
         int month = 2;
         int[] candy = {2, 2, 1, 3, 2};
 
-        int result = Solution(day, month, candy);
+        int result = solution(day, month, candy);
         System.out.println(result);
     }
 }

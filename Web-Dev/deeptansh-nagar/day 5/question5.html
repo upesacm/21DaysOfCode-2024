@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 Web Deb Question-5</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            background-color: #6A1B9A;
+            padding: 10px;
+            height: 50px;
+        }
+
+        .nav-item {
+            color: white;
+            margin: 0 10px;
+        }
+
+        .home {
+            flex: 1;
+        }
+
+        .search-container {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-bar {
+            width: 80%;
+            padding: 5px 10px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .download {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .download-button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .download-button:hover {
+            background-color: rgba(0, 0, 0, 0.199);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-item home">Home</div>
+        <div class="nav-item search-container">
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <div class="nav-item download">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+</body>
+
+</html>

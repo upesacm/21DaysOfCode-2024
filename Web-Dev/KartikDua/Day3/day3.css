@@ -1,0 +1,97 @@
+/* Q3 */
+.button-dark {
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid rgb(10, 102, 194);
+    cursor: pointer;
+}
+.button-dark:hover {
+    background-color: rgb(7, 72, 137);
+}
+.button-light {
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid rgb(10, 102, 194);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button-light:hover {
+    background-color: rgba(10, 102, 194, 0.1);
+    color: rgb(7, 72, 137);
+    padding: 9px 19px;
+    border: 3px solid rgb(7, 72, 137);
+}
+
+/* Q4 */
+.button-start {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border-radius: 4px;
+    border: 2px solid rgb(121, 82, 179);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-start:hover {
+    background-color: rgb(91, 62, 139);
+}
+.button-download {
+    background-color: transparent;
+    color: rgb(108, 117, 125);
+    border-radius: 4px;
+    border: 2px solid rgb(108, 117, 125);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.button-download:hover {
+    background-color: rgb(108, 117, 125);
+    color: white;
+    border-color: rgb(108, 117, 125);
+}
+
+/* Q5 */
+.amazon-link {
+    color: rgb(10, 102, 194);
+    text-decoration: underline;
+}
+.amazon-link:hover {
+    color: red;
+}
+
+.add-to-cart,
+.buy-now {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 216, 20);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.add-to-cart:hover,
+.buy-now:hover {
+    background-color: rgb(204, 173, 16);
+}
+.add-to-cart.clicked,
+.buy-now.clicked {
+    background-color: rgb(215, 190, 130); 
+    color: black;
+}
+
+.buy-now {
+    background-color: rgb(255, 165, 0); 
+    border: 2px solid rgb(255, 165, 0);
+}
+.buy-now:hover {
+    background-color: rgb(204, 132, 0);
+    border: 2px solid rgb(204, 132, 0);
+}

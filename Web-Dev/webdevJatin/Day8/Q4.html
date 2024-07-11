@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Order Cost</title>
+</head>
+<body>
+    <p id="ordercost"></p>
+    <script>
+        const soupPrice = 10;
+        const burgerPrice = 8;
+        const numBurgers = 3;
+        const iceCreamPrice = 5;
+
+        const orderCost = soupPrice + (burgerPrice * numBurgers) + iceCreamPrice;
+
+        const costElement = document.getElementById("ordercost");
+        costElement.innerHTML = "Order Cost: $" + orderCost;
+    </script>
+</body>
+</html>

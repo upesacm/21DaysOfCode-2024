@@ -1,0 +1,12 @@
+.flex-container {
+    height: 50px;
+    border: 2px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background-color: rgba(255, 0, 0, 0.2);
+}

@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+aside {
+    width: 100px;
+    background-color: green;
+    padding: 20px;
+    color: white;
+}

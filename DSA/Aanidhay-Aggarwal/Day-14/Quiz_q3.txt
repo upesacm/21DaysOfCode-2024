@@ -1,0 +1,37 @@
+A hallway is divided into n parts, numbered : O,1,2,3...n-1. There is a socket for attaching a bulb at every partition.
+
+A bulb with power x at partition i can light all partitions from i-x to i+x.
+
+Given an array hallway[] consisting of n integers, where hallway[i] is the power of bulb at partition i (power==-1 indicates no bulb attached), 
+return the minimum number of bulbs that need to be turned on to light up the complete hallway.
+
+If there is no possible way to light up the hallway using the given bulbs, return -1.
+
+Input Format
+Input: n=6 hallway = {-1, 2, 2, -1, 0, 0}
+Output: 2
+
+Explanation: Bulbs at index 2 and 5 can light up the complete hall, range of bulb at index 2 = (0,4) and range of bulb at index 5 = (5,5)
+
+Constraints
+1 <= n <= 100000 -1 <= hallway[i] <= 500000 Note: when hallway[i] == -1, it means no bulb attached at i location.
+
+Output Format
+Input: n = 9 hallway = {2, 3, 4, -1, 2, 0, 0, -1, 0}
+Output: -1
+
+Explanation: No bulb can light up index 7. Hence hallway cannot be completely lit.
+
+Sample Input 0
+6
+-1 2 2 -1 0 0
+
+Sample Output 0
+2
+
+Sample Input 1
+9
+2 3 4 -1 2 0 0 -1 0
+
+Sample Output 1
+-1

@@ -1,0 +1,79 @@
+#Q1_b1{
+    border: 10px solid rgb(10,102,194);
+    border-radius: 20px;
+    background-color: rgb(10,102,194);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+#Q1_b2{
+    border: 2px solid rgb(10,102,194);
+    border-radius: 20px;
+    background-color: white;
+    color: rgb(10,102,194);
+    padding: 7px 20px 7px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#Q1_b1:hover{
+    background-color: rgb(9, 85, 160);
+    border-color: rgb(9, 85, 160);
+}
+#Q1_b2:hover{
+    background-color: rgb(226, 238, 249);
+}
+#Q2_b1{
+    background-color: rgb(121,82,179);
+    border: 10px solid rgb(121,82,179) ;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#Q2_b2{
+    background-color: white;
+    border:  rgb(108,117,125);
+    color: rgb(108,117,125) ;
+    border: 3px solid rgb(108,117,125);
+    border-radius: 7px;
+    padding: 10px 15px 10px 15px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#Q2_b1:hover{
+    background-color: rgb(100, 70, 146);
+    border-color: rgb(100, 70, 146);
+}
+#Q2_b2:hover{
+    background-color: rgb(108,117,125);
+    color: white;
+}
+#Q3_b1{
+    background-color: rgb(255,216,20);
+    border: 5px solid rgb(255,216,20);
+    text-align: center;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+}
+#Q3_b2{
+    background-color: orange;
+    border: 5px solid orange;
+    text-align: center;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+}
+#Q3_b1:hover{
+    background-color: rgb(243, 206, 19);
+    border-color: rgb(243,206,19);
+}
+#Q3_b2:hover{
+    background-color: rgb(242, 158, 2);
+    border-color: rgb(242, 158, 2);
+}
+#link:hover{
+    color: red;
+}
+
+
+

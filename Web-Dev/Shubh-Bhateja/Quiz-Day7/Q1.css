@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(201, 164, 15);
+    padding: 10px;
+    position: sticky; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(51, 51, 51);
+    margin-right: 20px;
+}

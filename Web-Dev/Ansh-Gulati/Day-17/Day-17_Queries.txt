@@ -1,0 +1,17 @@
+-- Exercise - 1
+CREATE DATABASE ACM21DOC;
+USE ACM21DOC;
+
+-- Exercise - 2
+CREATE TABLE STUDENTS (
+    Name VARCHAR(15) NOT NULL,
+    Bdate DATE,
+    Sex CHAR(10)
+);
+
+-- Exercise - 3
+INSERT INTO STUDENTS (Name, Bdate, Sex) VALUES 
+('Ansh', '2004-03-22', 'Male'),
+('Pratham', '2006-05-15', 'Male'),
+('Pooja', '2008-12-12', 'Female');
+SELECT * FROM STUDENTS;

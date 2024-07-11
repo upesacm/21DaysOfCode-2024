@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Day 8 Question 4</title>
+        <style>
+            input{
+                width:50px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Soup $10  
+            <button onclick="soup(0)">-</button>
+            <input type="number" id="soup_number" value=0 readonly>
+            <button onclick="soup(1)">+</button>
+        </p>
+        <p>
+            Burger $8  
+            <button onclick="burger(0)">-</button>
+            <input type="number" id="burger_number" value=0 readonly>
+            <button onclick="burger(1)">+</button>
+        </p>
+        <p>
+            Ice cream  $5
+            <button onclick="icecream(0)">-</button>
+            <input type="number" id="icecream_number" value=0 readonly>
+            <button onclick="icecream(1)">+</button>
+        </p>
+        <button onclick="compute()">Calculate cost</button>
+        <p id="total_cost"></p>
+    </body>
+    <script>
+        function soup(x) {
+            var a=document.getElementById("soup_number").value;
+            a=parseInt(a);
+            if(x==1){
+                document.getElementById("soup_number").value=a+1;
+            }
+            else if(x==0 && a>0){
+                document.getElementById("soup_number").value=a-1;
+            }
+        }
+
+        function burger(x) {
+            var a=document.getElementById("burger_number").value;
+            a=parseInt(a);
+            if(x==1){
+                document.getElementById("burger_number").value=a+1;
+            }
+            else if(x==0 && a>0){
+                document.getElementById("burger_number").value=a-1;
+            }
+        }
+
+        function icecream(x) {
+            var a=document.getElementById("icecream_number").value;
+            a=parseInt(a);
+            if(x==1){
+                document.getElementById("icecream_number").value=a+1;
+            }
+            else if(x==0 && a>0){
+                document.getElementById("icecream_number").value=a-1;
+            }
+        }
+
+        function compute(){
+            var a=document.getElementById("soup_number").value*10;
+            var b=document.getElementById("burger_number").value*8;
+            var c=document.getElementById("icecream_number").value*5;
+
+            var cost=a+b+c;
+            document.getElementById("total_cost").innerHTML="Total cost = $"+cost;
+        }
+    </script>
+</html>

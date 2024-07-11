@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Question-2</title>
+        <style>
+            div{
+                border:2px solid black;
+                height:200px;
+                width:500px;
+            }
+            img{
+                position:relative;
+                margin-left:150px;
+                margin-top:20px;
+            }
+            input{
+                width:150px;
+                height:40px;
+                border-radius:7px;
+                margin-left:20px;
+                margin-top:20px;
+            }
+            .c1{
+                float:left;
+                margin-left:90px;
+            }
+            .c2{
+                margin-left:90px;
+                width:320px;
+            }
+            .c3{
+                margin-left:90px;
+                width:320px;
+                color:White;
+                background:rgb(78, 78, 252);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="text" placeholder="  First name" class="c1">
+            <input type="text" placeholder="  First name">
+            <br>
+            <input type="email" placeholder="  Email" class="c2">
+            <br>
+            <input type="submit" value="Sign Up" class="c3">
+        </div>
+    </body>
+</html>

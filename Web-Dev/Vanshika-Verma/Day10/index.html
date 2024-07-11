@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+        <button>Hello</button>
+        <button class="btn"> Hello</button>
+        <br>
+        <br>
+        <!--Q3 -->
+        <button onclick="heads()">Head</button>
+        <button onclick="tail()">Tail</button>
+        <p> </p>
+        <br>
+        <br>
+        <!--Q4 -->
+        <input type="text" id="inp" placeholder="Enter your name">
+        <button onclick="disp()">Submit</button>
+        <p id="result"></p>
+
+        <script>
+            //Q1
+           console.log(document.querySelector("button"))
+
+           //Q2
+           console.log(document.querySelector(".btn"))
+           let a = document.querySelector(".btn") 
+           a.innerText = "Hello !"
+        
+           //Q3
+           function heads() {
+            document.querySelector("p").innerText = "You chose: heads";
+            }
+ 
+           function tail() {
+            document.querySelector("p").innerText = "You chose: tails";
+            }
+
+            //Q4
+            function disp() {
+            let a = document.getElementById("inp").value;
+            document.getElementById("result").innerText = "Your name is: " + a;
+            }
+            
+
+        </script>
+    </body>
+</html>

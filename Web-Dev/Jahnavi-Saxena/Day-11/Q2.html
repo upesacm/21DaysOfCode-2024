@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q2</title>
+  </head>
+  <body>
+    <script>
+      const add = function() {
+        console.log(2 + 3);
+      };
+
+      add();
+      add();
+
+      function runTwice(fun) {
+        fun();
+        fun();
+      }
+
+      runTwice(function() {
+        console.log('Jahnavi');
+      });
+      
+      runTwice(add);
+    </script>
+  </body>
+</html>

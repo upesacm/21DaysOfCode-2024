@@ -1,0 +1,27 @@
+.button1 {
+    border: none;
+    background-color: rgb(10, 102, 194); 
+    color: white;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+.button2 {
+    background-color: transparent; 
+    padding: 10px 30px;
+    border: none;
+    border: 2px solid rgb(10, 102, 194);
+    color: rgb(10, 102, 194);
+    font-weight: bold;
+    border-radius: 150px;
+}
+
+.button1:hover {
+    background-color: rgb(10, 85, 160);
+}
+
+.button2:hover {
+    background-color: rgba(10, 102, 194, 0.1);
+    border-width: 2.5px;
+}

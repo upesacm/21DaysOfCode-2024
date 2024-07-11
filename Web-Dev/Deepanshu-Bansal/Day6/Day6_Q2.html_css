@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Question-2</title>
+        <style>
+            body{
+                margin:0px;
+            }
+            aside{
+                border:none;
+                height:710px;
+                margin-left:1200px;
+                background-color:green;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <aside>
+            <p>Bottom-right</p>
+        </aside>
+    </body>
+</html>

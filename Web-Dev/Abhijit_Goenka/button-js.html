@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+  </head>
+  <body>
+    <button class="hello">Hello</button>
+    <button class="hello2">Hello</button>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hello = document.querySelector(".hello");
+        hello.addEventListener("click", () => {
+          console.log(hello);
+        });
+        const hello2 = document.querySelector(".hello2");
+        hello2.textContent = "Hello!";
+      });
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id="head">Head</button>
+    <button id="tail">Tail</button>
+    <p id="choice"></p>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const head = document.querySelector("#head");
+        const tail = document.querySelector("#tail");
+        const choice = document.querySelector("#choice");
+        head.addEventListener("click", () => {
+          choice.textContent = "You chose:Head";
+        });
+        tail.addEventListener("click", () => {
+          choice.textContent = "You chode:tail";
+        });
+      });
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <input type="text" id="mine" placeholder="name" />
+    <button id="submitBtn">Submit</button>
+    <p id="display"></p>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mine = document.querySelector("#mine");
+        const submitBtn = document.querySelector("#submitBtn");
+        const display = document.querySelector("#display");
+
+        submitBtn.addEventListener("click", () => {
+          const name = mine.value;
+          display.textContent = `Your name is ${name}`;
+        });
+      });
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <button id="visible">Show</button>
+    <p id="displayText" style="display: none;">Hello Abhijit!</p>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const visible = document.querySelector("#visible");
+        const displayText = document.querySelector("#displayText");
+
+        visible.addEventListener("click", () => {
+          displayText.style.display="block";
+        });
+      });
+    </script>
+  </body>
+</html>

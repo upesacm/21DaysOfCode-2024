@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Question-3</title>
+        <style>
+            span{
+                margin-left:20px;
+                margin-right:20px;
+                margin-top:10px;
+                margin-bottom:10px;
+                background-color:rgb(255, 184, 207)
+            }
+            .div1{
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            .div2{
+                margin-top:200px;
+                margin-bottom:20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <span>col1 </span>
+            <span>col2 </span>
+            <span>col3 </span>
+            <span>col4 </span>
+        </div>
+        <div class="div1">
+            <span>col5 </span>
+            <span>col6 </span>
+            <span>col7 </span>
+            <span>col8 </span>
+        </div>
+    </body>
+</html>

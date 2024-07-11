@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown from 5 to 0</title>
+</head>
+<body>
+    <h1>Countdown (5 to 0)</h1>
+    <p id="countdownResult"></p>
+
+    <script>
+        let countString = "";  // Initialize an empty string to store the results
+
+        for (let i = 5; i >= 0; i--) {
+          countString += `${i} `;  // Add each count value to the string, separated by spaces
+        }
+
+        document.getElementById("countdownResult").textContent = countString.trim(); // Display the formatted string
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Question-4</title>
+    <style>
+        .main{
+            border:2px solid black;
+            width:260px;
+        }
+        .box{
+            display:flex;
+            padding:10px;
+            width:600px;
+        }
+        .div1 {
+            font-weight:bold;
+        }
+        .div2 {
+            border:1px solid white;
+            background-color:rgb(59, 59, 255);
+            color:white;
+            padding:4px;
+            border-radius:20px;
+            margin-left:150px;
+            width:40px;
+            text-align:center;
+        }
+        #id2{
+            width:30px;
+            margin-left:114px
+        }
+        #id3{
+            width:30px;
+            margin-left:137px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="div1">Home</div>
+            <div class="div2">14</div>
+        </div>
+        <div class="box">
+            <div class="div1">Notifications</div>
+            <div class="div2" id="id2">3</div>
+        </div>
+        <div class="box">
+            <div class="div1">Messages</div>
+            <div class="div2" id="id3">5</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name</title>
+</head>
+<body>
+    <input type="text" id="nameInput" placeholder="Enter your name" required>
+    <button id="submitButton">Submit</button>
+    <p id="displayText"></p>
+
+    <script>
+        // Get the input, button, and paragraph elements
+        const nameInput = document.getElementById('nameInput');
+        const submitButton = document.getElementById('submitButton');
+        const displayText = document.getElementById('displayText');
+
+        // Add an event listener to the submit button
+        submitButton.addEventListener('click', () => {
+            // Get the value of the input field
+            const name = nameInput.value;
+
+            // Display the text inside the paragraph
+            displayText.textContent = `Your name is: ${name}`;
+        });
+    </script>
+</body>
+</html>

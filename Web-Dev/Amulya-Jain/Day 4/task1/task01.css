@@ -1,0 +1,74 @@
+body {
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    margin-top: 15%;
+}
+
+.img-container {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.google-img {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.search-container {
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 2rem;
+    width: 50%;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 1000px;
+    display: flex;
+    gap: 5%;
+}
+
+.search {
+    position: relative;
+    width: 90%;
+    display: flex;
+    gap: 2%;
+}
+
+.search input {
+    width: 100%;
+    height: 2rem;
+}
+
+.search-icon {
+    position: relative;
+    top: 25%;
+}
+
+.buttons {
+    position: relative;
+    width: 10%;
+    display: flex;
+    gap: 5%;
+}
+
+.microphone {
+    border: none;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.camera-button {
+    border: none;
+    cursor: pointer;
+    margin-right: 0;
+}

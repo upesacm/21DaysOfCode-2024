@@ -1,0 +1,77 @@
+body
+{
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+}
+.chrome
+{
+    text-align: center;
+}
+.logo
+{
+
+}
+.search-bar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search
+{
+    width: 500px;
+    height: 20px;
+    padding: 10px 20px;
+    font-size: larger;
+    border-radius: 50px;
+    border: 2px solid grey;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    
+}
+.user
+{
+    justify-content: center;
+    text-align: center;
+    
+}
+.fname
+{
+    border-radius: 10px;
+    font-size: large;
+    border: 2px solid grey;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.email
+{
+    width: 36%;
+    border-radius: 10px;
+    border: 2px solid grey;
+    font-size: large;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.sign-up
+{
+    background-color: blue;
+    font-size: x-large;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 500px;
+    border: none;
+}
+th,td
+{
+    border-collapse:collapse;
+    border: 2px solid pink;
+    background-color: pink;
+    
+}
+table
+{
+    border-spacing: 20px 10px;
+}

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Question-3</title>
+        <style>
+            .div1{
+                width:50px;
+                background-color:rgb(248, 193, 193);
+                margin-top:50px;
+                margin-bottom:50px;
+            }
+            .div2{
+                width:50px;
+                background-color:rgb(248, 193, 193);
+                margin-top:50px;
+                margin-bottom:50px;
+            }
+            div{
+                display:flex;
+                justify-content:space-between;
+                border:2px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="div1">item1</div>
+            <div class="div2">item2</div>
+        </div>
+    </body>
+</html>

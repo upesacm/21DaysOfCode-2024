@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ModalOverlay_Task3</title>
+    <style>
+        .sidebar {
+            position: absolute;
+            top: 0; right: 0;
+            width: 100px;
+            height: 100%;
+            background-color: green;
+            color: white; display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .content {
+            margin-right: 100px; 
+            padding: 20px;
+            background-color: white;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .modal {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+.close-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+    <div class="sidebar">right sidebar</div>
+
+    <div class="overlay">
+        <div class="modal">
+            <h2>Modal Title</h2>
+            <p>This is a modal</p>
+<label for="modalToggle" class="close-btn">Close</label>
+        </div>
+    </div>
+</body>
+</html>

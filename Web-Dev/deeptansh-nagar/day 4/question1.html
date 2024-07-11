@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Web Dev</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .google-logo {
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            width: 30%;
+            height: 50px;
+            background-color: #f2f2f2;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar:hover {
+            background-color: #e4e2e2;
+        }
+
+        .search-bar input[type="text"] {
+            width: 90%;
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            padding: 5px;
+            color: black;
+
+        }
+
+        .search-bar input[type="text"]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="google.png" alt="Google Logo" class="google-logo">    
+        <div class="search-bar">
+            <input type="text" placeholder="Search Google or type a URL">
+        </div>
+    </div>
+</body>
+
+<script>
+    alert('DAY 4 :)');
+</script>
+
+</html>

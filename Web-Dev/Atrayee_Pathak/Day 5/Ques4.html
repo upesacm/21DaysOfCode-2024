@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            border:2px solid grey;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            border:2px solid grey;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .item:last-child {
+            border-bottom: none;
+        }
+        .badge {
+            background-color: #4285f4;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <span>Home</span>
+            <span class="badge">14</span>
+        </div>
+        <div class="item">
+            <span>Notifications</span>
+            <span class="badge">3</span>
+        </div>
+        <div class="item">
+            <span>Messages</span>
+            <span class="badge">5</span>
+        </div>
+    </div>
+</body>
+</html>

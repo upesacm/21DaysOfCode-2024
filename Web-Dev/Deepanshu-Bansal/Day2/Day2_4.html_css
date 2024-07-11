@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Question-4</title>
+    </head>
+    <style>
+        .bfirst{
+            background:rgb(121,82,179);
+            color:white;
+            border:none;
+            border-radius:2px;
+        }
+        .bsecond{
+            background:white;
+            color:rgb(108,117,125);
+            border:1px solid rgb(108,117,125);
+            border-radius:2px;
+        }
+    </style>
+    <body>
+        <button class="bfirst">Get started</button>
+        <button class="bsecond">Download</button>
+    </body>
+</html>

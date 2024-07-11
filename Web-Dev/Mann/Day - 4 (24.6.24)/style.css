@@ -1,0 +1,77 @@
+.first{
+  width: 50%;
+}
+.input{
+    width: 50%;
+    height: 2rem;
+    border-radius: 1rem;
+    color: grey;
+    outline: none;
+    padding: 1rem;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+.google{
+    width: 25%;
+    padding-left: 10%
+}
+.second{
+    width: 50%;
+}
+.btn1{
+    width: 15% ;
+    background-color: white; 
+    color:rgb(108,117,125); 
+    padding: 0.5rem 1rem 0.5rem 1rem; 
+    border-color: rgb(201, 201, 201); 
+    border-radius: 0.5rem; 
+    text-align: left;
+    border-style: solid;
+    
+}
+.btn2{
+    width: 15%;
+    background-color: white; 
+    text-align: left;
+    color:rgb(108,117,125); 
+    padding: 0.5rem 1rem 0.5rem 1rem; 
+    border-color: rgb(201, 201, 201); 
+    border-radius: 0.5rem; 
+    border-style: solid;
+    
+}
+.btn3{
+    width: 30%;
+    background-color: white; 
+    text-align: left;
+    color:rgb(108,117,125); 
+    padding: 0.5rem 1rem 0.5rem 1rem; 
+    border-color: rgb(201, 201, 201); 
+    border-radius: 0.5rem; 
+    border-style: solid;
+    
+}
+.btn4{
+    width: 30%;
+    background-color: rgb(36, 116, 255); 
+    text-align: center;
+    color:white; 
+    padding: 0.5rem 1rem 0.5rem 1rem; 
+    border-color: transparent;
+    border-radius: 0.5rem; 
+    border-style: solid; 
+}
+.third{
+    width: 50%;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.box{
+    width: 23%;
+    height: 2rem;
+    background-color: rgb(237, 158, 222);
+}

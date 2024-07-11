@@ -1,0 +1,22 @@
+def class_is_cancelled(threshold, arrival_times):
+    # Count the number of on-time students
+    on_time_count = sum(1 for time in arrival_times if time <= 0)
+    
+    # Check if the on-time count is less than the threshold
+    if on_time_count < threshold:
+        return "YES"
+    else:
+        return "NO"
+
+if __name__ == '__main__':
+    # Read the threshold
+    threshold = int(input("Enter the threshold number of students: "))
+    
+    # Read the arrival times
+    arrival_times = list(map(int, input("Enter the arrival times: ").split()))
+    
+    # Determine if the class is cancelled
+    result = class_is_cancelled(threshold, arrival_times)
+    
+    # Print the result
+    print(result)
