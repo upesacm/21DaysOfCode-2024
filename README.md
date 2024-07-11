@@ -1,63 +1,54 @@
-# Questions for Day 17 – (07/07/2024)
+# Questions for Day 20 – (07/10/2024)
 ## DSA:
 **Question 1:** 
-Given a binary search tree (BST) and two nodes, find their lowest common ancestor (LCA).
+Given an undirected graph, determine if it is possible to color the vertices of the graph using at most 2 colors such that no two adjacent vertices share the same color.
 ##### Inputs:
--	The root node of the BST.
-Two nodes for which the LCA is to be found.
+- The number of vertices and edges in the graph.
+- A list of edges.
 ##### Output:
--	The value of the LCA node.
+- "YES" if the graph can be colored using 2 colors, otherwise "NO".
 ##### Example:
-# BST:
+#### Graph:
 ```
-       20
-      /  \
-    10    30
-   /  \  /  \
-  5   15 25  35
- ```
-#### Nodes: 5, 30
-#### Output: 20
+  1 -- 2
+  |    |
+  3 -- 4
+```
+#### Vertices: 4
+#### Edges: [(1, 2), (1, 3), (2, 4), (3, 4)]
+#### Output: YES
 <br>
 
 **Question 2:** 
-Given a binary search tree (BST) and a value, insert the value into the BST while maintaining its properties.
+Implement Dijkstra's algorithm to find the shortest path from a starting node to all other nodes in a weighted graph.
 ##### Inputs:
--	The root node of the BST.
-The value to be inserted.
+- The number of vertices and edges in the graph.
+- A list of edges with their weights.
+- The starting node.
 ##### Output:
-- The root node of the updated BST.
+- The shortest path distance to each node from the starting node.
 ##### Example:
+#### Graph:
 ```
- BST:
-       4
-      / \
-     2   7
-    / \
-   1   3
-Insert: 5
-Updated BST:
-       4
-      / \
-     2   7
-    / \ /
-   1  3 5
+  1 --(4)-- 2
+  |        / |
+ (1)     (2) |
+  |   (3)    |
+  3 -------- 4
 ```
-
-
-
-
-
-
-
+#### Vertices: 4
+#### Edges: [(1, 2, 4), (1, 3, 1), (2, 4, 2), (3, 4, 3)]
+#### Start: 1
+#### Output: [0, 4, 1, 4]
+<br>
 
 ## WEB-DEV:
-Today, we aim to explore the necessity and function of databases. Given that many of us will be setting up MySQL, we'll focus on foundational questions.
-1.	Create a database named ACM21DOC.
-2.	Create a table named STUDENTS as followed:
-[ Name VARCHAR(15) NOT NULL, Bdate DATE, Sex CHAR]
-3.	Input some dummy entry and use SELECT * FROM STUDENTS to display all the entry.
-Submit all the queries performed in a .txt file
+Today, we will continue working on SQL queries to manipulate and retrieve data from the employees and departments tables.
 
+### Tasks:
+1. Write a SQL query to retrieve the names of employees and their corresponding department names.
+2. Write a SQL query to calculate the total number of employees in each department.
+3. Write a SQL query to retrieve the names of employees who have a salary greater than the average salary of the employees in their department.
+4. Write a SQL query to delete all employees who belong to the 'Marketing' department from the employees table.
 
-
+Submit all the queries performed in a .txt file.
