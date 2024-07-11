@@ -1,0 +1,30 @@
+-- Exercise - 1
+SELECT e.employee_name , d.department_name
+FROM employees e
+JOIN departements d ON e.employee_id = d.department_name;
+
+-- Exercise - 2
+SELECT d.department_name, COUNT(e.employee_id) AS num_employees
+FROM employees e
+JOIN departments d ON e.department_id = d.department_id
+GROUP BY d.department_name
+ORDER BY num_employees DESC;
+
+-- Exercise - 3
+WITH department_avg_salaries AS (
+SELECT department_id, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id
+)
+SELECT e.employee_name, e.salary, d.department_name
+FROM employees e
+JOIN department_avg_salaries d ON e.department_id = d.department_id
+WHERE e.salary > d.avg_salary;
+
+-- Exercise - 4
+DELETE FROM employees
+WHERE department_id IN (
+SELECT department_id
+FROM departments
+WHERE department_name = 'Marketing'
+);
