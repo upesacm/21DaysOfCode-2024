@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Josefin Sans';
+}
+
+.section-home, .section-about {
+    background-size: cover;
+    background-position: center;
+}
+
+.section-home {
+    background-image: url('Italy.jpg');
+}
+
+.section-about {
+    background-image: url('beach.jpg');
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    
+}
+
+footer {
+    background-color: #874a1e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+}

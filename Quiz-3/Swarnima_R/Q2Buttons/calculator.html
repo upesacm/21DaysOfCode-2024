@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        
+        #sum {
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="button" onclick="updateSum(2)">+2</button>
+        <button class="button" onclick="updateSum(3)">+3</button>
+        <button class="button" onclick="updateSum(4)">+4</button>
+        <button class="button" onclick="updateSum(5)">+5</button>
+        <button class="button" onclick="updateSum(-1)">-1</button>
+        <button class="button" onclick="updateSum(-2)">-2</button>
+        <button class="button" onclick="updateSum(-3)">-3</button>
+        <button class="button" onclick="reset()">Reset</button>
+    </div>
+    <div id="sum">Sum: 0</div>
+
+    <script>
+        let total = 0;
+
+        function updateSum(value) {
+            total += value;
+            document.getElementById('sum').textContent = `Sum: ${total}`;
+        }
+
+        function reset() {
+            total = 0;
+            document.getElementById('sum').textContent = `Sum: ${total}`;
+        }
+    </script>
+</body>
+</html>
