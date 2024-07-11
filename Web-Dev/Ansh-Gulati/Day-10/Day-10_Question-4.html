@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Gulati - Day-10, Q-4</title>
+</head>
+
+<body>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button id="submitButton">Submit</button>
+    <p id="displayName"></p>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function () {
+            var name = document.getElementById('nameInput').value;
+            document.getElementById('displayName').innerText = 'Your name is: ' + name;
+        });
+    </script>
+</body>
+
+</html>

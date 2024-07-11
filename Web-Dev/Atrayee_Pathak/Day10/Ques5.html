@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility</title>
+    <style>
+        /* Initially hide the element */
+        #toggleElement {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Visibility</button>
+    <p id="toggleElement">This is a toggled paragraph.</p>
+
+    <script>
+        // Get the button and the element to be toggled
+        const toggleButton = document.getElementById('toggleButton');
+        const toggleElement = document.getElementById('toggleElement');
+
+        // Add an event listener to the button
+        toggleButton.addEventListener('click', () => {
+            // Check the current display property of the element
+            if (toggleElement.style.display === 'none') {
+                // If the element is hidden, show it
+                toggleElement.style.display = 'block';
+            } else {
+                // If the element is visible, hide it
+                toggleElement.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

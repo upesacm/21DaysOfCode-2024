@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day.js Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+</head>
+<body>
+    <script>
+        // Get the date 5 days after today and display it in the format: '<Month> <Day of Month>'
+        const fiveDaysLater = dayjs().add(5, 'day');
+        console.log(`5 days later: ${fiveDaysLater.format('MMMM D')}`);
+
+        // Calculate 1 month after today and display it in the same format
+        const oneMonthLater = dayjs().add(1, 'month');
+        console.log(`1 month later: ${oneMonthLater.format('MMMM D')}`);
+
+        // Calculate 1 month before today and display it in the same format
+        const oneMonthBefore = dayjs().subtract(1, 'month');
+        console.log(`1 month before: ${oneMonthBefore.format('MMMM D')}`);
+
+        // Get a date from DayJS and display it in this format: '<Day of Week>'
+        const today = dayjs();
+        console.log(`Today is: ${today.format('dddd')}`);
+
+        // Create a function isWeekend(date) that takes a DayJS object and returns whether the date is 'Saturday' or 'Sunday'
+        function isWeekend(date) {
+            const dayOfWeek = date.format('dddd');
+            return dayOfWeek === 'Saturday' || dayOfWeek === 'Sunday';
+        }
+        console.log(`Is today a weekend? ${isWeekend(today)}`);
+    </script>
+</body>
+</html>

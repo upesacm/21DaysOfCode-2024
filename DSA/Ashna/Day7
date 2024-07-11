@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int minmaxvalue(char*str){
+        int n=strlen(str);
+        int tot_x=0;
+        int tot_y=0;
+        for(int i=0;i<n;i++){
+            if(str[i]=='x'){
+                tot_x++;
+            }
+            else{
+                tot_y++;
+            }
+        }
+        int left_x=0;
+        int left_y=0;
+        int minmax_value= tot_x>tot_y?tot_x:tot_y;
+        
+        for(int i=0;i<n;i++){
+            if(str[i]=='x'){
+                left_x++;
+            }else{
+                left_y++;
+            }
+            int dig0= tot_x - left_x;
+            int dig1= left_y;
+            int max_val= dig0>dig1?dig0:dig1;
+            
+            if (max_val<minmax_value){
+                minmax_value= max_val;
+            }
+        }
+        return minmax_value;
+    }
+    intmain(){
+        char str[]= "yxyyyxyyx";
+        int result = minmaxvalue(str);
+        peintf("The minimum value of max(dig0,dig1) is: %d\n", result);
+        return 0;
+    }
+}

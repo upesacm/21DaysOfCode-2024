@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day13</title>
+</head>
+<body>
+    <script>
+        let randomnum=Math.random();
+        console.log(randomnum);
+
+        let result;
+        if(randomnum<0.5){
+            result=randomnum;
+        }
+        console.log(result);
+
+        let guess=prompt("(Enter correct spell )heads or tails");
+
+        if(randomnum>0.5){
+            console.log("computer choose ",result="heads");
+        }
+        else{
+            console.log("computer choose: ",result="tails");
+            
+        }
+
+        if(guess==result){
+            console.log("You Choose: ",guess," 'you win'");
+        }
+        else{
+            console.log("You Choose: ",guess," you loss");
+        }
+
+
+    </script>
+</body>
+</html>

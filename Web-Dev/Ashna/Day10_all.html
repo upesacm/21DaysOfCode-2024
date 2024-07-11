@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Example</title>
+    <script>
+        function displayButton() {
+            const button = document.querySelector('button');
+            console.log(button);
+        }
+    </script>
+</head>
+<body onload="displayButton()">
+    <button>Hello</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button Text</title>
+    <script>
+        function changeButtonText() {
+            const button = document.querySelector('.second-button');
+            button.textContent = 'Hello <YourName>!';
+        }
+    </script>
+</head>
+<body onload="changeButtonText()">
+    <button>Hello</button>
+    <button class="second-button">Hello</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads or Tails</title>
+    <script>
+        function chooseHeads() {
+            document.getElementById('result').textContent = 'You chose: heads';
+        }
+
+        function chooseTails() {
+            document.getElementById('result').textContent = 'You chose: tails';
+        }
+    </script>
+</head>
+<body>
+    <button onclick="chooseHeads()">Heads</button>
+    <button onclick="chooseTails()">Tails</button>
+    <p id="result"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Name</title>
+    <script>
+        function displayText() {
+            const textBox = document.getElementById('textBox');
+            const name = textBox.value;
+            document.getElementById('nameDisplay').textContent = `Your name is: ${name}`;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="textBox" placeholder="Enter your name">
+    <button onclick="displayText()">Submit</button>
+    <p id="nameDisplay"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility</title>
+    <style>
+        #toggleElement {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleVisibility() {
+            const element = document.getElementById('toggleElement');
+            if (element.style.display === 'none') {
+                element.style.display = 'block';
+            } else {
+                element.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="toggleVisibility()">Toggle Visibility</button>
+    <div id="toggleElement">This is a toggleable element.</div>
+</body>
+</html>

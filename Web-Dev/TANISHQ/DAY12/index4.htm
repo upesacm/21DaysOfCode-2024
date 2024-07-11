@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+  </head>
+  <body>
+    <h1 id="date"></h1>
+    <script>
+        const dateElement = document.getElementById("date");
+const today = dayjs();
+const formattedDate = today.format("dddd");
+dateElement.innerText = formattedDate;
+    </script>
+  </body>
+</html>

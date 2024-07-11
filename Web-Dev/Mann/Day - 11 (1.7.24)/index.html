@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click!</button>
+    <script>
+      let add = () => {
+        console.log(2 + 3);
+      };
+      let printName = () => {
+        console.log("mann");
+      };
+      printName(printName());
+      let btn = document.querySelector("#btn");
+      btn.addEventListener("click", () => {
+        setTimeout(() => {
+          btn.textContent = "Finished!";
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

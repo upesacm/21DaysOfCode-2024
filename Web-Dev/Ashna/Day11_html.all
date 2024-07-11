@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Tasks</title>
+    <script>
+        // Task 1: Create a variable called 'add' and save a function inside
+        var add = function() {
+            console.log(2 + 3);
+        };
+
+        // Task 2: Create a function runTwice that takes a function as a parameter and runs it twice
+        function runTwice(fun) {
+            fun();
+            fun();
+        }
+        runTwice(function() {
+            console.log('Your_Name');
+        });
+
+        // Task 3: Function to change button text after 1 second
+        function changeButtonText() {
+            setTimeout(function() {
+                document.getElementById('finishButton').innerText = 'Finished!!';
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <button id="finishButton" onclick="changeButtonText()">Click me</button>
+</body>
+</html>

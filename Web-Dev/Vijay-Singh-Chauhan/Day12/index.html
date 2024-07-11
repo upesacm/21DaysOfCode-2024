@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</head>
+<body>
+    <script>
+
+        const today=dayjs();
+
+        // Ques1
+        const fivedayafter=today.add(5,'day').format('<MMMM> <D>');
+        console.log(fivedayafter);
+
+        // Ques2
+        const onemonthafter=today.add(1,'month').format('<MMMM> <D>');
+            console.log(onemonthafter);
+        
+        // Ques3
+        const onemonthbefore=today.subtract(1,'month').format('<MMMM> <D>');
+            console.log(onemonthbefore);
+
+        // Ques4
+        const dayofweek=today.format('dddd');
+        console.log(dayofweek);
+
+        // Ques5
+        function isweekend(date){
+            const day=date.format('dddd');
+            if(day==='Saturday' || day==='Sunday'){
+                return day;
+            }
+            else{
+                return false;
+            }
+        }
+        const date=dayjs('2024-07-06');
+        console.log(isweekend(date));
+
+
+    </script>
+</body>
+</html>
