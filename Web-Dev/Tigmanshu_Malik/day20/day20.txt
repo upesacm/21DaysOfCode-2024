@@ -1,0 +1,19 @@
+SELECT e.name AS EmployeeName, d.name AS DepartmentName
+FROM employees e
+JOIN departments d ON e.department_id = d.id;
+
+
+SELECT d.name AS DepartmentName, COUNT(e.id) AS TotalEmployees
+FROM employees e
+JOIN departments d ON e.department_id = d.id
+GROUP BY d.name;
+
+
+SELECT e.name AS EmployeeName, e.salary, AVG(e2.salary) AS AvgDepartmentSalary
+FROM employees e
+JOIN employees e2 ON e.department_id = e2.department_id
+GROUP BY e.id, e.salary, e.department_id
+HAVING e.salary > AVG(e2.salary);
+
+DELETE FROM employees
+WHERE department_id = (SELECT id FROM departments WHERE name = 'Marketing');
