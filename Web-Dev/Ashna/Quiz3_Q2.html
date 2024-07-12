@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Sum</title>
+    <style>
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Button Sum</h2>
+    <div>
+        <button onclick="addToSum(2)">+2</button>
+        <button onclick="addToSum(3)">+3</button>
+        <button onclick="addToSum(4)">+4</button>
+        <button onclick="addToSum(5)">+5</button>
+        <button onclick="addToSum(-1)">-1</button>
+        <button onclick="addToSum(-2)">-2</button>
+        <button onclick="addToSum(-3)">-3</button>
+        <button onclick="resetSum()">Reset</button>
+    </div>
+    <h3>Sum: <span id="sum">0</span></h3>
+
+    <script>
+        let sum = 0;
+
+        function addToSum(value) {
+            sum += value;
+            document.getElementById('sum').innerText = sum;
+        }
+
+        function resetSum() {
+            sum = 0;
+            document.getElementById('sum').innerText = sum;
+        }
+    </script>
+</body>
+</html>

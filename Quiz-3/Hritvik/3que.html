@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicated UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .tweet-box {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 5px;
+            width: 500px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            margin: 50px auto;
+        }
+        .tweet-box img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .tweet-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+        .tweet-box button {
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .tweet-box button:hover {
+            background-color: #0d8dd9;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-box">
+        <img src="upesacm.jpg" alt="UPES ACM logo">
+        <input type="text" placeholder="What's happening?">
+        <button>Tweet</button>
+    </div>
+</body>
+</html>

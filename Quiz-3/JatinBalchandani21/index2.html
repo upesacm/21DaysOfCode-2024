@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Sum Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        let sum = 0;
+
+        function addValue(value) {
+            sum += value;
+            document.getElementById("result").innerText = sum;
+        }
+
+        function resetSum() {
+            sum = 0;
+            document.getElementById("result").innerText = sum;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="addValue(2)">+2</button>
+    <button onclick="addValue(3)">+3</button>
+    <button onclick="addValue(4)">+4</button>
+    <button onclick="addValue(5)">+5</button>
+    <button onclick="addValue(-1)">-1</button>
+    <button onclick="addValue(-2)">-2</button>
+    <button onclick="addValue(-3)">-3</button>
+    <button onclick="resetSum()">Reset</button>
+    <p>Sum: <span id="result">0</span></p>
+</body>
+</html>
