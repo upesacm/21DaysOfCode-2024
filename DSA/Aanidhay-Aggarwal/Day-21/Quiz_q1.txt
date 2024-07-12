@@ -1,0 +1,41 @@
+You are given an array A[] of N integers. Consider a complete graph of N nodes numbered from 1 to N, 
+where the weight of edge connecting nodes x and y (x!=y) is | x * y - A[x] % A[y] - A[y] % A[x] |. 
+Your task is to find the cost of the minimum spanning tree of this graph.
+
+The cost of the spanning tree is the sum of the weights of all the edges in the tree. 
+There can be many spanning trees. Minimum spanning tree is the spanning tree where the cost is minimum among all the spanning trees.
+
+Input Format
+
+Input: N = 5 A[] = {1, 3, 5, 5, 1}
+Output: 10
+Explanation: One of the minimum spanning tree will be 1 / | \ 2 5 4 / 3
+
+Cost will be weight of edge 1 - 2 + weight of edge 1 - 4 + weight of edge 1 - 5 + weight of edge 2 - 3 = 1 + 3 + 5 + 1 = 10
+
+Constraints
+1 <= N <= 5*10^4
+1 <= A[i] <= N
+
+Output Format
+
+Input: N = 3 A[] = {1, 1, 1}
+Output: 5
+
+Explanation: One of the minimum spanning tree will be 1 / \ 3 2
+
+Cost will beweight of edge 1 - 3 + weight of edge 1 - 2 = 2 + 3 = 5
+
+Sample Input 0
+5
+1 3 5 5 1
+
+Sample Output 0
+10
+
+Sample Input 1
+3
+1 1 1
+
+Sample Output 1
+5
