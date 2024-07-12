@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <button onclick="calculate(2)">+2</button>
+        <button onclick="calculate(3)">+3</button>
+        <button onclick="calculate(4)">+4</button>
+        <button onclick="calculate(5)">+5</button>
+        <button onclick="calculate(-1)">-1</button>
+        <button onclick="calculate(-2)">-2</button>
+        <button onclick="calculate(-3)">-3</button>
+        <button onclick="calculate(-sum)">Reset</button>
+    </div>
+
+    <div id="output">sum : 0</div>
+
+    <script>
+
+        let sum = 0
+
+        function calculate(value){
+
+            sum += value
+             
+            const container = document.getElementById("output")
+
+            container.innerHTML = `Sum : ${sum}`
+        }
+
+    </script>
+</body>
+</html>
